@@ -1,0 +1,64 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+
+            & .card:not(.unsupport-dark-mode){
+                background-color: $dark-mode-color-2;
+                color: $light-color-4;     
+
+                
+                &.card-flush{
+
+                    & .card-header,
+                    & .card-footer{
+                        border: none !important;
+                    }
+
+                }
+
+                &.card-bordered{
+                    border: 1px solid $dark-mode-color-3;
+
+                    & .card-header:not(.unsupport-dark-mode){
+                        border-bottom: 1px solid $dark-mode-color-3;
+                    }
+
+                    & .card-footer:not(.unsupport-dark-mode){
+                        border-top: 1px solid $dark-mode-color-3;
+                    }
+                }
+                
+                & .card-title:not(.unsupport-dark-mode){
+                    color: $light-color-3;
+                }
+
+                & .card-header:not(.unsupport-dark-mode){
+                    color: $light-color-3;
+                    border-bottom: 1px solid $dark-mode-color-1;
+                }
+
+                & .card-body:not(.unsupport-dark-mode){
+                    color: $light-color-6;
+                }
+
+                & .card-footer:not(.unsupport-dark-mode){
+                    border-top: 1px solid $dark-mode-color-1;
+                }
+
+                & .card-scroll{
+
+                    & .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+                        background-color: rgba(255, 255, 255, 0.15);
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

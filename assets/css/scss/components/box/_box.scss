@@ -1,0 +1,612 @@
+.box{
+    width: 2.8rem;
+    height: 2.8rem;
+    padding: 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $dark-color-3;
+    transition: $content-transition;
+
+    &.box-shadow,
+    & .box-shadow{
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    }
+
+    & img{
+        object-fit: cover;
+    }
+
+    & .box-image{
+        border-radius: 6px;
+        transition: $content-transition;
+    }
+
+    &.pale{
+        color: $dark-color-4;
+
+        & svg{
+            fill: $dark-color-4;
+        }
+
+        &:hover{
+            color: $dark-color-3;
+
+            & svg{
+                fill: $dark-color-3;
+            }
+        }
+    }
+
+    & svg{
+        fill: $dark-color-3;
+        width: 50%;
+        height: 50%;
+        transition: $content-transition;
+    }
+
+    // colors
+    &.blue{
+        background: $blue-color-3;
+        color: $blue-color-1;
+
+        & svg{
+            fill: $blue-color-1;
+        }
+    }
+
+    &.red{
+        background: $red-color-3;
+        color: $red-color-1;
+
+        & svg{
+            fill: $red-color-1;
+        }
+    }
+
+    &.green{
+        background: $green-color-3;
+        color: $green-color-1;
+
+        & svg{
+            fill: $green-color-1;
+        }
+    }
+
+    &.cyan{
+        background: $cyan-color-3;
+        color: $cyan-color-1;
+
+        & svg{
+            fill: $cyan-color-1;
+        }
+    }
+
+    &.orange{
+        background: $orange-color-3;
+        color: $orange-color-1;
+
+        & svg{
+            fill: $orange-color-1;
+        }
+    }
+
+    &.purple{
+        background: $purple-color-3;
+
+        & svg{
+            fill: $purple-color-1;
+        }
+    }
+
+
+    // for svg
+    &.fill-primary{
+       color: $primary-color;
+
+        & svg{
+            fill: $primary-color;
+        }
+    }
+    
+    &.fill-hover-primary:hover{
+        color: $primary-color !important;
+
+        & svg{
+            fill: $primary-color !important;
+        }
+    }
+
+    &.fill-primary-dark{
+        color: $primary-dark-color;
+
+        & svg{
+            fill: $primary-dark-color;
+        }
+    }
+
+    &.fill-hover-primary-dark:hover{
+        color: $primary-dark-color !important;
+
+        & svg{
+            fill: $primary-dark-color !important;
+        }
+    }
+
+    &.fill-primary-light{
+        color: $primary-light-color;
+
+        & svg{
+            fill: $primary-light-color;
+        }
+    }
+
+    &.fill-hover-primary-light:hover{
+        color: $primary-light-color !important;
+
+        & svg{
+            fill: $primary-light-color !important;
+        }
+    }
+
+    &.fill-white{
+        color: $light-color-1;
+
+        & svg{
+            fill: $light-color-1;
+        }
+    }
+
+    &.fill-hover-white:hover{
+        color: $light-color-1 !important;
+
+        & svg{
+            fill: $light-color-1 !important;
+        }
+    }
+
+    &.fill-light-2{
+        color: $light-color-2;
+
+        & svg{
+            fill: $light-color-2;
+        }
+    }
+
+    &.fill-hover-light-2:hover{
+        color: $light-color-2 !important;
+
+        & svg{
+            fill: $light-color-2 !important;
+        }
+    }
+
+    &.fill-light-3{
+        color: $light-color-3;
+
+        & svg{
+            fill: $light-color-3;
+        }
+    }
+
+    &.fill-hover-light-3:hover{
+        color: $light-color-3 !important;
+
+        & svg{
+            fill: $light-color-3 !important;
+        }
+    }
+
+    &.fill-light-4{
+        color: $light-color-4;
+
+        & svg{
+            fill: $light-color-4;
+        }
+    }
+
+    &.fill-hover-light-4:hover{
+        color: $light-color-4 !important;
+
+        & svg{
+            fill: $light-color-4 !important;
+        }
+    }
+
+    &.fill-light-5{
+        color: $light-color-5;
+
+        & svg{
+            fill: $light-color-5;
+        }
+    }
+
+    &.fill-hover-light-5:hover{
+        color: $light-color-5 !important;
+
+        & svg{
+            fill: $light-color-5 !important;
+        }
+    }
+
+    &.fill-light-6{
+        color: $light-color-6;
+
+        & svg{
+            fill: $light-color-6;
+        }
+    }
+
+    &.fill-hover-light-6:hover{
+        color: $light-color-6 !important;
+
+        & svg{
+            fill: $light-color-6 !important;
+        }
+    }
+
+    &.fill-dark-2{
+        color: $dark-color-2;
+
+        & svg{
+            fill: $dark-color-2;
+        }
+    }
+
+    &.fill-hover-dark-2:hover{
+        color: $dark-color-2 !important;
+
+        & svg{
+            fill: $dark-color-2 !important;
+        }
+    }
+
+    &.fill-dark-3{
+        color: $dark-color-3;
+
+        & svg{
+            fill: $dark-color-3;
+        }
+    }
+
+    &.fill-hover-dark-3:hover{
+        color: $dark-color-3 !important;
+
+        & svg{
+            fill: $dark-color-3 !important;
+        }
+    }
+
+    &.fill-dark-4{
+        color: $dark-color-4;
+        
+        & svg{
+            fill: $dark-color-4;
+        }
+    }
+
+    &.fill-hover-dark-4:hover{
+        color: $dark-color-4 !important;
+        
+        & svg{
+            fill: $dark-color-4 !important;
+        }
+    }
+
+    &.fill-dark-5{
+        color: $dark-color-5;
+
+        & svg{
+            fill: $dark-color-5;
+        }
+    }
+
+    &.fill-hover-dark-5:hover{
+        color: $dark-color-5 !important;
+
+        & svg{
+            fill: $dark-color-5 !important;
+        }
+    }
+    
+    &.fill-red-1{
+        color: $red-color-1;
+
+        & svg{
+            fill: $red-color-1;
+        }
+    }
+
+    &.fill-hover-red-1:hover{
+        color: $red-color-1 !important;
+
+        & svg{
+            fill: $red-color-1 !important;
+        }
+    }
+
+    &.fill-red-2{
+        color: $red-color-2;
+        
+        & svg{
+            fill: $red-color-2;
+        }
+    }
+
+    &.fill-hover-red-2:hover{
+        color: $red-color-2 !important;
+        
+        & svg{
+            fill: $red-color-2 !important;
+        }
+    }
+
+    &.fill-red-3{
+        color: $red-color-3;
+
+        & svg{
+            fill: $red-color-3;
+        }
+    }
+
+    &.fill-hover-red-3:hover{
+        color: $red-color-3 !important;
+
+        & svg{
+            fill: $red-color-3 !important;
+        }
+    }
+
+    &.fill-green-1{
+        color: $green-color-1;
+
+        & svg{
+            fill: $green-color-1;
+        }
+    }
+
+    &.fill-hover-green-1:hover{
+        color: $green-color-1 !important;
+
+        & svg{
+            fill: $green-color-1 !important;
+        }
+    }
+
+    &.fill-green-2{
+        color: $green-color-2;
+
+        & svg{
+            fill: $green-color-2;
+        }
+    }
+
+    &.fill-hover-green-2:hover{
+        color: $green-color-2 !important;
+
+        & svg{
+            fill: $green-color-2 !important;
+        }
+    }
+
+    &.fill-green-3{
+        color: $green-color-3;
+
+        & svg{
+            fill: $green-color-3;
+        }
+    }
+
+    &.fill-hover-green-3:hover{
+        color: $green-color-3 !important;
+
+        & svg{
+            fill: $green-color-3 !important;
+        }
+    }
+
+    &.fill-blue-1{
+        color: $blue-color-1;
+
+        & svg{
+            fill: $blue-color-1;
+        }
+    }
+
+    &.fill-hover-blue-1:hover{
+        color: $blue-color-1 !important;
+
+        & svg{
+            fill: $blue-color-1 !important;
+        }
+    }
+
+    &.fill-blue-2{
+        color: $blue-color-2;
+        
+        & svg{
+            fill: $blue-color-2;
+        }
+    }
+
+    &.fill-hover-blue-2:hover{
+        color: $blue-color-2 !important;
+        
+        & svg{
+            fill: $blue-color-2 !important;
+        }
+    }
+    
+    &.fill-blue-3{
+        color: $blue-color-3;
+
+        & svg{
+            fill: $blue-color-3;
+        }
+    }
+
+    &.fill-hover-blue-3:hover{
+        color: $blue-color-3 !important;
+
+        & svg{
+            fill: $blue-color-3 !important;
+        }
+    }
+
+    &.fill-cyan-1{
+        color: $cyan-color-1;
+
+        & svg{
+            fill: $cyan-color-1;
+        }
+    }
+
+    &.fill-hover-cyan-1:hover{
+        color: $cyan-color-1 !important;
+
+        & svg{
+            fill: $cyan-color-1 !important;
+        }
+    }
+
+    &.fill-cyan-2{
+        color: $cyan-color-2;
+
+        & svg{
+            fill: $cyan-color-2;
+        }
+    }
+
+    &.fill-hover-cyan-2:hover{
+        color: $cyan-color-2 !important;
+
+        & svg{
+            fill: $cyan-color-2 !important;
+        }
+    }
+    
+    &.fill-cyan-3{
+        color: $cyan-color-3;
+
+        & svg{
+            fill: $cyan-color-3;
+        }
+    }
+
+    &.fill-hover-cyan-3:hover{
+        color: $cyan-color-3 !important;
+
+        & svg{
+            fill: $cyan-color-3 !important;
+        }
+    }
+
+    &.fill-orange-1{
+        color: $orange-color-1;
+
+        & svg{
+            fill: $orange-color-1;
+        }
+    }
+
+    &.fill-hover-orange-1:hover{
+        color: $orange-color-1 !important;
+
+        & svg{
+            fill: $orange-color-1 !important;
+        }
+    }
+
+    &.fill-orange-2{
+        color: $orange-color-2;
+
+        & svg{
+            fill: $orange-color-2;
+        }
+    }
+
+    &.fill-hover-orange-2:hover{
+        color: $orange-color-2 !important;
+
+        & svg{
+            fill: $orange-color-2 !important;
+        }
+    }
+    
+    &.fill-orange-3{
+        color: $orange-color-3;
+        
+        & svg{
+            fill: $orange-color-3;
+        }
+    }
+
+    &.fill-hover-orange-3:hover{
+        color: $orange-color-3 !important;
+        
+        & svg{
+            fill: $orange-color-3 !important;
+        }
+    }
+
+    &.fill-purple-1{
+        color: $purple-color-1;
+
+        & svg{
+            fill: $purple-color-1;
+        }
+    }
+
+    &.fill-hover-purple-1:hover{
+        color: $purple-color-1 !important;
+
+        & svg{
+            fill: $purple-color-1 !important;
+        }
+    }
+
+    &.fill-purple-2{
+        color: $purple-color-2;
+
+        & svg{
+            fill: $purple-color-2;
+        }
+    }
+
+    &.fill-hover-purple-2:hover{
+        color: $purple-color-2 !important;
+
+        & svg{
+            fill: $purple-color-2 !important;
+        }
+    }
+    
+    &.fill-purple-3{
+        color: $purple-color-3;
+
+        & svg{
+            fill: $purple-color-3;
+        }
+    }
+
+    &.fill-hover-purple-3:hover{
+        color: $purple-color-3 !important;
+
+        & svg{
+            fill: $purple-color-3 !important;
+        }
+    }
+    
+}
+
+.dot{
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 100% !important;
+    display: inline-block;
+    background-color: $dark-color-4;
+    border-radius: 6px;
+}
+
+@import 'box-dark';

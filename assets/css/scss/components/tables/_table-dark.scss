@@ -1,0 +1,28 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+
+            & .table:not(.unsupport-dark-mode){
+                color: $light-color-4;
+
+                & tr:not(.unsupport-dark-mode){
+                    border-color: $dark-mode-color-1;
+                }
+
+                &.table-border-mellow{
+                    
+                    & tr{
+                        border-color: $dark-mode-color-3;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

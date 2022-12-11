@@ -1,0 +1,32 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+            
+            & .introjs-tooltip{
+                background-color: $dark-mode-color-2;
+                color: $light-color-2;
+            }
+
+            & .introjs-button.introjs-prevbutton{
+                color: $light-color-6;
+
+                &.introjs-disabled{
+                    color: $dark-color-4;   
+                }
+            }
+
+            & .introjs-progress{
+                background-color: $dark-mode-color-3;
+            }
+
+            & .introjs-bullets ul li a{
+                background: $dark-mode-color-3;
+            }
+
+        }
+
+    }
+
+}

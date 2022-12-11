@@ -1,0 +1,28 @@
+//------------------------- From 0 to 900 Milliseconds ---------------------------//
+@for $i from 1 through 9 {
+    .anim-delay-#{$i * 100}ms {
+        animation-delay: #{$i * 100}ms !important;
+    }
+}
+
+
+//----------------------------- From 0 to 9 Seconds ------------------------------//
+@for $i from 0 through 9 {
+    .anim-delay-#{$i}s {
+        animation-delay: #{$i}s !important;
+    }
+}
+
+//----------------------------- From 10 to 20 Seconds ------------------------------//
+@for $i from 5 through 10 {
+    .anim-delay-#{$i * 2}s {
+        animation-delay: #{$i * 2}s !important;
+    }
+}
+
+//----------------------------- From 25 to 50 Seconds ------------------------------//
+@for $i from 5 through 10 {
+    .anim-delay-#{$i * 5}s {
+        animation-delay: #{$i * 5}s !important;
+    }
+}

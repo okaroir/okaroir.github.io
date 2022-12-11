@@ -1,0 +1,86 @@
+//----------------------------- Padding -----------------------------//
+//---------- All Direction //
+@for $i from 0 through 20 {
+    .p-#{$i}px {
+        padding: #{$i}px !important;
+    }
+}
+
+//---------- Top //
+@for $i from 0 through 20 {
+    .pt-#{$i}px {
+        padding-top: #{$i}px !important;
+    }
+}
+
+//---------- Bottom //
+@for $i from 0 through 20 {
+    .pb-#{$i}px {
+        padding-bottom: #{$i}px !important;
+    }
+}
+
+//---------- X Direction //
+@for $i from 0 through 20 {
+
+    .px-#{$i}px {
+        padding-left: #{$i}px !important;
+        padding-right: #{$i}px !important;
+    }
+
+}
+
+//---------- Y Direction //
+@for $i from 0 through 20 {
+
+    .py-#{$i}px {
+        padding-top: #{$i}px !important;
+        padding-bottom: #{$i}px !important;
+    }
+
+}
+
+
+
+body {
+
+    //-------------------------- LTR Direction --------------------------//
+    &:not(.rtl){
+        //---------- Start //
+        @for $i from 0 through 20 {
+            .ps-#{$i}px {
+                padding-left: #{$i}px !important;
+            }
+        }
+
+        //---------- End //
+        @for $i from 0 through 20 {
+
+            .pe-#{$i}px {
+                padding-right: #{$i}px !important;
+            }
+
+        }
+    }
+
+
+    //-------------------------- RTL Direction --------------------------//
+    &.rtl {
+        //---------- Start //
+        @for $i from 0 through 20 {
+            .ps-#{$i}px {
+                padding-right: #{$i}px !important;
+            }
+        }
+        //---------- End //
+        @for $i from 0 through 20 {
+
+            .pe-#{$i}px {
+                padding-left: #{$i}px !important;
+            }
+
+        }
+
+    }
+
+}

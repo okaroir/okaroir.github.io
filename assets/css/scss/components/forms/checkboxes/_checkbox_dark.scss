@@ -1,0 +1,17 @@
+@import "../../../functions/functions";
+@import "../../utilities/colors/variables";
+@import "../../pulses/pulse";
+
+body{
+    &.dark{
+        &.dark-mode-1{
+            .form-check-input{
+                &:not(.ignore-dark-mode){
+                    &:not(:checked){
+                        background-color: $custom-color-navy-blue-light-1;
+                    }
+                }
+            }
+        }
+    }
+}

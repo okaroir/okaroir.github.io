@@ -1,0 +1,454 @@
+@import "../../utilities/colors/variables";
+@import "../../pulses/pulse";
+
+
+
+.form-check-input{
+    font-family: 'custom-icons';
+    cursor: pointer;
+    margin-top: 0;
+    vertical-align: middle;
+    position: relative;
+    background-image: none !important;
+    color: #ffffff;
+
+    &:before{
+        content: "";
+        font-size: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    &:after{
+        content: "";
+        font-size: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    &:checked{
+        &:before{
+            content: "\e900";
+        }
+        &:after{
+            content: "\e900";
+        }
+    }
+
+    //------------------------------ Mark Style - Checked ------------------------------//
+    &.checked-mark-tick-01{
+        &:checked{
+            &:before,&:after{
+                content: "\e900";
+            }
+        }
+    }
+    &.checked-mark-tick-02{
+        &:checked{
+            &:before,&:after{
+                content: "\e901";
+            }
+        }
+    }
+    &.checked-mark-tick-03{
+        &:checked{
+            &:before,&:after{
+                content: "\e902";
+            }
+        }
+    }
+    &.checked-mark-tick-04{
+        &:checked{
+            &:before,&:after{
+                content: "\e903";
+            }
+        }
+    }
+    &.checked-mark-tick-05{
+        &:checked{
+            &:before,&:after{
+                content: "\e904";
+            }
+        }
+    }
+    &.checked-mark-tick-06{
+        &:checked{
+            &:before,&:after{
+                content: "\e905";
+            }
+        }
+    }
+    &.checked-mark-close-01{
+        &:checked{
+            &:before,&:after{
+                content: "\e906";
+            }
+        }
+    }
+    &.checked-mark-close-02{
+        &:checked{
+            &:before,&:after{
+                content: "\e907";
+            }
+        }
+    }
+    &.checked-mark-close-03{
+        &:checked{
+            &:before,&:after{
+                content: "\e908";
+            }
+        }
+    }
+    &.checked-mark-close-04{
+        &:checked{
+            &:before,&:after{
+                content: "\e909";
+            }
+        }
+    }
+    &.checked-mark-plus-01{
+        &:checked{
+            &:before,&:after{
+                content: "\e90a";
+            }
+        }
+    }
+    &.checked-mark-plus-02{
+        &:checked{
+            &:before,&:after{
+                content: "\e90b";
+            }
+        }
+    }
+    &.checked-mark-minus-01{
+        &:checked{
+            &:before,&:after{
+                content: "\e90c";
+            }
+        }
+    }
+    &.checked-mark-minus-02{
+        &:checked{
+            &:before,&:after{
+                content: "\e90d";
+            }
+        }
+    }
+    &.checked-mark-square-01{
+        &:checked{
+            &:before,&:after{
+                content: "\e90e";
+            }
+        }
+    }
+    &.checked-mark-square-02{
+        &:checked{
+            &:before,&:after{
+                content: "\e90f";
+            }
+        }
+    }
+    &.checked-mark-circle{
+        &:checked{
+            &:before,&:after{
+                content: "\e910";
+            }
+        }
+    }
+
+    //------------------------------ Mark Style - Unchecked ------------------------------//
+    &.unchecked-mark-tick-01{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e900";
+            }
+        }
+    }
+    &.unchecked-mark-tick-02{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e901";
+            }
+        }
+    }
+    &.unchecked-mark-tick-03{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e902";
+            }
+        }
+    }
+    &.unchecked-mark-tick-04{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e903";
+            }
+        }
+    }
+    &.unchecked-mark-tick-05{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e904";
+            }
+        }
+    }
+    &.unchecked-mark-tick-06{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e905";
+            }
+        }
+    }
+    &.unchecked-mark-close-01{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e906";
+            }
+        }
+    }
+    &.unchecked-mark-close-02{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e907";
+            }
+        }
+    }
+    &.unchecked-mark-close-03{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e908";
+            }
+        }
+    }
+    &.unchecked-mark-close-04{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e909";
+            }
+        }
+    }
+    &.unchecked-mark-plus-01{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e90a";
+            }
+        }
+    }
+    &.unchecked-mark-plus-02{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e90b";
+            }
+        }
+    }
+    &.unchecked-mark-minus-01{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e90c";
+            }
+        }
+    }
+    &.unchecked-mark-minus-02{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e90d";
+            }
+        }
+    }
+    &.unchecked-mark-square-01{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e90e";
+            }
+        }
+    }
+    &.unchecked-mark-square-02{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e90f";
+            }
+        }
+    }
+    &.unchecked-mark-circle{
+        &:not(:checked){
+            &:before,&:after{
+                content: "\e910";
+            }
+        }
+    }
+
+
+    /*---------------------------- Simple Checkboxes -----------------------------*/
+    @each $colorName, $colorValue in $colors {
+        &.checkbox-#{$colorName} {
+            &:checked {
+                border-color: $colorValue;
+                background-color: $colorValue;
+            }
+
+            &:focus {
+                border-color: $colorValue;
+                box-shadow: 0 0 0 0.25rem transparentize($colorValue,0.75);
+            }
+
+
+
+
+            //&.checkbox-unchecked-pulse {
+            //&:not(:checked) {
+
+            //&:before {
+            //border: solid 1px $colorValue;
+            //}
+
+            //}
+            //}
+
+
+        }
+
+        &.checked-bg-#{$colorName}{
+            &:checked {
+                background-color: $colorValue !important;
+            }
+        }
+        &.unchecked-bg-#{$colorName}{
+            &:not(:checked) {
+                background-color: $colorValue !important;
+            }
+        }
+
+        &.checked-mark-#{$colorName}{
+            &:checked {
+                color: $colorValue;
+            }
+        }
+        &.unchecked-mark-#{$colorName}{
+            &:not(:checked) {
+                color: $colorValue;
+            }
+        }
+
+        &.checked-border-#{$colorName}{
+            &:checked {
+                border-color: $colorValue !important;
+            }
+        }
+        &.unchecked-border-#{$colorName}{
+            &:not(:checked) {
+                border-color: $colorValue !important;
+            }
+        }
+    }
+
+
+
+    /*---------------------------------- Sizes -----------------------------------*/
+    &.checkbox-xs{
+        width: 0.7rem;
+        height: 0.7rem;
+        font-size: 10px;
+    }
+    &.checkbox-sm{
+        width: 0.8rem;
+        height: 0.8rem;
+        font-size: 12px;
+    }
+    &.checkbox-md{
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 16px;
+    }
+    &.checkbox-lg{
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 22px;
+    }
+    &.checkbox-xl{
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 26px;
+    }
+
+
+    /*----------------------------------- Pulses ---------------------------------*/
+    &.checked-pulse,&.unchecked-pulse{
+        position: relative;
+        z-index: 1;
+        animation-duration: 2.5s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+
+        &:before {
+            opacity: 0;
+            border: inherit;
+            border-radius: inherit;
+            background-color: inherit;
+            background-image: inherit;
+            animation-name: pulse-scale-1 !important;
+            animation-iteration-count: inherit;
+        }
+    }
+
+    &.checked-pulse {
+        &:checked{
+            &:before {
+                animation-duration: inherit;
+                animation-delay: inherit;
+            }
+        }
+    }
+
+    &.unchecked-pulse {
+
+        &:not(:checked) {
+            &:before {
+                animation-duration: inherit;
+                animation-delay: inherit;
+            }
+        }
+
+    }
+
+    @for $i from 1 through 5 {
+
+        &.checked-pulse {
+            &.pulse-scale-#{$i}{
+                &:checked{
+                    &:before {
+                        animation-name: pulse-scale-#{$i} !important;
+                    }
+                }
+            }
+        }
+
+        &.unchecked-pulse {
+            &.pulse-scale-#{$i}{
+                &:not(:checked){
+                    &:before {
+                        animation-name: pulse-scale-#{$i} !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+
+.form-check-label{
+    cursor: pointer;
+}
+
+
+
+/*------------------------------ Dark Mode ------------------------------*/
+@import "checkbox_dark";

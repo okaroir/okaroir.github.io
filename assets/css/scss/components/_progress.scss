@@ -1,0 +1,16 @@
+// ---------- Progress Color in Dark-mode ---------- //
+body{
+
+    &.dark-mode-1{
+        
+        .progress{
+            background-color: $dark-mode-color-1;
+        }
+
+    }
+
+    & .progress{
+        transition: $main-transition;
+    }
+
+}

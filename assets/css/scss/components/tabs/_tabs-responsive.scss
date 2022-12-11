@@ -1,0 +1,15 @@
+@media(min-width: 993px){
+
+    .nav-tabs{
+
+        &.vertical-tabs{
+
+            & .nav-item{
+                min-width: 200px;
+            }
+    
+        }
+
+    }
+
+}

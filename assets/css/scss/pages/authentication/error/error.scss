@@ -1,0 +1,32 @@
+@import '../../../variables';
+
+*{
+    margin: 0;
+    font-family: 'vazir';
+    box-sizing: border-box;
+}
+
+body{
+    background: url('../../../../images/backgrounds/pic-8.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: none;
+
+
+
+    & .card{
+        max-width: 550px;
+    }
+
+
+}
+
+
+// plugins
+@import '../../../components/forms/buttons/buttons';
+@import '../../../components/utilities/colors/colors';

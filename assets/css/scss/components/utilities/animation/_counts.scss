@@ -1,0 +1,17 @@
+//----------------------------- From 0 to 9 Seconds ------------------------------//
+@for $i from 0 through 9 {
+    .anim-count-#{$i} {
+        animation-iteration-count: #{$i} !important;
+    }
+}
+
+//----------------------------- From 10 to 20 Seconds ------------------------------//
+@for $i from 5 through 10 {
+    .anim-count-#{$i * 2} {
+        animation-iteration-count: #{$i * 2} !important;
+    }
+}
+
+.anim-count-infinite{
+    animation-iteration-count: infinite;
+}

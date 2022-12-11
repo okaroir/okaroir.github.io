@@ -1,0 +1,19 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+            
+            & .dropdown:not(.unsupport-dark-mode){
+
+                & .dropdown-menu:not(.unsupport-dark-mode){
+                    background-color: $dark-mode-color-2;
+                }
+
+            }
+
+        }
+
+    }
+
+}

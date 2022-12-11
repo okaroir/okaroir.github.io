@@ -1,0 +1,277 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+            
+            & .box:not(.unsupport-dark-mode){
+                color: $light-color-4;
+                background-color: $dark-mode-color-3;
+                
+
+                &.pale{
+                    color: $light-color-6 !important;
+            
+                    & svg{
+                        fill: $light-color-6 !important;
+                    }
+            
+                    &:hover{
+                        color: $light-color-4 !important;
+            
+                        & svg{
+                            fill: $light-color-4 !important;
+                        }
+                    }
+                }
+
+                & svg:not(.unsupport-dark-mode){
+                    fill: $light-color-4;
+                }
+
+                & .box-image:not(.unsupport-dark-mode){
+                    border-color: $dark-mode-color-3 !important;
+                }
+
+                // Dark ===> Light
+                &.fill-white{
+                    color: $dark-color-1;
+            
+                    & svg{
+                        fill: $dark-color-1;
+                    }
+                }
+
+                &.fill-hover-white:hover{
+                    color: $dark-color-1 !important;
+            
+                    & svg{
+                        fill: $dark-color-1 !important;
+                    }
+                }
+
+                &.fill-light-2{
+                    color: $dark-color-2;
+            
+                    & svg{
+                        fill: $dark-color-2;
+                    }
+                }
+    
+                &.fill-hover-light-2:hover{
+                    color: $dark-color-2 !important;
+            
+                    & svg{
+                        fill: $dark-color-2 !important;
+                    }
+                }
+            
+                &.fill-light-3{
+                    color: $dark-color-3;
+            
+                    & svg{
+                        fill: $dark-color-3;
+                    }
+                }
+    
+                &.fill-hover-light-3:hover{
+                    color: $dark-color-3 !important;
+            
+                    & svg{
+                        fill: $dark-color-3 !important;
+                    }
+                }
+
+                &.fill-light-4{
+                    color: $dark-color-4;
+            
+                    & svg{
+                        fill: $dark-color-4;
+                    }
+                }
+    
+                &.fill-hover-light-4:hover{
+                    color: $dark-color-4 !important;
+            
+                    & svg{
+                        fill: $dark-color-4 !important;
+                    }
+                }
+
+                &.fill-light-5{
+                    color: $dark-color-5;
+            
+                    & svg{
+                        fill: $dark-color-5;
+                    }
+                }
+    
+                &.fill-hover-light-5:hover{
+                    color: $dark-color-5 !important;
+            
+                    & svg{
+                        fill: $dark-color-5 !important;
+                    }
+                }
+
+
+                // Light ===> Dark
+                &.fill-dark-1{
+                    color: $light-color-1;
+            
+                    & svg{
+                        fill: $light-color-1;
+                    }
+            
+                }
+    
+                &.fill-hover-dark-1:hover{
+                    color: $light-color-1 !important;
+            
+                    & svg{
+                        fill: $light-color-1 !important;
+                    }
+            
+                }
+
+                &.fill-dark-2{
+                    color: $light-color-2;
+            
+                    & svg{
+                        fill: $light-color-2;
+                    }
+            
+                }
+    
+                &.fill-hover-dark-2:hover{
+                    color: $light-color-2 !important;
+            
+                    & svg{
+                        fill: $light-color-2 !important;
+                    }
+            
+                }
+
+                &.fill-dark-3{
+                    color: $light-color-3;
+            
+                    & svg{
+                        fill: $light-color-3;
+                    }
+            
+                }
+    
+                &.fill-hover-dark-3:hover{
+                    color: $light-color-3 !important;
+            
+                    & svg{
+                        fill: $light-color-3 !important;
+                    }
+            
+                }
+            
+                &.fill-dark-4{
+                    color: $light-color-4;
+                    
+                    & svg{
+                        fill: $light-color-4;
+                    }
+                }
+    
+                &.fill-hover-dark-4:hover{
+                    color: $light-color-4 !important;
+                    
+                    & svg{
+                        fill: $light-color-4 !important;
+                    }
+                }
+            
+                &.fill-dark-5{
+                    color: $light-color-5;
+            
+                    & svg{
+                        fill: $light-color-5;
+                    }
+                }
+    
+                &.fill-hover-dark-5:hover{
+                    color: $light-color-5 !important;
+            
+                    & svg{
+                        fill: $light-color-5 !important;
+                    }
+                }
+
+
+
+                // Background ===> Dark ===> Light  
+                // & .hover-box-bg-dark-1:hover:not(.unsupport-dark-mode){
+                //     & .box{
+                //         background-color: $light-color-1 !important;
+                //     }
+                // }
+
+                // & .hover-box-bg-dark-2:hover:not(.unsupport-dark-mode){
+                //     & .box{
+                //         background-color: $light-color-2 !important;
+                //     }
+                // }
+
+                // & .hover-box-bg-dark-3:hover:not(.unsupport-dark-mode){
+                //     & .box{
+                //         background-color: $light-color-3 !important;
+                //     }
+                // }
+
+                // & .hover-box-bg-dark-4:hover:not(.unsupport-dark-mode){
+                //     & .box{
+                //         background-color: $light-color-5 !important;
+                //     }
+                // }
+
+                // & .hover-box-bg-dark-5:hover:not(.unsupport-dark-mode){
+                //     & .box{
+                //         background-color: $light-color-6 !important;
+                //     }
+                // }
+
+
+                // // Background ===> Light ===> Dark  
+                // & .hover-box-bg-light-1:hover:not(.unsupport-dark-mode){
+                //     & .box{
+                //         background-color: $dark-color-1 !important;
+                //     }
+                // }
+
+                // & .hover-box-bg-light-2:hover:not(.unsupport-dark-mode){
+                //     & .box{
+                //         background-color: $dark-color-2 !important;
+                //     }
+                // }
+
+                // & .hover-box-bg-light-3:hover:not(.unsupport-dark-mode){
+                //     & .box{
+                //         background-color: $dark-color-3 !important;
+                //     }
+                // }
+
+                // & .hover-box-bg-light-4:hover:not(.unsupport-dark-mode){
+                //     & .box{
+                //         background-color: $dark-color-4 !important;
+                //     }
+                // }
+
+                // & .hover-box-bg-light-5:hover:not(.unsupport-dark-mode),
+                // & .hover-box-bg-light-6:hover:not(.unsupport-dark-mode){
+                //     & .box{
+                //         background-color: $dark-color-5 !important;
+                //     }
+                // }
+
+            }
+
+        }
+
+    }
+
+}

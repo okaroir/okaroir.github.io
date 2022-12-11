@@ -1,0 +1,79 @@
+@import '../../variables';
+
+*{
+    margin: 0;
+    font-family: 'vazirmatn';
+    box-sizing: border-box;
+}
+
+body{
+    background: url('../../../images/backgrounds/08.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: none;
+   
+    & input{
+        
+        &::placeholder{
+            color: $dark-color-5 !important;
+        }
+
+    }
+
+    & .card{
+        max-width: 550px;
+
+        & .card-text-has-line{
+            position: relative;
+    
+            &::before{
+                content: ' ';
+                width: 35%;
+                height: 1px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0%;
+                margin: auto;
+                background-color: $light-color-6;
+                opacity: 0.3;
+            }
+    
+            &::after{
+                content: ' ';
+                width: 35%;
+                height: 1px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                background-color: $light-color-6;
+                opacity: 0.3;
+            }
+            
+        }
+    }
+
+
+}
+
+@media(max-width: 600px){
+    
+    .form-description{
+        font-size: 16px !important; 
+    }
+
+}
+
+// plugins
+@import '../../components/utilities/fonts';
+@import '../../components/forms/buttons/buttons';
+@import '../../components/utilities/colors/colors';
+@import '../../components/forms/input';
+@import '../../components/forms/checkboxes/checkbox';

@@ -1,0 +1,5109 @@
+body:not(.dark) {
+    .custom-nav-tabs {
+        & > ul.nav-tabs {
+            border-bottom: none !important;
+
+            & .nav-link {
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border: 1px solid transparent;
+                margin-bottom: 0;
+                color: $dark-color-5;
+
+                &.disabled {
+                    cursor: no-drop !important;
+                    pointer-events: auto !important;
+                }
+            }
+        }
+
+        & .nav-link {
+            color: $dark-color-5;
+
+            &.disabled {
+                cursor: no-drop !important;
+                pointer-events: auto !important;
+            }
+        }
+
+
+        /*------------------------------ Nav Border Colors ------------------------------*/
+        &.nav-border-red {
+            & .nav-link {
+                &.active {
+                    border: 1px solid $red-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $red-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-light-red {
+            & .nav-link {
+                &.active {
+                    border: 1px solid $red-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $red-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-cyan {
+
+            & .nav-link {
+                &.active {
+                    border: 1px solid $cyan-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $cyan-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-light-cyan {
+
+            & .nav-link {
+                &.active {
+                    border: 1px solid $cyan-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $cyan-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-blue {
+            & .nav-link {
+                &.active {
+                    border: 1px solid $blue-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $blue-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-light-blue {
+            & .nav-link {
+                &.active {
+                    border: 1px solid $blue-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $blue-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-orange {
+            & .nav-link {
+                &.active {
+                    border: 1px solid $orange-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $orange-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-light-orange {
+            & .nav-link {
+                &.active {
+                    border: 1px solid $orange-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $orange-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-purple {
+            & .nav-link {
+                &.active {
+                    border: 1px solid $purple-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $purple-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-light-purple {
+            & .nav-link {
+                &.active {
+                    border: 1px solid $purple-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $purple-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-green {
+            & .nav-link {
+                &.active {
+                    border: 1px solid $green-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $green-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-light-green {
+            & .nav-link {
+                &.active {
+                    border: 1px solid $green-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid $green-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.nav-border-transparent {
+            & .nav-link {
+                &.active {
+                    border: 1px solid transparent;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &.active {
+                        border-bottom: 1px solid transparent;
+                    }
+                }
+
+            }
+        }
+
+
+
+        /*---------------------------- Nav Background Colors ----------------------------*/
+        &.nav-bg-white {
+            & .nav-link {
+                &.active {
+                    background-color: #fff;
+                }
+            }
+        }
+
+        &.nav-bg-red {
+            & .nav-link {
+                &.active {
+                    background-color: $red-color-1;
+                }
+            }
+        }
+
+        &.nav-bg-light-red {
+            & .nav-link {
+                &.active {
+                    background-color: $red-color-2;
+                }
+            }
+        }
+
+        &.nav-bg-cyan {
+
+            & .nav-link {
+                &.active {
+                    background-color: $cyan-color-1;
+                }
+            }
+        }
+
+        &.nav-bg-light-cyan {
+            & .nav-link {
+                &.active {
+                    background-color: $cyan-color-2;
+                }
+            }
+        }
+
+        &.nav-bg-blue {
+            & .nav-link {
+                &.active {
+                    background-color: $blue-color-1;
+                }
+            }
+
+        }
+
+        &.nav-bg-light-blue {
+            & .nav-link {
+                &.active {
+                    background-color: $blue-color-2;
+                }
+            }
+        }
+
+        &.nav-bg-orange {
+            & .nav-link {
+                &.active {
+                    background-color: $orange-color-1;
+                }
+            }
+
+        }
+
+        &.nav-bg-light-orange {
+            & .nav-link {
+                &.active {
+                    background-color: $orange-color-2;
+                }
+            }
+        }
+
+        &.nav-bg-purple {
+            & .nav-link {
+                &.active {
+                    background-color: $purple-color-1;
+                }
+            }
+
+        }
+
+        &.nav-bg-light-purple {
+            & .nav-link {
+                &.active {
+                    background-color: $purple-color-2;
+                }
+            }
+        }
+
+        &.nav-bg-green {
+            & .nav-link {
+                &.active {
+                    background-color: $green-color-1;
+                }
+            }
+
+        }
+
+        &.nav-bg-light-green {
+            & .nav-link {
+                &.active {
+                    background-color: $green-color-2;
+                }
+            }
+        }
+
+        &.nav-bg-transparent{
+            & .nav-link {
+                &.active {
+                    background: transparent;
+                }
+            }
+        }
+
+        /*---------------------------------- Nav Colors ---------------------------------*/
+        &.nav-color-white {
+            & .nav-link {
+                &.active {
+                    color: #fff;
+
+                    svg {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-red {
+            & .nav-link {
+                &.active {
+                    color: $red-color-1;
+
+                    svg {
+                        fill: $red-color-1;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-light-red {
+            & .nav-link {
+                &.active {
+                    color: $red-color-2;
+
+                    svg {
+                        fill: $red-color-2;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-cyan {
+            & .nav-link {
+                &.active {
+                    color: $cyan-color-1;
+
+                    svg {
+                        fill: $cyan-color-1;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-light-cyan {
+            & .nav-link {
+                &.active {
+                    color: $cyan-color-2;
+
+                    svg {
+                        fill: $cyan-color-2;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-blue {
+            & .nav-link {
+                &.active {
+                    color: $blue-color-1;
+
+                    svg {
+                        fill: $blue-color-1;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-light-blue {
+            & .nav-link {
+                &.active {
+                    color: $blue-color-2;
+
+                    svg {
+                        fill: $blue-color-2;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-orange {
+            & .nav-link {
+                &.active {
+                    color: $orange-color-1;
+
+                    svg {
+                        fill: $orange-color-1;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-light-orange {
+            & .nav-link {
+                &.active {
+                    color: $orange-color-2;
+
+                    svg {
+                        fill: $orange-color-2;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-purple {
+            & .nav-link {
+                &.active {
+                    color: $purple-color-1;
+
+                    svg {
+                        fill: $purple-color-1;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-light-purple {
+            & .nav-link {
+                &.active {
+                    color: $purple-color-2;
+
+                    svg {
+                        fill: $purple-color-2;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-green {
+            & .nav-link {
+                &.active {
+                    color: $green-color-1;
+
+                    svg {
+                        fill: $green-color-1;
+                    }
+                }
+            }
+        }
+
+        &.nav-color-light-green {
+            & .nav-link {
+                &.active {
+                    color: $green-color-2;
+
+                    svg {
+                        fill: $green-color-2;
+                    }
+                }
+            }
+        }
+
+
+        /*----------------------------- Inactive Nav Colors -----------------------------*/
+        &.inactive-color-dark {
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $dark-color-4;
+                }
+            }
+        }
+
+        &.inactive-color-white {
+
+            & .nav-link {
+                &:not(.active) {
+                    color: #fff;
+                }
+            }
+        }
+
+        &.inactive-hover-color-white {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    color: #fff;
+
+                    svg {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-red {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $red-color-1;
+
+                    svg {
+                        fill: $red-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-light-red {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $red-color-2;
+
+                    svg {
+                        fill: $red-color-2;
+                    }
+                }
+            }
+        }
+
+        &.inactive-hover-color-red {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    color: $red-color-1;
+
+                    svg {
+                        fill: $red-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-cyan {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $cyan-color-1;
+
+                    svg {
+                        fill: $cyan-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-light-cyan {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $cyan-color-2;
+
+                    svg {
+                        fill: $cyan-color-2;
+                    }
+                }
+            }
+        }
+
+        &.inactive-hover-color-cyan {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    color: $cyan-color-1;
+
+                    svg {
+                        fill: $cyan-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-blue {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $blue-color-1;
+
+                    svg {
+                        fill: $blue-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-light-blue {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $blue-color-2;
+
+                    svg {
+                        fill: $blue-color-2;
+                    }
+                }
+            }
+        }
+
+        &.inactive-hover-color-blue {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    color: $blue-color-1;
+
+                    svg {
+                        fill: $blue-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-orange {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $orange-color-1;
+
+                    svg {
+                        fill: $orange-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-light-orange {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $orange-color-2;
+
+                    svg {
+                        fill: $orange-color-2;
+                    }
+                }
+            }
+        }
+
+        &.inactive-hover-color-orange {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    color: $orange-color-1;
+
+                    svg {
+                        fill: $orange-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-purple {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $purple-color-1;
+
+                    svg {
+                        fill: $purple-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-light-purple {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $purple-color-2;
+
+                    svg {
+                        fill: $purple-color-2;
+                    }
+                }
+            }
+        }
+
+        &.inactive-hover-color-purple {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    color: $purple-color-1;
+
+                    svg {
+                        fill: $purple-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-green {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $green-color-1;
+
+                    svg {
+                        fill: $green-color-1;
+                    }
+                }
+            }
+        }
+
+        &.inactive-color-light-green {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    color: $green-color-2;
+
+                    svg {
+                        fill: $green-color-2;
+                    }
+                }
+            }
+        }
+
+        &.inactive-hover-color-green {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    color: $green-color-1;
+
+                    svg {
+                        fill: $green-color-1;
+                    }
+                }
+            }
+        }
+
+
+        /*--------------------------- Inactive Border Colors ----------------------------*/
+        &.inactive-border-red {
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $red-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $red-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-light-red {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $red-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $red-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-red {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $red-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $red-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-light-red {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $red-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $red-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-cyan {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $cyan-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $cyan-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-light-cyan {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $cyan-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $cyan-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-cyan {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $cyan-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $cyan-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-light-cyan {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $cyan-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $cyan-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-blue {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $blue-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $blue-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-light-blue {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $blue-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $blue-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-blue {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $blue-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $blue-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-light-blue {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $blue-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $blue-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-orange {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $orange-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $orange-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-light-orange {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $orange-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $orange-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-orange {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $orange-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $orange-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-light-orange {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $orange-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $orange-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-purple {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $purple-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $purple-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-light-purple {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $purple-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $purple-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-purple {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $purple-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $purple-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-light-purple {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $purple-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $purple-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-green {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $green-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $green-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-border-light-green {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid ;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $green-color-2;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-green {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $green-color-1;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $green-color-1;
+                    }
+                }
+
+            }
+        }
+
+        &.inactive-hover-border-green {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid $green-color-2;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid $green-color-2;
+                    }
+                }
+
+            }
+        }
+        &.inactive-border-transparent {
+
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    border: 1px solid transparent;
+                    border-bottom: none;
+                }
+            }
+
+            & .nav-pills {
+
+                & .nav-link {
+                    &:not(.active):not(.disabled) {
+                        border-bottom: 1px solid transparent;
+                    }
+                }
+
+            }
+        }
+
+
+        /*------------------------- Inactive Background Colors --------------------------*/
+        &.inactive-bg-dark {
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    background-color: $light-color-1;
+                }
+            }
+        }
+
+        &.inactive-bg-light-dark {
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    background-color: $light-color-2;
+                }
+            }
+        }
+
+        &.inactive-bg-red {
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    background-color: $red-color-1;
+                }
+            }
+        }
+
+        &.inactive-bg-light-red {
+            & .nav-link {
+                &:not(.active):not(.disabled) {
+                    background-color: $red-color-2;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-red {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $red-color-1;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-light-red {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $red-color-2;
+                }
+            }
+        }
+
+
+        &.inactive-bg-blue {
+            & .nav-link {
+                &:not(.active) {
+                    background-color: $blue-color-1;
+                }
+            }
+        }
+
+        &.inactive-bg-light-blue {
+            & .nav-link {
+                &:not(.active) {
+                    background-color: $blue-color-2;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-blue {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $blue-color-1;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-light-blue {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $blue-color-2;
+                }
+            }
+        }
+
+
+        &.inactive-bg-cyan {
+            & .nav-link {
+                &:not(.active) {
+                    background-color: $cyan-color-1;
+                }
+            }
+        }
+
+        &.inactive-bg-light-cyan {
+            & .nav-link {
+                &:not(.active) {
+                    background-color: $cyan-color-2;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-cyan {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $cyan-color-1;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-light-cyan {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $cyan-color-2;
+                }
+            }
+        }
+
+
+        &.inactive-bg-orange {
+            & .nav-link {
+                &:not(.active) {
+                    background-color: $orange-color-1;
+                }
+            }
+        }
+
+        &.inactive-bg-light-orange {
+            & .nav-link {
+                &:not(.active) {
+                    background-color: $orange-color-2;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-orange {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $orange-color-1;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-light-orange {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $orange-color-2;
+                }
+            }
+        }
+
+
+        &.inactive-bg-purple {
+            & .nav-link {
+                &:not(.active) {
+                    background-color: $purple-color-1;
+                }
+            }
+        }
+
+        &.inactive-bg-light-purple {
+            & .nav-link {
+                &:not(.active) {
+                    background-color: $purple-color-2;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-purple {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $purple-color-1;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-light-purple {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $purple-color-2;
+                }
+            }
+        }
+
+        &.inactive-bg-green {
+            & .nav-link {
+                &:not(.active) {
+                    background-color: $green-color-1;
+                }
+            }
+        }
+
+        &.inactive-bg-light-green {
+            & .nav-link {
+                &:not(.active) {
+                    background-color: $green-color-2;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-green {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $green-color-1;
+                }
+            }
+        }
+
+        &.inactive-hover-bg-light-green {
+
+            & .nav-link:hover {
+                &:not(.active):not(.disabled) {
+                    background-color: $green-color-2;
+                }
+            }
+        }
+
+
+        /*---------------------------- Content Border Colors ----------------------------*/
+        &.content-border-red {
+            & .tab-content {
+                border: $red-color-1 solid 1px;
+            }
+        }
+
+        &.content-border-light-red {
+            & .tab-content {
+                border: $red-color-2 solid 1px;
+            }
+        }
+
+        &.content-border-cyan {
+            & .tab-content {
+                border: $cyan-color-1 solid 1px;
+            }
+        }
+
+        &.content-border-light-cyan {
+            & .tab-content {
+                border: $cyan-color-2 solid 1px;
+            }
+        }
+
+        &.content-border-blue {
+            & .tab-content {
+                border: $blue-color-1 solid 1px;
+            }
+        }
+
+        &.content-border-light-blue {
+            & .tab-content {
+                border: $blue-color-2 solid 1px;
+            }
+        }
+
+        &.content-border-orange {
+            & .tab-content {
+                border: $orange-color-1 solid 1px;
+            }
+        }
+
+        &.content-border-light-orange {
+            & .tab-content {
+                border: $orange-color-2 solid 1px;
+            }
+        }
+
+        &.content-border-purple {
+            & .tab-content {
+                border: $purple-color-1 solid 1px;
+            }
+        }
+
+        &.content-border-light-purple {
+            & .tab-content {
+                border: $purple-color-2 solid 1px;
+            }
+        }
+
+        &.content-border-green {
+            & .tab-content {
+                border: $green-color-1 solid 1px;
+            }
+        }
+
+        &.content-border-light-green {
+            & .tab-content {
+                border: $green-color-2 solid 1px;
+            }
+        }
+
+
+        /*-------------------------- Content Background Colors --------------------------*/
+        &.content-bg-red {
+            & .tab-content {
+                background-color: $red-color-1;
+            }
+        }
+
+        &.content-bg-light-red {
+            & .tab-content {
+                background-color: $red-color-2;
+            }
+        }
+
+        &.content-bg-cyan {
+            & .tab-content {
+                background-color: $cyan-color-1;
+            }
+        }
+
+        &.content-bg-light-cyan {
+            & .tab-content {
+                background-color: $cyan-color-2;
+            }
+        }
+
+        &.content-bg-blue {
+            & .tab-content {
+                background-color: $blue-color-1;
+            }
+        }
+
+        &.content-bg-light-blue {
+            & .tab-content {
+                background-color: $blue-color-2;
+            }
+        }
+
+        &.content-bg-orange {
+            & .tab-content {
+                background-color: $orange-color-1;
+            }
+        }
+
+        &.content-bg-light-orange {
+            & .tab-content {
+                background-color: $orange-color-2;
+            }
+        }
+
+        &.content-bg-purple {
+            & .tab-content {
+                background-color: $purple-color-1;
+            }
+        }
+
+        &.content-bg-light-purple {
+            & .tab-content {
+                background-color: $purple-color-2;
+            }
+        }
+
+        &.content-bg-green {
+            & .tab-content {
+                background-color: $green-color-1;
+            }
+        }
+
+        &.content-bg-light-green {
+            & .tab-content {
+                background-color: $green-color-2;
+            }
+        }
+
+        /*-------------------------- Content Colors --------------------------*/
+        &.content-color-black {
+            & .tab-content {
+                color: black;
+            }
+        }
+
+        &.content-color-white {
+            & .tab-content {
+                color: white;
+            }
+        }
+
+        &.content-color-red {
+            & .tab-content {
+                color: $red-color-1;
+            }
+        }
+
+        &.content-color-cyan {
+            & .tab-content {
+                color: $cyan-color-1;
+            }
+        }
+
+        &.content-color-blue {
+            & .tab-content {
+                color: $blue-color-1;
+            }
+        }
+
+        &.content-color-orange {
+            & .tab-content {
+                color: $orange-color-1;
+            }
+        }
+
+        &.content-color-purple {
+            & .tab-content {
+                color: $purple-color-1;
+            }
+        }
+
+        &.content-color-green {
+            & .tab-content {
+                color: $green-color-1;
+            }
+        }
+
+        &.style02 {
+            & .nav-link {
+                border-radius: 0;
+                border: none;
+                border-bottom: 3px solid transparent;
+                color: $dark-color-5;
+
+                &.disabled {
+                    cursor: no-drop !important;
+                    pointer-events: auto !important;
+                }
+            }
+
+
+            /*------------------------------ Nav Border Colors ------------------------------*/
+            &.nav-border-red {
+
+                & .nav-link {
+                    &.active {
+                        border: 1px solid $red-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.nav-border-cyan {
+
+                & .nav-link {
+                    &.active {
+                        border: 1px solid $cyan-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.nav-border-blue {
+                & .nav-link {
+                    &.active {
+                        border-bottom: 3px solid $blue-color-1;
+                    }
+                }
+
+            }
+
+            &.nav-border-orange {
+                & .nav-link {
+                    &.active {
+                        border: 1px solid $orange-color-1;
+                        border-bottom: none;
+                    }
+                }
+
+            }
+
+            &.nav-border-purple {
+                & .nav-link {
+                    &.active {
+                        border: 1px solid $purple-color-1;
+                        border-bottom: none;
+                    }
+                }
+
+            }
+
+            &.nav-border-green {
+                & .nav-link {
+                    &.active {
+                        border: 1px solid $green-color-1;
+                        border-bottom: none;
+                    }
+                }
+
+            }
+
+
+            /*---------------------------- Nav Background Colors ----------------------------*/
+            &.nav-bg-red {
+                & .nav-link {
+                    &.active {
+                        background-color: $red-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.nav-bg-cyan {
+
+                & .nav-link {
+                    &.active {
+                        background-color: $cyan-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.nav-bg-blue {
+                & .nav-link {
+                    &.active {
+                        background-color: $blue-color-1;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+            &.nav-bg-orange {
+                & .nav-link {
+                    &.active {
+                        background-color: $orange-color-1;
+                        color: #fff;
+
+                        svg {
+                            fill: #fff;
+                        }
+                    }
+                }
+
+            }
+
+            &.nav-bg-purple {
+                & .nav-link {
+                    &.active {
+                        background-color: $purple-color-1;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+            &.nav-bg-green {
+                & .nav-link {
+                    &.active {
+                        background-color: $green-color-1;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+            /*---------------------------------- Nav Colors ---------------------------------*/
+            &.nav-color-white {
+                & .nav-link {
+                    &.active {
+                        color: #fff;
+
+                        svg {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+
+            &.nav-color-red {
+                & .nav-link {
+                    &.active {
+                        color: $red-color-1;
+
+                        svg {
+                            fill: $red-color-1;
+                        }
+                    }
+                }
+            }
+
+            &.nav-color-cyan {
+                & .nav-link {
+                    &.active {
+                        color: $cyan-color-1;
+
+                        svg {
+                            fill: $cyan-color-1;
+                        }
+                    }
+                }
+            }
+
+            &.nav-color-blue {
+                & .nav-link {
+                    &.active {
+                        color: $blue-color-1;
+
+                        svg {
+                            fill: $blue-color-1;
+                        }
+                    }
+                }
+            }
+
+            &.nav-color-orange {
+                & .nav-link {
+                    &.active {
+                        color: $orange-color-1;
+
+                        svg {
+                            fill: $orange-color-1;
+                        }
+                    }
+                }
+            }
+
+            &.nav-color-purple {
+                & .nav-link {
+                    &.active {
+                        color: $purple-color-1;
+
+                        svg {
+                            fill: $purple-color-1;
+                        }
+                    }
+                }
+            }
+
+            &.nav-color-green {
+                & .nav-link {
+                    &.active {
+                        color: $green-color-1;
+
+                        svg {
+                            fill: $green-color-1;
+                        }
+                    }
+                }
+            }
+
+            /*----------------------------- Inactive Nav Colors -----------------------------*/
+            &.inactive-color-red {
+
+                & .nav-link {
+                    &:not(.active) {
+                        color: $red-color-1;
+                    }
+                }
+            }
+
+            &.inactive-hover-color-red {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        color: $red-color-1;
+                    }
+                }
+            }
+
+            &.inactive-color-cyan {
+
+                & .nav-link {
+                    &:not(.active) {
+                        color: $cyan-color-1;
+                    }
+                }
+            }
+
+            &.inactive-hover-color-cyan {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        color: $cyan-color-1;
+                    }
+                }
+            }
+
+            &.inactive-color-blue {
+
+                & .nav-link {
+                    &:not(.active) {
+                        color: $blue-color-1;
+                    }
+                }
+            }
+
+            &.inactive-hover-color-blue {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        color: $blue-color-1;
+                    }
+                }
+            }
+
+            &.inactive-color-orange {
+
+                & .nav-link {
+                    &:not(.active) {
+                        color: $orange-color-1;
+                    }
+                }
+            }
+
+            &.inactive-hover-color-orange {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        color: $orange-color-1;
+                    }
+                }
+            }
+
+            &.inactive-color-purple {
+
+                & .nav-link {
+                    &:not(.active) {
+                        color: $purple-color-1;
+                    }
+                }
+            }
+
+            &.inactive-hover-color-purple {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        color: $purple-color-1;
+                    }
+                }
+            }
+
+            &.inactive-color-green {
+
+                & .nav-link {
+                    &:not(.active) {
+                        color: $green-color-1;
+                    }
+                }
+            }
+
+            &.inactive-hover-color-green {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        color: $green-color-1;
+                    }
+                }
+            }
+
+
+            /*--------------------------- Inactive Border Colors ----------------------------*/
+            &.inactive-border-red {
+
+                & .nav-link {
+                    &:not(.active) {
+                        border: 1px solid $red-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-hover-border-red {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        border: 1px solid $red-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-border-cyan {
+
+                & .nav-link {
+                    &:not(.active) {
+                        border: 1px solid $cyan-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-hover-border-cyan {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        border: 1px solid $cyan-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-border-blue {
+
+                & .nav-link {
+                    &:not(.active) {
+                        border: 1px solid $blue-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-hover-border-blue {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        border: 1px solid $blue-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-border-orange {
+
+                & .nav-link {
+                    &:not(.active) {
+                        border: 1px solid $orange-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-hover-border-orange {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        border: 1px solid $orange-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-border-purple {
+
+                & .nav-link {
+                    &:not(.active) {
+                        border: 1px solid $purple-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-hover-border-purple {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        border: 1px solid $purple-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-border-green {
+
+                & .nav-link {
+                    &:not(.active) {
+                        border: 1px solid $green-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.inactive-hover-border-green {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        border: 1px solid $green-color-1;
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            /*------------------------- Inactive Background Colors --------------------------*/
+            &.inactive-bg-red {
+                & .nav-link {
+                    &:not(.active) {
+                        background-color: $red-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.inactive-hover-bg-red {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        background-color: $red-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.inactive-bg-cyan {
+                & .nav-link {
+                    &:not(.active) {
+                        background-color: $cyan-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.inactive-hover-bg-cyan {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        background-color: $cyan-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.inactive-bg-blue {
+                & .nav-link {
+                    &:not(.active) {
+                        background-color: $blue-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.inactive-hover-bg-blue {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        background-color: $blue-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+
+            &.inactive-bg-orange {
+                & .nav-link {
+                    &:not(.active) {
+                        background-color: $orange-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.inactive-hover-bg-orange {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        background-color: $orange-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.inactive-bg-purple {
+                & .nav-link {
+                    &:not(.active) {
+                        background-color: $purple-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.inactive-hover-bg-purple {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        background-color: $purple-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.inactive-bg-green {
+                & .nav-link {
+                    &:not(.active) {
+                        background-color: $green-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &.inactive-hover-bg-green {
+
+                & .nav-link:hover {
+                    &:not(.active) {
+                        background-color: $green-color-1;
+                        color: #fff;
+                    }
+                }
+            }
+
+
+            /*---------------------------- Content Border Colors ----------------------------*/
+            &.content-border-red {
+                & .tab-content {
+                    border: $red-color-1 solid 1px;
+                }
+            }
+
+            &.content-border-cyan {
+                & .tab-content {
+                    border: $cyan-color-1 solid 1px;
+                }
+            }
+
+            &.content-border-blue {
+                & .tab-content {
+                    border: $blue-color-1 solid 1px;
+                }
+            }
+
+            &.content-border-orange {
+                & .tab-content {
+                    border: $orange-color-1 solid 1px;
+                }
+            }
+
+            &.content-border-purple {
+                & .tab-content {
+                    border: $purple-color-1 solid 1px;
+                }
+            }
+
+            &.content-border-green {
+                & .tab-content {
+                    border: $green-color-1 solid 1px;
+                }
+            }
+
+
+            /*-------------------------- Content Background Colors --------------------------*/
+            &.content-bg-red {
+                & .tab-content {
+                    background-color: $red-color-1;
+                    color: #fff;
+                }
+            }
+
+            &.content-bg-cyan {
+                & .tab-content {
+                    background-color: $cyan-color-1;
+                    color: #fff;
+                }
+            }
+
+            &.content-bg-blue {
+                & .tab-content {
+                    background-color: $blue-color-1;
+                    color: #fff;
+                }
+            }
+
+            &.content-bg-orange {
+                & .tab-content {
+                    background-color: $orange-color-1;
+                    color: #fff;
+                }
+            }
+
+            &.content-bg-purple {
+                & .tab-content {
+                    background-color: $purple-color-1;
+                    color: #fff;
+                }
+            }
+
+            &.content-bg-green {
+                & .tab-content {
+                    background-color: $green-color-1;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+}
+
+.nav-tabs.lsdkfjlsdkjflsdkjflsdkjf {
+    border-bottom-color: #dee2e6;
+
+    // ------ start public codes ------ //
+    & .nav-item {
+
+        &:hover {
+            border-bottom: none !important;
+
+            & .nav-link {
+                border-color: #dee2e6;
+                color: $dark-color-3;
+
+                & .tab-icon {
+
+                    & svg, i {
+                        color: $dark-color-3;
+                        fill: $dark-color-3;
+                    }
+
+                }
+
+                &:disabled {
+                    border-color: #dee2e6;
+                }
+            }
+
+        }
+
+        & .nav-link {
+            border-bottom: none;
+            transition: $content-transition;
+
+            &.active {
+                border-color: #dee2e6;
+                color: $dark-color-3;
+
+                & .tab-icon {
+
+                    & svg, i {
+                        color: $dark-color-3;
+                        fill: $dark-color-3;
+                    }
+
+                }
+
+            }
+
+            &:disabled {
+                color: $dark-color-5 !important;
+                cursor: no-drop !important;
+
+                & .tab-icon {
+
+                    & svg, i {
+                        color: $dark-color-5 !important;
+                        fill: $dark-color-5 !important;
+                    }
+
+                }
+            }
+
+        }
+
+        &.active-item-red {
+            transition: none !important;
+
+            & .tab-icon {
+
+                & svg, i {
+                    transition: none !important;
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    color: $red-color-1 !important;
+                    background-color: $red-color-3 !important;
+
+                    & span {
+                        color: $red-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $red-color-1 !important;
+                            fill: $red-color-1 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+            &:hover {
+
+                & .nav-link {
+                    color: $red-color-1 !important;
+                    background-color: $red-color-3 !important;
+
+                    & span {
+                        color: $red-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $red-color-1 !important;
+                            fill: $red-color-1 !important;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-item-blue {
+            transition: none !important;
+
+            & .tab-icon {
+
+                & svg, i {
+                    transition: none !important;
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    color: $blue-color-1 !important;
+                    background-color: $blue-color-3 !important;
+
+                    & span {
+                        color: $blue-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $blue-color-1 !important;
+                            fill: $blue-color-1 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+            &:hover {
+
+                & .nav-link {
+                    color: $blue-color-1 !important;
+                    background-color: $blue-color-3 !important;
+
+                    & span {
+                        color: $blue-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $blue-color-1 !important;
+                            fill: $blue-color-1 !important;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-item-primary {
+            transition: none !important;
+
+            & .tab-icon {
+
+                & svg, i {
+                    transition: none !important;
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    color: $primary-color !important;
+                    background-color: $blue-color-3 !important;
+
+                    & span {
+                        color: $primary-color !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $primary-color !important;
+                            fill: $primary-color !important;
+                        }
+
+                    }
+                }
+
+            }
+
+            &:hover {
+
+                & .nav-link {
+                    color: $primary-color !important;
+                    background-color: $blue-color-2 !important;
+
+                    & span {
+                        color: $primary-color !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $primary-color !important;
+                            fill: $primary-color !important;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-item-cyan {
+            transition: none !important;
+
+            & .tab-icon {
+
+                & svg, i {
+                    transition: none !important;
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    color: $cyan-color-1 !important;
+                    background-color: $cyan-color-3 !important;
+
+                    & span {
+                        color: $cyan-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $cyan-color-1 !important;
+                            fill: $cyan-color-1 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+            &:hover {
+
+                & .nav-link {
+                    color: $cyan-color-1 !important;
+                    background-color: $cyan-color-3 !important;
+
+                    & span {
+                        color: $cyan-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $cyan-color-1 !important;
+                            fill: $cyan-color-1 !important;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-item-purple {
+            transition: none !important;
+
+            & .tab-icon {
+
+                & svg, i {
+                    transition: none !important;
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    color: $purple-color-1 !important;
+                    background-color: $purple-color-3 !important;
+
+                    & span {
+                        color: $purple-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $purple-color-1 !important;
+                            fill: $purple-color-1 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+            &:hover {
+
+                & .nav-link {
+                    color: $purple-color-1 !important;
+                    background-color: $purple-color-3 !important;
+
+                    & span {
+                        color: $purple-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $purple-color-1 !important;
+                            fill: $purple-color-1 !important;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-item-orange {
+            transition: none !important;
+
+            & .tab-icon {
+
+                & svg, i {
+                    transition: none !important;
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    color: $orange-color-1 !important;
+                    background-color: $orange-color-3 !important;
+
+                    & span {
+                        color: $orange-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $orange-color-1 !important;
+                            fill: $orange-color-1 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+            &:hover {
+
+                & .nav-link {
+                    color: $orange-color-1 !important;
+                    background-color: $orange-color-3 !important;
+
+                    & span {
+                        color: $orange-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $orange-color-1 !important;
+                            fill: $orange-color-1 !important;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-item-green {
+            transition: none !important;
+
+            & .tab-icon {
+
+                & svg, i {
+                    transition: none !important;
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    color: $green-color-1 !important;
+                    background-color: $green-color-3 !important;
+
+                    & span {
+                        color: $green-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $green-color-1 !important;
+                            fill: $green-color-1 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+            &:hover {
+
+                & .nav-link {
+                    color: $green-color-1 !important;
+                    background-color: $green-color-3 !important;
+
+                    & span {
+                        color: $green-color-1 !important;
+                    }
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $green-color-1 !important;
+                            fill: $green-color-1 !important;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    // ------ end public codes ------ //
+
+    &.border-tab-light {
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    border-color: #dee2e6;
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    border-color: #dee2e6;
+                }
+
+            }
+
+        }
+
+    }
+
+    &.bg-item-fill {
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    background-color: $light-color-3;
+
+                    &:disabled {
+                        color: $light-color-5 !important;
+                    }
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    background-color: $light-color-3;
+                }
+
+            }
+
+        }
+
+    }
+
+    &.bg-item-light-fill {
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    background-color: $light-color-2;
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    background-color: $light-color-2;
+                }
+
+            }
+
+        }
+
+    }
+
+    &.border-item {
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    border-color: #dee2e6;
+                }
+
+            }
+
+            & .nav-link {
+                border-color: #dee2e6;
+
+                &:disabled {
+                    border: 1px solid !important;
+                    border-bottom: none !important;
+                    border-color: #dee2e6 !important;
+                }
+            }
+
+        }
+
+    }
+
+    &.active-border-bottom {
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    border-bottom-width: 1px;
+                    border-bottom-style: solid;
+                }
+
+            }
+
+            & .nav-link {
+                border-top: none !important;
+                border-right: none !important;
+                border-left: none !important;
+
+                &.active {
+                    border-bottom-width: 1px;
+                    border-bottom-style: solid;
+                }
+
+            }
+
+        }
+
+        &.border-2 {
+
+            &:hover {
+
+                & .nav-link {
+                    border-bottom-width: 2px;
+                }
+
+            }
+
+            & .nav-link {
+                margin-bottom: -2px !important;
+
+                &.active {
+                    border-bottom-width: 2px;
+                }
+
+            }
+
+        }
+
+        &.border-3 {
+
+            &:hover {
+
+                & .nav-link {
+                    border-bottom-width: 3px;
+                }
+
+            }
+
+            & .nav-link {
+                margin-bottom: -3px !important;
+
+                &.active {
+                    border-bottom-width: 3px;
+                }
+
+            }
+
+        }
+
+        &.border-4 {
+
+            &:hover {
+
+                & .nav-link {
+                    border-bottom-width: 4px;
+                }
+
+            }
+
+            & .nav-link {
+                margin-bottom: -4px !important;
+
+                &.active {
+                    border-bottom-width: 4px;
+                }
+
+            }
+
+        }
+
+        &.border-5 {
+
+            &:hover {
+
+                & .nav-link {
+                    border-bottom-width: 5px;
+                }
+
+            }
+
+            & .nav-link {
+                margin-bottom: -5px !important;
+
+                &.active {
+                    border-bottom-width: 5px;
+                }
+
+            }
+
+        }
+
+        &.transition-none {
+
+            & .nav-item {
+
+                & .nav-link {
+                    transition: none !important;
+                }
+
+            }
+
+        }
+
+    }
+
+    &.primary {
+        border-bottom-color: $primary-color;
+
+        // for-border-bottom-tabs
+        &.border-tabs-light {
+            border-bottom-color: $blue-color-2 !important;
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $blue-color-2 !important;
+                        }
+
+                    }
+
+                    & .nav-link {
+                        border-color: $blue-color-2 !important;
+
+                    }
+                }
+
+            }
+
+        }
+
+        // for-each-item
+        &.border-tab-light {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        border-color: $blue-color-2;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        border-color: $blue-color-2;
+                    }
+
+                }
+
+            }
+
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $blue-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        &.bg-item-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $primary-color;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $primary-color;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.bg-item-light-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $blue-color-3;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $blue-color-3;
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.border-item {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        border-color: $primary-color;
+                    }
+
+                }
+
+                & .nav-link {
+                    border-color: $primary-color;
+                }
+
+
+            }
+
+        }
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    border-color: $primary-color;
+                    color: $primary-color;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $primary-color;
+                            fill: $primary-color;
+                        }
+
+                    }
+
+                    &:disabled {
+                        border: 1px solid !important;
+                        border-bottom: none !important;
+                        border-color: $primary-color !important;
+                    }
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    border-color: $primary-color;
+                    color: $primary-color;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $primary-color;
+                            fill: $primary-color;
+                        }
+
+                    }
+
+                }
+
+                &:disabled {
+                    color: $dark-color-5 !important;
+                    cursor: default;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $dark-color-5 !important;
+                            fill: $dark-color-5 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    &.red {
+        border-bottom-color: $red-color-1;
+
+        // for-border-bottom-tabs
+        &.border-tabs-light {
+            border-bottom-color: $red-color-2 !important;
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $red-color-2 !important;
+                        }
+
+                    }
+
+                    & .nav-link {
+                        border-color: $red-color-2 !important;
+
+                        &:disabled {
+                            border-color: $red-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        // for-each-item
+        &.border-tab-light {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        border-color: $red-color-2;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        border-color: $red-color-2;
+                    }
+
+                }
+
+            }
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $red-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        &.bg-item-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $red-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $red-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.bg-item-light-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $red-color-3;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $red-color-3;
+                    }
+
+                }
+
+            }
+
+        }
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    border-color: $red-color-1;
+                    color: $red-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $red-color-1;
+                            fill: $red-color-1;
+                        }
+
+                    }
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    border-color: $red-color-1;
+                    color: $red-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $red-color-1;
+                            fill: $red-color-1;
+                        }
+
+                    }
+
+                }
+
+                &:disabled {
+                    color: $dark-color-5 !important;
+                    cursor: default;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $dark-color-5 !important;
+                            fill: $dark-color-5 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    &.green {
+        border-bottom-color: $green-color-1;
+
+        // for-border-bottom-tabs
+        &.border-tabs-light {
+            border-bottom-color: $green-color-2 !important;
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $green-color-2 !important;
+                        }
+
+                    }
+
+                    & .nav-link {
+                        border-color: $green-color-2 !important;
+
+                        &:disabled {
+                            border-color: $green-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        // for-each-item
+        &.border-tab-light {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        border-color: $green-color-2;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        border-color: $green-color-2;
+                    }
+
+                }
+
+            }
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $green-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        &.bg-item-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $green-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $green-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.bg-item-light-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $green-color-3;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $green-color-3;
+                    }
+
+                }
+
+            }
+
+        }
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    border-color: $green-color-1;
+                    color: $green-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $green-color-1;
+                            fill: $green-color-1;
+                        }
+
+                    }
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    border-color: $green-color-1;
+                    color: $green-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $green-color-1;
+                            fill: $green-color-1;
+                        }
+
+                    }
+
+                }
+
+                &:disabled {
+                    color: $dark-color-5 !important;
+                    cursor: default;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $dark-color-5 !important;
+                            fill: $dark-color-5 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    &.blue {
+        border-bottom-color: $blue-color-1;
+
+        // for-border-bottom-tabs
+        &.border-tabs-light {
+            border-bottom-color: $blue-color-2 !important;
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $blue-color-2 !important;
+                        }
+
+                    }
+
+                    & .nav-link {
+                        border-color: $blue-color-2 !important;
+
+                        &:disabled {
+                            border-color: $blue-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        // for-each-item
+        &.border-tab-light {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        border-color: $blue-color-2;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        border-color: $blue-color-2;
+                    }
+
+                }
+
+            }
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $blue-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        &.bg-item-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $blue-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+
+                        &:disabled {
+                            color: $light-color-5 !important;
+                        }
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $blue-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.bg-item-light-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $blue-color-3;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $blue-color-3;
+                    }
+
+                }
+
+            }
+
+        }
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    border-color: $blue-color-1;
+                    color: $blue-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $blue-color-1;
+                            fill: $blue-color-1;
+                        }
+
+                    }
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    border-color: $blue-color-1;
+                    color: $blue-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $blue-color-1;
+                            fill: $blue-color-1;
+                        }
+
+                    }
+
+                }
+
+                &:disabled {
+                    color: $dark-color-5 !important;
+                    cursor: default;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $dark-color-5 !important;
+                            fill: $dark-color-5 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    &.cyan {
+        border-bottom-color: $cyan-color-1;
+
+        // for-border-bottom-tabs
+        &.border-tabs-light {
+            border-bottom-color: $cyan-color-2 !important;
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $cyan-color-2 !important;
+                        }
+
+                    }
+
+                    & .nav-link {
+                        border-color: $cyan-color-2 !important;
+
+                        &:disabled {
+                            border-color: $cyan-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        // for-each-item
+        &.border-tab-light {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        border-color: $cyan-color-2;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        border-color: $cyan-color-2;
+                    }
+
+                }
+
+            }
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $cyan-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        &.bg-item-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $cyan-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+
+                        &:disabled {
+                            color: $light-color-5 !important;
+                        }
+
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $cyan-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.bg-item-light-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $cyan-color-3;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $cyan-color-3;
+                    }
+
+                }
+
+            }
+
+        }
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    border-color: $cyan-color-1;
+                    color: $cyan-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $cyan-color-1;
+                            fill: $cyan-color-1;
+                        }
+
+                    }
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    border-color: $cyan-color-1;
+                    color: $cyan-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $cyan-color-1;
+                            fill: $cyan-color-1;
+                        }
+
+                    }
+
+                }
+
+                &:disabled {
+                    color: $dark-color-5 !important;
+                    cursor: default;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $dark-color-5 !important;
+                            fill: $dark-color-5 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    &.purple {
+        border-bottom-color: $purple-color-1;
+
+        // for-border-bottom-tabs
+        &.border-tabs-light {
+            border-bottom-color: $purple-color-2 !important;
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $purple-color-2 !important;
+                        }
+
+                    }
+
+                    & .nav-link {
+                        border-color: $purple-color-2 !important;
+
+                        &:disabled {
+                            border-color: $purple-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        // for-each-item
+        &.border-tab-light {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        border-color: $purple-color-2;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        border-color: $purple-color-2;
+                    }
+
+                }
+
+            }
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $purple-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        &.bg-item-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $purple-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $purple-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.bg-item-light-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $purple-color-3;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $purple-color-3;
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.border-item {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        border-color: $purple-color-1;
+                    }
+
+                }
+
+                & .nav-link {
+                    border-color: $purple-color-1;
+
+                    &:disabled {
+                        border-color: $purple-color-1 !important;
+                    }
+                }
+
+            }
+
+        }
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    border-color: $purple-color-1;
+                    color: $purple-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $purple-color-1;
+                            fill: $purple-color-1;
+                        }
+
+                    }
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    border-color: $purple-color-1;
+                    color: $purple-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $purple-color-1;
+                            fill: $purple-color-1;
+                        }
+
+                    }
+
+                }
+
+                &:disabled {
+                    color: $dark-color-5 !important;
+                    cursor: default;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $dark-color-5 !important;
+                            fill: $dark-color-5 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    &.orange {
+        border-bottom-color: $orange-color-1;
+
+        // for-border-bottom-tabs
+        &.border-tabs-light {
+            border-bottom-color: $orange-color-2 !important;
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $orange-color-2 !important;
+                        }
+
+                    }
+
+                    & .nav-link {
+                        border-color: $orange-color-2 !important;
+
+                        &:disabled {
+                            border-color: $orange-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        // for-each-item
+        &.border-tab-light {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        border-color: $orange-color-2;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        border-color: $orange-color-2;
+                    }
+
+                }
+
+            }
+
+            &.border-item {
+
+                & .nav-item {
+
+                    &:hover {
+
+                        & .nav-link {
+                            border-color: $orange-color-2 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        &.bg-item-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $orange-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $orange-color-1;
+                        color: $light-color-1;
+
+                        & .tab-icon {
+
+                            & svg, i {
+                                color: $light-color-1;
+                                fill: $light-color-1;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.bg-item-light-fill {
+
+            & .nav-item {
+
+                &:hover {
+
+                    & .nav-link {
+                        background-color: $orange-color-3;
+                    }
+
+                }
+
+                & .nav-link {
+
+                    &.active {
+                        background-color: $orange-color-3;
+                    }
+
+                }
+
+            }
+
+        }
+
+        & .nav-item {
+
+            &:hover {
+
+                & .nav-link {
+                    border-color: $orange-color-1;
+                    color: $orange-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $orange-color-1;
+                            fill: $orange-color-1;
+                        }
+
+                    }
+                }
+
+            }
+
+            & .nav-link {
+
+                &.active {
+                    border-color: $orange-color-1;
+                    color: $orange-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $orange-color-1;
+                            fill: $orange-color-1;
+                        }
+
+                    }
+
+                }
+
+                &:disabled {
+                    color: $dark-color-5 !important;
+                    cursor: default;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $dark-color-5 !important;
+                            fill: $dark-color-5 !important;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    &.text-active-primary {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    color: $primary-color !important;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $primary-color !important;
+                            fill: $primary-color !important;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &.text-active-red {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    color: $red-color-1 !important;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $red-color-1 !important;
+                            fill: $red-color-1 !important;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &.text-active-green {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    color: $green-color-1 !important;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $green-color-1 !important;
+                            fill: $green-color-1 !important;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &.text-active-cyan {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    color: $cyan-color-1 !important;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $cyan-color-1 !important;
+                            fill: $cyan-color-1 !important;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &.text-active-orange {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    color: $orange-color-1 !important;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $orange-color-1 !important;
+                            fill: $orange-color-1 !important;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &.text-active-purple {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    color: $purple-color-1 !important;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $purple-color-1 !important;
+                            fill: $purple-color-1 !important;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &.text-active-blue {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    color: $blue-color-1 !important;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $blue-color-1 !important;
+                            fill: $blue-color-1 !important;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &.bg-active-cyan {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    background-color: $cyan-color-1 !important;
+                }
+
+            }
+        }
+
+    }
+
+    &.bg-active-blue {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    background-color: $blue-color-1 !important;
+                }
+
+            }
+        }
+
+    }
+
+    &.bg-active-red {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    background-color: $red-color-1 !important;
+                }
+
+            }
+        }
+
+    }
+
+    &.bg-active-green {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    background-color: $green-color-1 !important;
+                }
+
+            }
+        }
+
+    }
+
+    &.bg-active-orange {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    background-color: $orange-color-1 !important;
+                }
+
+            }
+        }
+
+    }
+
+    &.bg-active-purple {
+
+        & .nav-item {
+
+            & .nav-link {
+
+                &.active {
+                    background-color: $purple-color-1 !important;
+                }
+
+            }
+        }
+
+    }
+
+    &.vertical-tabs {
+
+        & .nav-item {
+
+            & .nav-link {
+                width: 100%;
+
+                &.active {
+                    background-color: $primary-color;
+                    color: $light-color-1;
+
+                    & .tab-icon {
+
+                        & svg, i {
+                            color: $light-color-1;
+                            fill: $light-color-1;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    // styles
+    &.nav-tabs-style-1 {
+
+        & .nav-item {
+            margin-left: 16px;
+
+            &:last-child {
+                margin-left: 0;
+            }
+
+            & .nav-link {
+                border-style: dashed;
+                border-color: #e4e6ef;
+
+                &.active {
+                    border-style: solid !important;
+                    position: relative;
+
+                    &::before {
+                        content: ' ';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 3px;
+                        border-bottom-left-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                        background-color: $primary-color;
+                    }
+                }
+
+            }
+
+        }
+
+        &.has-shadow {
+
+            & .nav-item {
+
+                & .nav-link {
+
+                    &.active {
+                        box-shadow: 0 0 15px 5px #00000010;
+                    }
+                }
+
+            }
+
+        }
+
+        &.active-border-none {
+
+            & .nav-item {
+
+                & .nav-link {
+
+                    &.active {
+
+                        &::before {
+                            background-color: transparent;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-border-blue {
+
+            & .nav-item {
+
+                & .nav-link {
+
+                    &.active {
+
+                        &::before {
+                            background-color: $blue-color-1;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-border-gray {
+
+            & .nav-item {
+
+                & .nav-link {
+
+                    &.active {
+
+                        &::before {
+                            background-color: $light-color-6;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-border-purple {
+
+            & .nav-item {
+
+                & .nav-link {
+
+                    &.active {
+
+                        &::before {
+                            background-color: $purple-color-1;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-border-orange {
+
+            & .nav-item {
+
+                & .nav-link {
+
+                    &.active {
+
+                        &::before {
+                            background-color: $orange-color-1;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-border-red {
+
+            & .nav-item {
+
+                & .nav-link {
+
+                    &.active {
+
+                        &::before {
+                            background-color: $red-color-1;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-border-green {
+
+            & .nav-item {
+
+                & .nav-link {
+
+                    &.active {
+
+                        &::before {
+                            background-color: $green-color-1;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &.active-border-cyan {
+
+            & .nav-item {
+
+                & .nav-link {
+
+                    &.active {
+
+                        &::before {
+                            background-color: $cyan-color-1;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.tab-content.lsdkfjlsdkjflsdkjflsdkjf {
+    border: 1px solid !important;
+    border-color: #dee2e6 !important;
+
+    &.border-top-0 {
+        border-top: 0 !important;
+    }
+
+    &.purple {
+        border-color: $purple-color-1 !important;
+
+        &.border-light {
+            border-color: $purple-color-2 !important;
+        }
+
+    }
+
+    &.cyan {
+        border-color: $cyan-color-1 !important;
+
+        &.border-light {
+            border-color: $cyan-color-2 !important;
+        }
+
+    }
+
+    &.primary {
+        border-color: $primary-color !important;
+
+        &.border-light {
+            border-color: $blue-color-2 !important;
+        }
+
+    }
+
+    &.blue {
+        border-color: $blue-color-1 !important;
+
+        &.border-light {
+            border-color: $blue-color-2 !important;
+        }
+
+    }
+
+    &.red {
+        border-color: $red-color-1 !important;
+
+        &.border-light {
+            border-color: $red-color-2 !important;
+        }
+
+    }
+
+    &.orange {
+        border-color: $orange-color-1 !important;
+
+        &.border-light {
+            border-color: $orange-color-2 !important;
+        }
+
+    }
+
+    &.green {
+        border-color: $green-color-1 !important;
+
+        &.border-light {
+            border-color: $green-color-2 !important;
+        }
+
+    }
+
+}
+
+@import 'tabs-responsive';

@@ -1,0 +1,17 @@
+//------------------------------ Width ------------------------------//
+.fs-8px{
+    font-size: 8px !important;
+}
+.fs-10px{
+    font-size: 10px !important;
+}
+@for $i from 11 through 20 {
+    .fs-#{$i}px {
+        font-size: #{$i}px !important;
+    }
+}
+@for $i from 11 through 20 {
+    .fs-#{$i * 2}px {
+        font-size: #{$i * 2}px !important;
+    }
+}

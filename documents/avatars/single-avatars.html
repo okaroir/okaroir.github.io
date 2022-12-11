@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Panel</title>
+	<link rel="icon" href="../../assets/images/logo.svg">
+	<link rel="stylesheet" href="../../assets/css/plugins/boostrap/bootstrap.rtl.min.css">
+	<link rel="stylesheet" href="../../assets/css/plugins/intro-js/introjs.min.css">
+	<link rel="stylesheet" href="../../assets/css/plugins/intro-js/introjs-rtl.min.css">
+	<link rel="stylesheet" href="../../assets/css/plugins/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../../assets/css/plugins/codemirror/codemirror.css">
+	<link rel="stylesheet" href="../../assets/css/plugins/codemirror/ayu-mirage.css">
+	
+	<link rel="stylesheet" href="../../assets/css/styles.css">
+
+</head>
+
+<body class="rtl">
+
+<!------------------------------ Content ------------------------------>
+<div class="main-content p-3 float-end">
+	
+	<!-------------------------------- Main ------------------------------->
+	<main class="main">
+		
+		<!------------------------------ Description ---------------------------->
+		<div class="card rounded-10px shadow-sm border-0 mb-5">
+			
+			<div class="card-header">
+				توضیحات
+			</div>
+			
+			<div class="card-body">
+				
+				<ul>
+					<li>
+						با ویرایش فایل
+						<span class="badge badge-light">
+							assets/css/scss/components/avatars/_avatars.scss
+						</span>
+						می توانید آواتارها را سفارشی سازی کنید.
+					</li>
+					<li>
+						برای آواتارهای 5 ضلعی و بیشتر ابتدا باید ماسک مربوطه را به صفحه اضافه کنید و سپس خصوصیت clip-path را به تصویر اعمال کنید.
+					</li>
+				</ul>
+			
+			</div>
+		
+		</div>
+		
+		
+		<div class="card rounded-10px shadow-sm border-0 mb-5">
+			<div class="card-header">
+				ماسک‌ها
+			</div>
+			<div class="card-body">
+				<div class="5-sided">
+					<div class="mb-3">
+						5 ضلعی
+					</div>
+					
+					<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<svg class="w-0px" x="0px" y="0px" viewBox="0 0 256 256">
+        <clipPath id="5-sided-clip-path">
+                <path d="M133.9,246.6l116.2-84.5c3.5-2.5,5-7.1,3.6-11.2L209.4,14.4c-1.3-4.1-5.2-6.9-9.5-6.9H56.2c-4.3,0-8.2,2.8-9.5,6.9L2.2,151c-1.3,4.1,0.1,8.6,3.6,11.2l116.2,84.5C125.6,249.2,130.4,249.2,133.9,246.6z"/>
+        </clipPath>
+</svg></textarea>
+					</div>
+					
+					<svg class="w-0px" x="0px" y="0px" viewBox="0 0 256 256">
+						<clipPath id="5-sided-clip-path">
+							<path
+									d="M133.9,246.6l116.2-84.5c3.5-2.5,5-7.1,3.6-11.2L209.4,14.4c-1.3-4.1-5.2-6.9-9.5-6.9H56.2
+                                    c-4.3,0-8.2,2.8-9.5,6.9L2.2,151c-1.3,4.1,0.1,8.6,3.6,11.2l116.2,84.5C125.6,249.2,130.4,249.2,133.9,246.6z" />
+						</clipPath>
+					</svg>
+				</div>
+				<div class="6-sided-style01">
+					<div class="mb-3">
+						6 ضلعی - استایل اول
+					</div>
+					
+					<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<svg class="w-0px" x="0px" y="0px" viewBox="0 0 256 256">
+        <clipPath id="6-sided-style01-clip-path">
+                <path d="M186.6,16.5H69.4c-3.6,0-6.9,1.9-8.7,5L2.1,123c-1.8,3.1-1.8,6.9,0,10l58.6,101.5c1.8,3.1,5.1,5,8.7,5h117.2c3.6,0,6.9-1.9,8.7-5L253.9,133c1.8-3.1,1.8-6.9,0-10L195.3,21.5C193.5,18.4,190.2,16.5,186.6,16.5z"/>
+        </clipPath>
+</svg></textarea>
+					</div>
+					
+					<svg class="w-0px" x="0px" y="0px" viewBox="0 0 256 256">
+						<clipPath id="6-sided-style01-clip-path">
+							<path
+									d="M186.6,16.5H69.4c-3.6,0-6.9,1.9-8.7,5L2.1,123c-1.8,3.1-1.8,6.9,0,10l58.6,101.5c1.8,3.1,5.1,5,8.7,5
+                                    h117.2c3.6,0,6.9-1.9,8.7-5L253.9,133c1.8-3.1,1.8-6.9,0-10L195.3,21.5C193.5,18.4,190.2,16.5,186.6,16.5z" />
+						</clipPath>
+					</svg>
+				</div>
+				<div class="6-sided-style02">
+					<div class="mb-3">
+						6 ضلعی - استایل دوم
+					</div>
+					
+					<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<svg class="w-0px" x="0px" y="0px" viewBox="0 0 256 256">
+        <clipPath id="6-sided-style02-clip-path">
+                <path d="M16.5,69.4v117.2c0,3.6,1.9,6.9,5,8.7L123,253.9c3.1,1.8,6.9,1.8,10,0l101.5-58.6c3.1-1.8,5-5.1,5-8.7V69.4c0-3.6-1.9-6.9-5-8.7L133,2.1c-3.1-1.8-6.9-1.8-10,0L21.5,60.7C18.4,62.5,16.5,65.8,16.5,69.4z"/>
+        </clipPath>
+</svg></textarea>
+					</div>
+					
+					<svg class="w-0px" x="0px" y="0px" viewBox="0 0 256 256">
+						<clipPath id="6-sided-style02-clip-path">
+							<path
+									d="M16.5,69.4v117.2c0,3.6,1.9,6.9,5,8.7L123,253.9c3.1,1.8,6.9,1.8,10,0l101.5-58.6c3.1-1.8,5-5.1,5-8.7
+                                    V69.4c0-3.6-1.9-6.9-5-8.7L133,2.1c-3.1-1.8-6.9-1.8-10,0L21.5,60.7C18.4,62.5,16.5,65.8,16.5,69.4z" />
+						</clipPath>
+					</svg>
+				</div>
+				<div class="7-sided">
+					<div class="mb-3">
+						7 ضلعی
+					</div>
+					
+					<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<svg class="w-0px" x="0px" y="0px" viewBox="0 0 256 256">
+        <clipPath id="7-sided-clip-path">
+                    <path d="M121.3,5.6L32,48.6c-4.2,2-7.3,5.9-8.3,10.4L1.6,155.6c-1,4.6,0.1,9.4,3,13l61.8,77.5
+                        c2.9,3.7,7.3,5.8,12,5.8h99.1c4.7,0,9.1-2.1,12-5.8l61.8-77.5c2.9-3.7,4-8.5,3-13L232.3,59c-1-4.6-4.1-8.4-8.3-10.4l-89.3-43
+                        C130.5,3.5,125.5,3.5,121.3,5.6z"/>
+        </clipPath>
+</svg></textarea>
+					</div>
+					
+					<svg class="w-0px" x="0px" y="0px" viewBox="0 0 256 256">
+						<clipPath id="7-sided-clip-path">
+							<path
+									d="M121.3,5.6L32,48.6c-4.2,2-7.3,5.9-8.3,10.4L1.6,155.6c-1,4.6,0.1,9.4,3,13l61.8,77.5
+                        c2.9,3.7,7.3,5.8,12,5.8h99.1c4.7,0,9.1-2.1,12-5.8l61.8-77.5c2.9-3.7,4-8.5,3-13L232.3,59c-1-4.6-4.1-8.4-8.3-10.4l-89.3-43
+                        C130.5,3.5,125.5,3.5,121.3,5.6z" />
+						</clipPath>
+					</svg>
+				</div>
+				<div class="8-sided">
+					<div class="mb-3">
+						8 ضلعی
+					</div>
+					
+					<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<svg class="w-0px" x="0px" y="0px" viewBox="0 0 256 256">
+        <clipPath id="8-sided-clip-path">
+                    <path d="M163.7,0H92.3C81.2,0,70.6,4.4,62.7,12.2L12.2,62.7C4.4,70.6,0,81.2,0,92.3v71.4c0,11.1,4.4,21.7,12.2,29.6
+                                    l50.5,50.5c7.8,7.8,18.5,12.2,29.6,12.2h71.4c11.1,0,21.7-4.4,29.6-12.2l50.5-50.5c7.8-7.8,12.2-18.5,12.2-29.6V92.3
+                                    c0-11.1-4.4-21.7-12.2-29.6l-50.5-50.5C185.4,4.4,174.8,0,163.7,0z"/>
+        </clipPath>
+</svg></textarea>
+					</div>
+					
+					<svg class="w-0px" x="0px" y="0px" viewBox="0 0 256 256">
+						<clipPath id="8-sided-clip-path">
+							<path
+									d="M163.7,0H92.3C81.2,0,70.6,4.4,62.7,12.2L12.2,62.7C4.4,70.6,0,81.2,0,92.3v71.4c0,11.1,4.4,21.7,12.2,29.6
+                                    l50.5,50.5c7.8,7.8,18.5,12.2,29.6,12.2h71.4c11.1,0,21.7-4.4,29.6-12.2l50.5-50.5c7.8-7.8,12.2-18.5,12.2-29.6V92.3
+                                    c0-11.1-4.4-21.7-12.2-29.6l-50.5-50.5C185.4,4.4,174.8,0,163.7,0z" />
+						</clipPath>
+					</svg>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!------------------------------- Style 01 ------------------------------>
+		<div class="card rounded-10px shadow-sm border-0 mb-5">
+			
+			<div class="card-header">
+				استایل 1 - مربعی
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="d-flex flex-wrap">
+					<div class="custom-avatar square position-relative rounded-15px w-140px h-140px mb-3 me-2">
+						<span class="badge bg-white text-dark">
+							1
+						</span>
+						<img class="img-thumbnail" src="../../assets/images/users/woman/red-woman-01.png" alt="">
+					</div>
+					<div class="custom-avatar square position-relative rounded-15px w-140px h-140px mb-3 me-2">
+						<span class="badge bg-white text-dark">
+							2
+						</span>
+						<img class="img-thumbnail" src="../../assets/images/users/man/blue-man-01.png" alt="">
+					</div>
+					<div class="custom-avatar square position-relative rounded-15px w-140px h-140px mb-3 me-2">
+						<span class="badge bg-white text-dark">
+							3
+						</span>
+						<img class="img-thumbnail" src="../../assets/images/users/woman/cyan-woman-01.png" alt="">
+					</div>
+					<div class="custom-avatar square position-relative rounded-15px w-140px h-140px mb-3 me-2">
+						<span class="badge bg-white text-dark">
+							4
+						</span>
+						<img class="img-thumbnail" src="../../assets/images/users/man/orange-man-01.png" alt="">
+					</div>
+					<div class="custom-avatar square position-relative rounded-15px w-140px h-140px mb-3 me-2">
+						<span class="badge bg-white text-dark">
+							5
+						</span>
+						<img class="img-thumbnail" src="../../assets/images/users/woman/purple-woman-01.png" alt="">
+					</div>
+					<div class="custom-avatar square position-relative rounded-15px w-140px h-140px mb-3">
+						<span class="badge bg-white text-dark">
+							6
+						</span>
+						<img class="img-thumbnail" src="../../assets/images/users/man/green-man-01.png" alt="">
+					</div>
+				</div>
+				
+				<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<div class="custom-avatar position-relative rounded-15px w-140px h-140px mb-3 me-2">
+        <span class="badge bg-white text-dark">
+                1
+        </span>
+        <img class="img-thumbnail" src="..." alt="" />
+</div></textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		
+		<!------------------------------- Style 02 ------------------------------>
+		<div class="card rounded-10px shadow-sm border-0 mb-5">
+			
+			<div class="card-header">
+				استایل 2 - دایره‌ای
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="d-flex flex-wrap">
+					<div class="custom-avatar circle position-relative rounded-15px w-140px h-140px mb-3 me-2">
+						<span class="badge badge-light">
+							1
+						</span>
+						<img
+                                class="img-thumbnail rounded-circle" src="../../assets/images/users/man/red-man-01.png" alt="">
+					</div>
+					<div class="custom-avatar circle position-relative rounded-15px w-140px h-140px mb-3 me-2">
+						<span class="badge badge-light">
+							2
+						</span>
+						<img
+                                class="img-thumbnail rounded-circle" src="../../assets/images/users/woman/blue-woman-01.png" alt="">
+					</div>
+					<div class="custom-avatar circle position-relative rounded-15px w-140px h-140px mb-3 me-2">
+						<span class="badge badge-light">
+							3
+						</span>
+						<img
+                                class="img-thumbnail rounded-circle" src="../../assets/images/users/man/cyan-man-01.png" alt="">
+					</div>
+					<div class="custom-avatar circle position-relative rounded-15px w-140px h-140px mb-3 me-2">
+						<span class="badge badge-light">
+							4
+						</span>
+						<img
+                                class="img-thumbnail rounded-circle" src="../../assets/images/users/woman/orange-woman-01.png" alt="">
+					</div>
+					<div class="custom-avatar circle position-relative rounded-15px w-140px h-140px mb-3 me-2">
+						<span class="badge badge-light">
+							5
+						</span>
+						<img
+                                class="img-thumbnail rounded-circle" src="../../assets/images/users/man/purple-man-01.png" alt="">
+					</div>
+					<div class="custom-avatar circle position-relative rounded-15px w-140px h-140px mb-3">
+						<span class="badge badge-light">
+							6
+						</span>
+						<img
+                                class="img-thumbnail rounded-circle" src="../../assets/images/users/woman/green-woman-01.png" alt="">
+					</div>
+				</div>
+				
+				<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<div class="custom-avatar position-relative rounded-15px w-140px h-140px mb-3 me-2">
+        <span class="badge badge-light">
+                1
+        </span>
+        <img class="img-thumbnail rounded-circle" src="..." alt="" />
+</div></textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		
+		<!------------------------------- Style 03 ------------------------------>
+		<div class="card rounded-10px shadow-sm border-0 mb-5">
+			
+			<div class="card-header">
+				استایل 3 - پنج ضلعی
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="d-flex flex-wrap">
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									width="100%" clip-path="url(#5-sided-clip-path)" xlink:href="../../assets/images/users/woman/red-woman-01.png"></image>
+							<path
+									clip-path="url(#5-sided-clip-path)" class="has-shadow" fill="#cccccc" d="M199.8,12.4c2.2,0,4.1,1.4,4.8,3.5L249,152.6c0.7,2.1-0.1,4.3-1.8,5.6l-116.2,84.5c-0.9,0.6-1.9,1-2.9,1
+                                c-1.1,0-2.1-0.3-2.9-1L8.8,158.1c-1.8-1.3-2.5-3.5-1.8-5.6L51.4,15.9c0.7-2.1,2.6-3.5,4.8-3.5H199.8 M199.8,7.4H56.2
+                                c-4.3,0-8.2,2.8-9.5,6.9L2.2,151c-1.3,4.1,0.1,8.6,3.6,11.2l116.2,84.5c1.8,1.3,3.8,1.9,5.9,1.9s4.1-0.6,5.9-1.9l116.2-84.5
+                                c3.5-2.5,5-7.1,3.6-11.2L209.4,14.4C208,10.2,204.2,7.4,199.8,7.4L199.8,7.4z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									width="100%" clip-path="url(#5-sided-clip-path)" xlink:href="../../assets/images/users/man/blue-man-02.png"></image>
+							<path
+									clip-path="url(#5-sided-clip-path)" class="has-shadow" fill="#cccccc" d="M199.8,12.4c2.2,0,4.1,1.4,4.8,3.5L249,152.6c0.7,2.1-0.1,4.3-1.8,5.6l-116.2,84.5c-0.9,0.6-1.9,1-2.9,1
+                                c-1.1,0-2.1-0.3-2.9-1L8.8,158.1c-1.8-1.3-2.5-3.5-1.8-5.6L51.4,15.9c0.7-2.1,2.6-3.5,4.8-3.5H199.8 M199.8,7.4H56.2
+                                c-4.3,0-8.2,2.8-9.5,6.9L2.2,151c-1.3,4.1,0.1,8.6,3.6,11.2l116.2,84.5c1.8,1.3,3.8,1.9,5.9,1.9s4.1-0.6,5.9-1.9l116.2-84.5
+                                c3.5-2.5,5-7.1,3.6-11.2L209.4,14.4C208,10.2,204.2,7.4,199.8,7.4L199.8,7.4z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									width="100%" clip-path="url(#5-sided-clip-path)" xlink:href="../../assets/images/users/woman/cyan-woman-02.png"></image>
+							<path
+									clip-path="url(#5-sided-clip-path)" class="has-shadow" fill="#cccccc" d="M199.8,12.4c2.2,0,4.1,1.4,4.8,3.5L249,152.6c0.7,2.1-0.1,4.3-1.8,5.6l-116.2,84.5c-0.9,0.6-1.9,1-2.9,1
+                                c-1.1,0-2.1-0.3-2.9-1L8.8,158.1c-1.8-1.3-2.5-3.5-1.8-5.6L51.4,15.9c0.7-2.1,2.6-3.5,4.8-3.5H199.8 M199.8,7.4H56.2
+                                c-4.3,0-8.2,2.8-9.5,6.9L2.2,151c-1.3,4.1,0.1,8.6,3.6,11.2l116.2,84.5c1.8,1.3,3.8,1.9,5.9,1.9s4.1-0.6,5.9-1.9l116.2-84.5
+                                c3.5-2.5,5-7.1,3.6-11.2L209.4,14.4C208,10.2,204.2,7.4,199.8,7.4L199.8,7.4z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									width="100%" clip-path="url(#5-sided-clip-path)" xlink:href="../../assets/images/users/man/orange-man-02.png"></image>
+							<path
+									clip-path="url(#5-sided-clip-path)" class="has-shadow" fill="#cccccc" d="M199.8,12.4c2.2,0,4.1,1.4,4.8,3.5L249,152.6c0.7,2.1-0.1,4.3-1.8,5.6l-116.2,84.5c-0.9,0.6-1.9,1-2.9,1
+                                c-1.1,0-2.1-0.3-2.9-1L8.8,158.1c-1.8-1.3-2.5-3.5-1.8-5.6L51.4,15.9c0.7-2.1,2.6-3.5,4.8-3.5H199.8 M199.8,7.4H56.2
+                                c-4.3,0-8.2,2.8-9.5,6.9L2.2,151c-1.3,4.1,0.1,8.6,3.6,11.2l116.2,84.5c1.8,1.3,3.8,1.9,5.9,1.9s4.1-0.6,5.9-1.9l116.2-84.5
+                                c3.5-2.5,5-7.1,3.6-11.2L209.4,14.4C208,10.2,204.2,7.4,199.8,7.4L199.8,7.4z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									width="100%" clip-path="url(#5-sided-clip-path)" xlink:href="../../assets/images/users/woman/purple-woman-02.png"></image>
+							<path
+									clip-path="url(#5-sided-clip-path)" class="has-shadow" fill="#cccccc" d="M199.8,12.4c2.2,0,4.1,1.4,4.8,3.5L249,152.6c0.7,2.1-0.1,4.3-1.8,5.6l-116.2,84.5c-0.9,0.6-1.9,1-2.9,1
+                                c-1.1,0-2.1-0.3-2.9-1L8.8,158.1c-1.8-1.3-2.5-3.5-1.8-5.6L51.4,15.9c0.7-2.1,2.6-3.5,4.8-3.5H199.8 M199.8,7.4H56.2
+                                c-4.3,0-8.2,2.8-9.5,6.9L2.2,151c-1.3,4.1,0.1,8.6,3.6,11.2l116.2,84.5c1.8,1.3,3.8,1.9,5.9,1.9s4.1-0.6,5.9-1.9l116.2-84.5
+                                c3.5-2.5,5-7.1,3.6-11.2L209.4,14.4C208,10.2,204.2,7.4,199.8,7.4L199.8,7.4z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									width="100%" clip-path="url(#5-sided-clip-path)" xlink:href="../../assets/images/users/man/green-man-02.png"></image>
+							<path
+									clip-path="url(#5-sided-clip-path)" class="has-shadow" fill="#cccccc" d="M199.8,12.4c2.2,0,4.1,1.4,4.8,3.5L249,152.6c0.7,2.1-0.1,4.3-1.8,5.6l-116.2,84.5c-0.9,0.6-1.9,1-2.9,1
+                                c-1.1,0-2.1-0.3-2.9-1L8.8,158.1c-1.8-1.3-2.5-3.5-1.8-5.6L51.4,15.9c0.7-2.1,2.6-3.5,4.8-3.5H199.8 M199.8,7.4H56.2
+                                c-4.3,0-8.2,2.8-9.5,6.9L2.2,151c-1.3,4.1,0.1,8.6,3.6,11.2l116.2,84.5c1.8,1.3,3.8,1.9,5.9,1.9s4.1-0.6,5.9-1.9l116.2-84.5
+                                c3.5-2.5,5-7.1,3.6-11.2L209.4,14.4C208,10.2,204.2,7.4,199.8,7.4L199.8,7.4z" />
+						</svg>
+					</div>
+				</div>
+				
+				<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+        <svg x="0px" y="0px" viewBox="0 0 256 256">
+                <image width="100%" clip-path="url(#5-sided-clip-path)" xlink:href="../../your-file-name.png"></image>
+                <path clip-path="url(#5-sided-clip-path)" class="has-shadow" fill="#cccccc" d="M199.8,12.4c2.2,0,4.1,1.4,4.8,3.5L249,152.6c0.7,2.1-0.1,4.3-1.8,5.6l-116.2,84.5c-0.9,0.6-1.9,1-2.9,1
+                c-1.1,0-2.1-0.3-2.9-1L8.8,158.1c-1.8-1.3-2.5-3.5-1.8-5.6L51.4,15.9c0.7-2.1,2.6-3.5,4.8-3.5H199.8 M199.8,7.4H56.2
+                c-4.3,0-8.2,2.8-9.5,6.9L2.2,151c-1.3,4.1,0.1,8.6,3.6,11.2l116.2,84.5c1.8,1.3,3.8,1.9,5.9,1.9s4.1-0.6,5.9-1.9l116.2-84.5
+                c3.5-2.5,5-7.1,3.6-11.2L209.4,14.4C208,10.2,204.2,7.4,199.8,7.4L199.8,7.4z"/>
+        </svg>
+</div></textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		
+		<!------------------------------- Style 04 ------------------------------>
+		<div class="card rounded-10px shadow-sm border-0 mb-5">
+			
+			<div class="card-header">
+				استایل 4 - شش ضلعی - استایل اول
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="d-flex flex-wrap">
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style01-clip-path)" xlink:href="../../assets/images/users/man/red-man-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style01-clip-path)" class="has-shadow" fill="#CCCCCC" d="M186.6,21.5c1.8,0,3.4,1,4.3,2.5l58.6,101.5c0.9,1.5,0.9,3.5,0,5L190.9,232c-0.9,1.5-2.5,2.5-4.3,2.5H69.4
+                                c-1.8,0-3.4-1-4.3-2.5L6.4,130.5c-0.9-1.5-0.9-3.5,0-5L65.1,24c0.9-1.5,2.5-2.5,4.3-2.5H186.6 M186.6,16.5H69.4
+                                c-3.6,0-6.9,1.9-8.7,5L2.1,123c-1.8,3.1-1.8,6.9,0,10l58.6,101.5c1.8,3.1,5.1,5,8.7,5h117.2c3.6,0,6.9-1.9,8.7-5L253.9,133
+                                c1.8-3.1,1.8-6.9,0-10L195.3,21.5C193.5,18.4,190.2,16.5,186.6,16.5L186.6,16.5z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style01-clip-path)" xlink:href="../../assets/images/users/woman/blue-woman-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style01-clip-path)" class="has-shadow" fill="#CCCCCC" d="M186.6,21.5c1.8,0,3.4,1,4.3,2.5l58.6,101.5c0.9,1.5,0.9,3.5,0,5L190.9,232c-0.9,1.5-2.5,2.5-4.3,2.5H69.4
+                                c-1.8,0-3.4-1-4.3-2.5L6.4,130.5c-0.9-1.5-0.9-3.5,0-5L65.1,24c0.9-1.5,2.5-2.5,4.3-2.5H186.6 M186.6,16.5H69.4
+                                c-3.6,0-6.9,1.9-8.7,5L2.1,123c-1.8,3.1-1.8,6.9,0,10l58.6,101.5c1.8,3.1,5.1,5,8.7,5h117.2c3.6,0,6.9-1.9,8.7-5L253.9,133
+                                c1.8-3.1,1.8-6.9,0-10L195.3,21.5C193.5,18.4,190.2,16.5,186.6,16.5L186.6,16.5z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style01-clip-path)" xlink:href="../../assets/images/users/man/cyan-man-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style01-clip-path)" class="has-shadow" fill="#CCCCCC" d="M186.6,21.5c1.8,0,3.4,1,4.3,2.5l58.6,101.5c0.9,1.5,0.9,3.5,0,5L190.9,232c-0.9,1.5-2.5,2.5-4.3,2.5H69.4
+                                c-1.8,0-3.4-1-4.3-2.5L6.4,130.5c-0.9-1.5-0.9-3.5,0-5L65.1,24c0.9-1.5,2.5-2.5,4.3-2.5H186.6 M186.6,16.5H69.4
+                                c-3.6,0-6.9,1.9-8.7,5L2.1,123c-1.8,3.1-1.8,6.9,0,10l58.6,101.5c1.8,3.1,5.1,5,8.7,5h117.2c3.6,0,6.9-1.9,8.7-5L253.9,133
+                                c1.8-3.1,1.8-6.9,0-10L195.3,21.5C193.5,18.4,190.2,16.5,186.6,16.5L186.6,16.5z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style01-clip-path)" xlink:href="../../assets/images/users/woman/orange-woman-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style01-clip-path)" class="has-shadow" fill="#CCCCCC" d="M186.6,21.5c1.8,0,3.4,1,4.3,2.5l58.6,101.5c0.9,1.5,0.9,3.5,0,5L190.9,232c-0.9,1.5-2.5,2.5-4.3,2.5H69.4
+                                c-1.8,0-3.4-1-4.3-2.5L6.4,130.5c-0.9-1.5-0.9-3.5,0-5L65.1,24c0.9-1.5,2.5-2.5,4.3-2.5H186.6 M186.6,16.5H69.4
+                                c-3.6,0-6.9,1.9-8.7,5L2.1,123c-1.8,3.1-1.8,6.9,0,10l58.6,101.5c1.8,3.1,5.1,5,8.7,5h117.2c3.6,0,6.9-1.9,8.7-5L253.9,133
+                                c1.8-3.1,1.8-6.9,0-10L195.3,21.5C193.5,18.4,190.2,16.5,186.6,16.5L186.6,16.5z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style01-clip-path)" xlink:href="../../assets/images/users/man/purple-man-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style01-clip-path)" class="has-shadow" fill="#CCCCCC" d="M186.6,21.5c1.8,0,3.4,1,4.3,2.5l58.6,101.5c0.9,1.5,0.9,3.5,0,5L190.9,232c-0.9,1.5-2.5,2.5-4.3,2.5H69.4
+                                c-1.8,0-3.4-1-4.3-2.5L6.4,130.5c-0.9-1.5-0.9-3.5,0-5L65.1,24c0.9-1.5,2.5-2.5,4.3-2.5H186.6 M186.6,16.5H69.4
+                                c-3.6,0-6.9,1.9-8.7,5L2.1,123c-1.8,3.1-1.8,6.9,0,10l58.6,101.5c1.8,3.1,5.1,5,8.7,5h117.2c3.6,0,6.9-1.9,8.7-5L253.9,133
+                                c1.8-3.1,1.8-6.9,0-10L195.3,21.5C193.5,18.4,190.2,16.5,186.6,16.5L186.6,16.5z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style01-clip-path)" xlink:href="../../assets/images/users/woman/green-woman-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style01-clip-path)" class="has-shadow" fill="#CCCCCC" d="M186.6,21.5c1.8,0,3.4,1,4.3,2.5l58.6,101.5c0.9,1.5,0.9,3.5,0,5L190.9,232c-0.9,1.5-2.5,2.5-4.3,2.5H69.4
+                                c-1.8,0-3.4-1-4.3-2.5L6.4,130.5c-0.9-1.5-0.9-3.5,0-5L65.1,24c0.9-1.5,2.5-2.5,4.3-2.5H186.6 M186.6,16.5H69.4
+                                c-3.6,0-6.9,1.9-8.7,5L2.1,123c-1.8,3.1-1.8,6.9,0,10l58.6,101.5c1.8,3.1,5.1,5,8.7,5h117.2c3.6,0,6.9-1.9,8.7-5L253.9,133
+                                c1.8-3.1,1.8-6.9,0-10L195.3,21.5C193.5,18.4,190.2,16.5,186.6,16.5L186.6,16.5z" />
+						</svg>
+					</div>
+				</div>
+				
+				<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+
+        <svg x="0px" y="0px" viewBox="0 0 256 256">
+                <image width="100%" clip-path="url(#6-sided-style01-clip-path)" xlink:href="../../your-file-name.png"></image>
+                <path clip-path="url(#6-sided-style01-clip-path)" class="has-shadow" fill="#CCCCCC" d="M186.6,21.5c1.8,0,3.4,1,4.3,2.5l58.6,101.5c0.9,1.5,0.9,3.5,0,5L190.9,232c-0.9,1.5-2.5,2.5-4.3,2.5H69.4
+                c-1.8,0-3.4-1-4.3-2.5L6.4,130.5c-0.9-1.5-0.9-3.5,0-5L65.1,24c0.9-1.5,2.5-2.5,4.3-2.5H186.6 M186.6,16.5H69.4
+                c-3.6,0-6.9,1.9-8.7,5L2.1,123c-1.8,3.1-1.8,6.9,0,10l58.6,101.5c1.8,3.1,5.1,5,8.7,5h117.2c3.6,0,6.9-1.9,8.7-5L253.9,133
+                c1.8-3.1,1.8-6.9,0-10L195.3,21.5C193.5,18.4,190.2,16.5,186.6,16.5L186.6,16.5z"/>
+        </svg>
+</div></textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		
+		<!------------------------------- Style 05 ------------------------------>
+		<div class="card rounded-10px shadow-sm border-0 mb-5">
+			
+			<div class="card-header">
+				استایل 5 - شش ضلعی - استایل دوم
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="d-flex flex-wrap">
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style02-clip-path)" xlink:href="../../assets/images/users/man/red-man-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style02-clip-path)" class="has-shadow" fill="#CCCCCC" d="M21.5,69.4c0-1.8,1-3.4,2.5-4.3L125.5,6.5c1.5-0.9,3.5-0.9,5,0L232,65.1c1.5,0.9,2.5,2.5,2.5,4.3v117.2
+                            c0,1.8-1,3.4-2.5,4.3l-101.5,58.7c-1.5,0.9-3.5,0.9-5,0L24,190.9c-1.5-0.9-2.5-2.5-2.5-4.3V69.4 M16.5,69.4v117.2
+                            c0,3.6,1.9,6.9,5,8.7L123,253.9c3.1,1.8,6.9,1.8,10,0l101.5-58.6c3.1-1.8,5-5.1,5-8.7V69.4c0-3.6-1.9-6.9-5-8.7L133,2.1
+                            c-3.1-1.8-6.9-1.8-10,0L21.5,60.7C18.4,62.5,16.5,65.8,16.5,69.4L16.5,69.4z" />
+						</svg>
+					</div>
+					
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style02-clip-path)" xlink:href="../../assets/images/users/woman/blue-woman-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style02-clip-path)" class="has-shadow" fill="#CCCCCC" d="M21.5,69.4c0-1.8,1-3.4,2.5-4.3L125.5,6.5c1.5-0.9,3.5-0.9,5,0L232,65.1c1.5,0.9,2.5,2.5,2.5,4.3v117.2
+                            c0,1.8-1,3.4-2.5,4.3l-101.5,58.7c-1.5,0.9-3.5,0.9-5,0L24,190.9c-1.5-0.9-2.5-2.5-2.5-4.3V69.4 M16.5,69.4v117.2
+                            c0,3.6,1.9,6.9,5,8.7L123,253.9c3.1,1.8,6.9,1.8,10,0l101.5-58.6c3.1-1.8,5-5.1,5-8.7V69.4c0-3.6-1.9-6.9-5-8.7L133,2.1
+                            c-3.1-1.8-6.9-1.8-10,0L21.5,60.7C18.4,62.5,16.5,65.8,16.5,69.4L16.5,69.4z" />
+						</svg>
+					</div>
+					
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style02-clip-path)" xlink:href="../../assets/images/users/man/cyan-man-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style02-clip-path)" class="has-shadow" fill="#CCCCCC" d="M21.5,69.4c0-1.8,1-3.4,2.5-4.3L125.5,6.5c1.5-0.9,3.5-0.9,5,0L232,65.1c1.5,0.9,2.5,2.5,2.5,4.3v117.2
+                            c0,1.8-1,3.4-2.5,4.3l-101.5,58.7c-1.5,0.9-3.5,0.9-5,0L24,190.9c-1.5-0.9-2.5-2.5-2.5-4.3V69.4 M16.5,69.4v117.2
+                            c0,3.6,1.9,6.9,5,8.7L123,253.9c3.1,1.8,6.9,1.8,10,0l101.5-58.6c3.1-1.8,5-5.1,5-8.7V69.4c0-3.6-1.9-6.9-5-8.7L133,2.1
+                            c-3.1-1.8-6.9-1.8-10,0L21.5,60.7C18.4,62.5,16.5,65.8,16.5,69.4L16.5,69.4z" />
+						</svg>
+					</div>
+					
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style02-clip-path)" xlink:href="../../assets/images/users/woman/orange-woman-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style02-clip-path)" class="has-shadow" fill="#CCCCCC" d="M21.5,69.4c0-1.8,1-3.4,2.5-4.3L125.5,6.5c1.5-0.9,3.5-0.9,5,0L232,65.1c1.5,0.9,2.5,2.5,2.5,4.3v117.2
+                            c0,1.8-1,3.4-2.5,4.3l-101.5,58.7c-1.5,0.9-3.5,0.9-5,0L24,190.9c-1.5-0.9-2.5-2.5-2.5-4.3V69.4 M16.5,69.4v117.2
+                            c0,3.6,1.9,6.9,5,8.7L123,253.9c3.1,1.8,6.9,1.8,10,0l101.5-58.6c3.1-1.8,5-5.1,5-8.7V69.4c0-3.6-1.9-6.9-5-8.7L133,2.1
+                            c-3.1-1.8-6.9-1.8-10,0L21.5,60.7C18.4,62.5,16.5,65.8,16.5,69.4L16.5,69.4z" />
+						</svg>
+					</div>
+					
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style02-clip-path)" xlink:href="../../assets/images/users/man/purple-man-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style02-clip-path)" class="has-shadow" fill="#CCCCCC" d="M21.5,69.4c0-1.8,1-3.4,2.5-4.3L125.5,6.5c1.5-0.9,3.5-0.9,5,0L232,65.1c1.5,0.9,2.5,2.5,2.5,4.3v117.2
+                            c0,1.8-1,3.4-2.5,4.3l-101.5,58.7c-1.5,0.9-3.5,0.9-5,0L24,190.9c-1.5-0.9-2.5-2.5-2.5-4.3V69.4 M16.5,69.4v117.2
+                            c0,3.6,1.9,6.9,5,8.7L123,253.9c3.1,1.8,6.9,1.8,10,0l101.5-58.6c3.1-1.8,5-5.1,5-8.7V69.4c0-3.6-1.9-6.9-5-8.7L133,2.1
+                            c-3.1-1.8-6.9-1.8-10,0L21.5,60.7C18.4,62.5,16.5,65.8,16.5,69.4L16.5,69.4z" />
+						</svg>
+					</div>
+					
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image
+									width="100%" clip-path="url(#6-sided-style02-clip-path)" xlink:href="../../assets/images/users/woman/green-woman-02.png"></image>
+							<path
+									clip-path="url(#6-sided-style02-clip-path)" class="has-shadow" fill="#CCCCCC" d="M21.5,69.4c0-1.8,1-3.4,2.5-4.3L125.5,6.5c1.5-0.9,3.5-0.9,5,0L232,65.1c1.5,0.9,2.5,2.5,2.5,4.3v117.2
+                            c0,1.8-1,3.4-2.5,4.3l-101.5,58.7c-1.5,0.9-3.5,0.9-5,0L24,190.9c-1.5-0.9-2.5-2.5-2.5-4.3V69.4 M16.5,69.4v117.2
+                            c0,3.6,1.9,6.9,5,8.7L123,253.9c3.1,1.8,6.9,1.8,10,0l101.5-58.6c3.1-1.8,5-5.1,5-8.7V69.4c0-3.6-1.9-6.9-5-8.7L133,2.1
+                            c-3.1-1.8-6.9-1.8-10,0L21.5,60.7C18.4,62.5,16.5,65.8,16.5,69.4L16.5,69.4z" />
+						</svg>
+					</div>
+				</div>
+				
+				
+				<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+        <svg x="0px" y="0px" viewBox="0 0 256 256">
+                <image width="100%" clip-path="url(#6-sided-style02-clip-path)" xlink:href="../../assets/images/users/woman/green-woman-02.png"></image>
+                <path clip-path="url(#6-sided-style02-clip-path)" class="has-shadow" fill="#CCCCCC" d="M21.5,69.4c0-1.8,1-3.4,2.5-4.3L125.5,6.5c1.5-0.9,3.5-0.9,5,0L232,65.1c1.5,0.9,2.5,2.5,2.5,4.3v117.2
+                c0,1.8-1,3.4-2.5,4.3l-101.5,58.7c-1.5,0.9-3.5,0.9-5,0L24,190.9c-1.5-0.9-2.5-2.5-2.5-4.3V69.4 M16.5,69.4v117.2
+                c0,3.6,1.9,6.9,5,8.7L123,253.9c3.1,1.8,6.9,1.8,10,0l101.5-58.6c3.1-1.8,5-5.1,5-8.7V69.4c0-3.6-1.9-6.9-5-8.7L133,2.1
+                c-3.1-1.8-6.9-1.8-10,0L21.5,60.7C18.4,62.5,16.5,65.8,16.5,69.4L16.5,69.4z"/>
+        </svg>
+</div></textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		
+		<!------------------------------- Style 06 ------------------------------>
+		<div class="card rounded-10px shadow-sm border-0 mb-5">
+			
+			<div class="card-header">
+				استایل 6 - هفت ضلعی
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="d-flex flex-wrap">
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									clip-path="url(#7-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/woman/red-woman-01.png"></image>
+							
+							<path
+									clip-path="url(#7-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M128,9.1c1.6,0,3.1,0.4,4.5,1l89.3,43c2.9,1.4,4.9,3.9,5.6,7l22.1,96.6c0.7,3.1,0,6.3-2,8.8L185.7,243
+                                    c-2,2.5-4.9,3.9-8.1,3.9H78.4c-3.2,0-6.1-1.4-8.1-3.9L8.5,165.5c-2-2.5-2.7-5.7-2-8.8l22.1-96.6c0.7-3.1,2.8-5.7,5.6-7l89.3-43
+                                    C124.9,9.4,126.4,9.1,128,9.1 M128,4.1c-2.3,0-4.6,0.5-6.7,1.5L32,48.6c-4.2,2-7.3,5.9-8.3,10.4L1.6,155.6c-1,4.6,0.1,9.4,3,13
+                                    l61.8,77.5c2.9,3.7,7.3,5.8,12,5.8h99.1c4.7,0,9.1-2.1,12-5.8l61.8-77.5c2.9-3.7,4-8.5,3-13L232.3,59c-1-4.6-4.1-8.4-8.3-10.4
+                                    l-89.3-43C132.6,4.6,130.3,4.1,128,4.1L128,4.1z" />
+						</svg>
+					</div>
+					
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image clip-path="url(#7-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/man/blue-man-01.png"></image>
+							
+							<path
+									clip-path="url(#7-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M128,9.1c1.6,0,3.1,0.4,4.5,1l89.3,43c2.9,1.4,4.9,3.9,5.6,7l22.1,96.6c0.7,3.1,0,6.3-2,8.8L185.7,243
+                            c-2,2.5-4.9,3.9-8.1,3.9H78.4c-3.2,0-6.1-1.4-8.1-3.9L8.5,165.5c-2-2.5-2.7-5.7-2-8.8l22.1-96.6c0.7-3.1,2.8-5.7,5.6-7l89.3-43
+                            C124.9,9.4,126.4,9.1,128,9.1 M128,4.1c-2.3,0-4.6,0.5-6.7,1.5L32,48.6c-4.2,2-7.3,5.9-8.3,10.4L1.6,155.6c-1,4.6,0.1,9.4,3,13
+                            l61.8,77.5c2.9,3.7,7.3,5.8,12,5.8h99.1c4.7,0,9.1-2.1,12-5.8l61.8-77.5c2.9-3.7,4-8.5,3-13L232.3,59c-1-4.6-4.1-8.4-8.3-10.4
+                            l-89.3-43C132.6,4.6,130.3,4.1,128,4.1L128,4.1z" />
+						</svg>
+					</div>
+					
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									clip-path="url(#7-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/woman/cyan-woman-01.png"></image>
+							
+							<path
+									clip-path="url(#7-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M128,9.1c1.6,0,3.1,0.4,4.5,1l89.3,43c2.9,1.4,4.9,3.9,5.6,7l22.1,96.6c0.7,3.1,0,6.3-2,8.8L185.7,243
+                            c-2,2.5-4.9,3.9-8.1,3.9H78.4c-3.2,0-6.1-1.4-8.1-3.9L8.5,165.5c-2-2.5-2.7-5.7-2-8.8l22.1-96.6c0.7-3.1,2.8-5.7,5.6-7l89.3-43
+                            C124.9,9.4,126.4,9.1,128,9.1 M128,4.1c-2.3,0-4.6,0.5-6.7,1.5L32,48.6c-4.2,2-7.3,5.9-8.3,10.4L1.6,155.6c-1,4.6,0.1,9.4,3,13
+                            l61.8,77.5c2.9,3.7,7.3,5.8,12,5.8h99.1c4.7,0,9.1-2.1,12-5.8l61.8-77.5c2.9-3.7,4-8.5,3-13L232.3,59c-1-4.6-4.1-8.4-8.3-10.4
+                            l-89.3-43C132.6,4.6,130.3,4.1,128,4.1L128,4.1z" />
+						</svg>
+					</div>
+					
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									clip-path="url(#7-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/man/orange-man-01.png"></image>
+							
+							<path
+									clip-path="url(#7-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M128,9.1c1.6,0,3.1,0.4,4.5,1l89.3,43c2.9,1.4,4.9,3.9,5.6,7l22.1,96.6c0.7,3.1,0,6.3-2,8.8L185.7,243
+                            c-2,2.5-4.9,3.9-8.1,3.9H78.4c-3.2,0-6.1-1.4-8.1-3.9L8.5,165.5c-2-2.5-2.7-5.7-2-8.8l22.1-96.6c0.7-3.1,2.8-5.7,5.6-7l89.3-43
+                            C124.9,9.4,126.4,9.1,128,9.1 M128,4.1c-2.3,0-4.6,0.5-6.7,1.5L32,48.6c-4.2,2-7.3,5.9-8.3,10.4L1.6,155.6c-1,4.6,0.1,9.4,3,13
+                            l61.8,77.5c2.9,3.7,7.3,5.8,12,5.8h99.1c4.7,0,9.1-2.1,12-5.8l61.8-77.5c2.9-3.7,4-8.5,3-13L232.3,59c-1-4.6-4.1-8.4-8.3-10.4
+                            l-89.3-43C132.6,4.6,130.3,4.1,128,4.1L128,4.1z" />
+						</svg>
+					</div>
+					
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									clip-path="url(#7-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/woman/purple-woman-01.png"></image>
+							
+							<path
+									clip-path="url(#7-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M128,9.1c1.6,0,3.1,0.4,4.5,1l89.3,43c2.9,1.4,4.9,3.9,5.6,7l22.1,96.6c0.7,3.1,0,6.3-2,8.8L185.7,243
+                            c-2,2.5-4.9,3.9-8.1,3.9H78.4c-3.2,0-6.1-1.4-8.1-3.9L8.5,165.5c-2-2.5-2.7-5.7-2-8.8l22.1-96.6c0.7-3.1,2.8-5.7,5.6-7l89.3-43
+                            C124.9,9.4,126.4,9.1,128,9.1 M128,4.1c-2.3,0-4.6,0.5-6.7,1.5L32,48.6c-4.2,2-7.3,5.9-8.3,10.4L1.6,155.6c-1,4.6,0.1,9.4,3,13
+                            l61.8,77.5c2.9,3.7,7.3,5.8,12,5.8h99.1c4.7,0,9.1-2.1,12-5.8l61.8-77.5c2.9-3.7,4-8.5,3-13L232.3,59c-1-4.6-4.1-8.4-8.3-10.4
+                            l-89.3-43C132.6,4.6,130.3,4.1,128,4.1L128,4.1z" />
+						</svg>
+					</div>
+					
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image
+									clip-path="url(#7-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/man/green-man-01.png"></image>
+							
+							<path
+									clip-path="url(#7-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M128,9.1c1.6,0,3.1,0.4,4.5,1l89.3,43c2.9,1.4,4.9,3.9,5.6,7l22.1,96.6c0.7,3.1,0,6.3-2,8.8L185.7,243
+                            c-2,2.5-4.9,3.9-8.1,3.9H78.4c-3.2,0-6.1-1.4-8.1-3.9L8.5,165.5c-2-2.5-2.7-5.7-2-8.8l22.1-96.6c0.7-3.1,2.8-5.7,5.6-7l89.3-43
+                            C124.9,9.4,126.4,9.1,128,9.1 M128,4.1c-2.3,0-4.6,0.5-6.7,1.5L32,48.6c-4.2,2-7.3,5.9-8.3,10.4L1.6,155.6c-1,4.6,0.1,9.4,3,13
+                            l61.8,77.5c2.9,3.7,7.3,5.8,12,5.8h99.1c4.7,0,9.1-2.1,12-5.8l61.8-77.5c2.9-3.7,4-8.5,3-13L232.3,59c-1-4.6-4.1-8.4-8.3-10.4
+                            l-89.3-43C132.6,4.6,130.3,4.1,128,4.1L128,4.1z" />
+						</svg>
+					</div>
+				</div>
+				
+				<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+
+        <svg x="0px" y="0px" viewBox="0 0 256 256">
+
+                <image clip-path="url(#7-sided-clip-path)" width="100%" xlink:href="../../your-file-name.png"></image>
+
+                <path clip-path="url(#7-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M128,9.1c1.6,0,3.1,0.4,4.5,1l89.3,43c2.9,1.4,4.9,3.9,5.6,7l22.1,96.6c0.7,3.1,0,6.3-2,8.8L185.7,243
+                c-2,2.5-4.9,3.9-8.1,3.9H78.4c-3.2,0-6.1-1.4-8.1-3.9L8.5,165.5c-2-2.5-2.7-5.7-2-8.8l22.1-96.6c0.7-3.1,2.8-5.7,5.6-7l89.3-43
+                C124.9,9.4,126.4,9.1,128,9.1 M128,4.1c-2.3,0-4.6,0.5-6.7,1.5L32,48.6c-4.2,2-7.3,5.9-8.3,10.4L1.6,155.6c-1,4.6,0.1,9.4,3,13
+                l61.8,77.5c2.9,3.7,7.3,5.8,12,5.8h99.1c4.7,0,9.1-2.1,12-5.8l61.8-77.5c2.9-3.7,4-8.5,3-13L232.3,59c-1-4.6-4.1-8.4-8.3-10.4
+                l-89.3-43C132.6,4.6,130.3,4.1,128,4.1L128,4.1z"/>
+        </svg>
+</div></textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		
+		<!------------------------------- Style 07 ------------------------------>
+		<div class="card rounded-10px shadow-sm border-0 mb-5">
+			
+			<div class="card-header">
+				استایل 7 - هشت ضلعی
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="d-flex flex-wrap">
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							
+							<image clip-path="url(#8-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/man/red-man-01.png"></image>
+							<path
+									clip-path="url(#8-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M163.7,5c9.8,0,19.1,3.8,26,10.8l50.5,50.5c7,7,10.8,16.2,10.8,26v71.4c0,9.8-3.8,19.1-10.8,26l-50.5,50.5
+                            c-7,7-16.2,10.8-26,10.8H92.3c-9.8,0-19.1-3.8-26-10.8l-50.5-50.5c-7-7-10.8-16.2-10.8-26V92.3c0-9.8,3.8-19.1,10.8-26l50.5-50.5
+                            c7-7,16.2-10.8,26-10.8H163.7 M163.7,0H92.3C81.2,0,70.6,4.4,62.7,12.2L12.2,62.7C4.4,70.6,0,81.2,0,92.3v71.4
+                            c0,11.1,4.4,21.7,12.2,29.6l50.5,50.5c7.8,7.8,18.5,12.2,29.6,12.2h71.4c11.1,0,21.7-4.4,29.6-12.2l50.5-50.5
+                            c7.8-7.8,12.2-18.5,12.2-29.6V92.3c0-11.1-4.4-21.7-12.2-29.6l-50.5-50.5C185.4,4.4,174.8,0,163.7,0L163.7,0z" />
+						</svg>
+					
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image clip-path="url(#8-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/woman/blue-woman-01.png"></image>
+							<path
+									clip-path="url(#8-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M163.7,5c9.8,0,19.1,3.8,26,10.8l50.5,50.5c7,7,10.8,16.2,10.8,26v71.4c0,9.8-3.8,19.1-10.8,26l-50.5,50.5
+                            c-7,7-16.2,10.8-26,10.8H92.3c-9.8,0-19.1-3.8-26-10.8l-50.5-50.5c-7-7-10.8-16.2-10.8-26V92.3c0-9.8,3.8-19.1,10.8-26l50.5-50.5
+                            c7-7,16.2-10.8,26-10.8H163.7 M163.7,0H92.3C81.2,0,70.6,4.4,62.7,12.2L12.2,62.7C4.4,70.6,0,81.2,0,92.3v71.4
+                            c0,11.1,4.4,21.7,12.2,29.6l50.5,50.5c7.8,7.8,18.5,12.2,29.6,12.2h71.4c11.1,0,21.7-4.4,29.6-12.2l50.5-50.5
+                            c7.8-7.8,12.2-18.5,12.2-29.6V92.3c0-11.1-4.4-21.7-12.2-29.6l-50.5-50.5C185.4,4.4,174.8,0,163.7,0L163.7,0z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image clip-path="url(#8-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/man/cyan-man-01.png"></image>
+							<path
+									clip-path="url(#8-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M163.7,5c9.8,0,19.1,3.8,26,10.8l50.5,50.5c7,7,10.8,16.2,10.8,26v71.4c0,9.8-3.8,19.1-10.8,26l-50.5,50.5
+                            c-7,7-16.2,10.8-26,10.8H92.3c-9.8,0-19.1-3.8-26-10.8l-50.5-50.5c-7-7-10.8-16.2-10.8-26V92.3c0-9.8,3.8-19.1,10.8-26l50.5-50.5
+                            c7-7,16.2-10.8,26-10.8H163.7 M163.7,0H92.3C81.2,0,70.6,4.4,62.7,12.2L12.2,62.7C4.4,70.6,0,81.2,0,92.3v71.4
+                            c0,11.1,4.4,21.7,12.2,29.6l50.5,50.5c7.8,7.8,18.5,12.2,29.6,12.2h71.4c11.1,0,21.7-4.4,29.6-12.2l50.5-50.5
+                            c7.8-7.8,12.2-18.5,12.2-29.6V92.3c0-11.1-4.4-21.7-12.2-29.6l-50.5-50.5C185.4,4.4,174.8,0,163.7,0L163.7,0z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image clip-path="url(#8-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/woman/orange-woman-01.png"></image>
+							<path
+									clip-path="url(#8-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M163.7,5c9.8,0,19.1,3.8,26,10.8l50.5,50.5c7,7,10.8,16.2,10.8,26v71.4c0,9.8-3.8,19.1-10.8,26l-50.5,50.5
+                            c-7,7-16.2,10.8-26,10.8H92.3c-9.8,0-19.1-3.8-26-10.8l-50.5-50.5c-7-7-10.8-16.2-10.8-26V92.3c0-9.8,3.8-19.1,10.8-26l50.5-50.5
+                            c7-7,16.2-10.8,26-10.8H163.7 M163.7,0H92.3C81.2,0,70.6,4.4,62.7,12.2L12.2,62.7C4.4,70.6,0,81.2,0,92.3v71.4
+                            c0,11.1,4.4,21.7,12.2,29.6l50.5,50.5c7.8,7.8,18.5,12.2,29.6,12.2h71.4c11.1,0,21.7-4.4,29.6-12.2l50.5-50.5
+                            c7.8-7.8,12.2-18.5,12.2-29.6V92.3c0-11.1-4.4-21.7-12.2-29.6l-50.5-50.5C185.4,4.4,174.8,0,163.7,0L163.7,0z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3 me-2">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image clip-path="url(#8-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/man/purple-man-01.png"></image>
+							<path
+									clip-path="url(#8-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M163.7,5c9.8,0,19.1,3.8,26,10.8l50.5,50.5c7,7,10.8,16.2,10.8,26v71.4c0,9.8-3.8,19.1-10.8,26l-50.5,50.5
+                            c-7,7-16.2,10.8-26,10.8H92.3c-9.8,0-19.1-3.8-26-10.8l-50.5-50.5c-7-7-10.8-16.2-10.8-26V92.3c0-9.8,3.8-19.1,10.8-26l50.5-50.5
+                            c7-7,16.2-10.8,26-10.8H163.7 M163.7,0H92.3C81.2,0,70.6,4.4,62.7,12.2L12.2,62.7C4.4,70.6,0,81.2,0,92.3v71.4
+                            c0,11.1,4.4,21.7,12.2,29.6l50.5,50.5c7.8,7.8,18.5,12.2,29.6,12.2h71.4c11.1,0,21.7-4.4,29.6-12.2l50.5-50.5
+                            c7.8-7.8,12.2-18.5,12.2-29.6V92.3c0-11.1-4.4-21.7-12.2-29.6l-50.5-50.5C185.4,4.4,174.8,0,163.7,0L163.7,0z" />
+						</svg>
+					</div>
+					<div class="custom-avatar position-relative w-140px h-140px mb-3">
+						<svg x="0px" y="0px" viewBox="0 0 256 256">
+							<image clip-path="url(#8-sided-clip-path)" width="100%" xlink:href="../../assets/images/users/woman/green-woman-01.png"></image>
+							<path
+									clip-path="url(#8-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M163.7,5c9.8,0,19.1,3.8,26,10.8l50.5,50.5c7,7,10.8,16.2,10.8,26v71.4c0,9.8-3.8,19.1-10.8,26l-50.5,50.5
+                            c-7,7-16.2,10.8-26,10.8H92.3c-9.8,0-19.1-3.8-26-10.8l-50.5-50.5c-7-7-10.8-16.2-10.8-26V92.3c0-9.8,3.8-19.1,10.8-26l50.5-50.5
+                            c7-7,16.2-10.8,26-10.8H163.7 M163.7,0H92.3C81.2,0,70.6,4.4,62.7,12.2L12.2,62.7C4.4,70.6,0,81.2,0,92.3v71.4
+                            c0,11.1,4.4,21.7,12.2,29.6l50.5,50.5c7.8,7.8,18.5,12.2,29.6,12.2h71.4c11.1,0,21.7-4.4,29.6-12.2l50.5-50.5
+                            c7.8-7.8,12.2-18.5,12.2-29.6V92.3c0-11.1-4.4-21.7-12.2-29.6l-50.5-50.5C185.4,4.4,174.8,0,163.7,0L163.7,0z" />
+						</svg>
+					</div>
+				</div>
+				
+				<div class="codebox mb-4">
+
+                    <textarea class="codebox-content" rows="20">
+<div class="custom-avatar square position-relative w-140px h-140px mb-3">
+        <svg x="0px" y="0px" viewBox="0 0 256 256">
+                <image clip-path="url(#8-sided-clip-path)" width="100%" xlink:href="../../your-file-name.png"></image>
+                <path clip-path="url(#8-sided-clip-path)" class="has-shadow" fill="#CCCCCC" d="M163.7,5c9.8,0,19.1,3.8,26,10.8l50.5,50.5c7,7,10.8,16.2,10.8,26v71.4c0,9.8-3.8,19.1-10.8,26l-50.5,50.5
+                    c-7,7-16.2,10.8-26,10.8H92.3c-9.8,0-19.1-3.8-26-10.8l-50.5-50.5c-7-7-10.8-16.2-10.8-26V92.3c0-9.8,3.8-19.1,10.8-26l50.5-50.5
+                    c7-7,16.2-10.8,26-10.8H163.7 M163.7,0H92.3C81.2,0,70.6,4.4,62.7,12.2L12.2,62.7C4.4,70.6,0,81.2,0,92.3v71.4
+                    c0,11.1,4.4,21.7,12.2,29.6l50.5,50.5c7.8,7.8,18.5,12.2,29.6,12.2h71.4c11.1,0,21.7-4.4,29.6-12.2l50.5-50.5
+                    c7.8-7.8,12.2-18.5,12.2-29.6V92.3c0-11.1-4.4-21.7-12.2-29.6l-50.5-50.5C185.4,4.4,174.8,0,163.7,0L163.7,0z"/>
+        </svg>
+</div></textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</main>
+
+</div>
+
+<!---------------------------- Back to Top ---------------------------->
+<div class="backdrop"></div>
+
+
+<!------------------------------ Scripts ------------------------------>
+<script src="../../assets/js/plugins/boostrap/bootstrap.bundle.min.js"></script>
+<script src="../../assets/js/plugins/jquery.min.js"></script>
+<script src="../../assets/js/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../assets/js/plugins/intro-js/intro.min.js"></script>
+<script src="../../assets/js/main/initialization.js"></script>
+<script src="../../assets/js/plugins/intro-js/custom-intro-tour.js"></script>
+<script src="../../assets/js/main/main.js"></script>
+<script src="../../assets/js/plugins/codemirror/codemirror.js"></script>
+<script src="../../assets/js/plugins/codemirror/xml.js"></script>
+<script src="../../assets/js/plugins/codemirror/custom-codemirror.js"></script>
+</body>
+
+</html>

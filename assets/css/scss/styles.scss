@@ -1,0 +1,105 @@
+//------------------------------ Functions and Variables ------------------------------//
+@import 'functions/functions';
+@import 'components/variables';
+
+//------------------------------------- Components ------------------------------------//
+//-------------------- Utilities //
+@import "components/utilities/fonts";
+@import "components/utilities/directions";
+@import "components/utilities/sizes/sizes";
+@import "components/utilities/opacities";
+@import "components/utilities/colors/colors";
+@import "components/utilities/animation/animations";
+@import "components/utilities/z-index";
+@import "components/strokes/strokes";
+@import "components/utilities/cursors";
+
+@import 'variables';
+@import 'layouts/layouts';
+@import 'layouts/layout-dark';
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: $default-font-family;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none !important;
+    background: none;
+}
+
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+    transition: $content-transition;
+}
+
+body {
+    transition: $main-transition;
+    background: $background-light-mode-1;
+}
+
+
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+}
+
+
+// change bootstrap default
+.dropdown {
+
+    button {
+        &::after {
+            display: none;
+        }
+    }
+
+}
+
+
+
+.object-fit {
+    object-fit: cover;
+}
+
+.object-fit-none {
+    object-fit: initial !important;
+}
+
+// components
+@import 'components/box/box';
+@import 'components/badge/badge';
+@import 'components/alert';
+@import 'components/tooltip';
+@import 'components/forms/buttons/buttons';
+@import 'components/pulses/pulse';
+@import 'components/forms/form';
+@import 'components/codebox';
+@import 'components/breadcrumb/breadcrumb';
+@import 'components/progress';
+@import 'components/card/card';
+@import 'components/tab/tab';
+@import 'components/dropdown/dropdown';
+@import 'components/tables/tables';
+@import 'components/tabs/tabs';
+@import 'components/avatars/avatars';
+
+// library components
+@import 'components/intro-js/intro-js';
+
+@import 'layouts/layout-responsive';

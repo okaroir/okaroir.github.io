@@ -1,0 +1,330 @@
+@import "../variables";
+
+
+//------------------------------ Red ------------------------------//
+.bg-red-dark-4 {
+    background-color: $custom-color-red-dark-4 !important;
+}
+.bg-red-dark-3 {
+    background-color: $custom-color-red-dark-3 !important;
+}
+.bg-red-dark-2 {
+    background-color: $custom-color-red-dark-2 !important;
+}
+.bg-red-dark-1 {
+    background-color: $custom-color-red-dark-1 !important;
+}
+.bg-red-medium {
+    background-color: $custom-color-red-medium !important;
+}
+.bg-red-light-1 {
+    background-color: $custom-color-red-light-1 !important;
+}
+.bg-red-light-2 {
+    background-color: $custom-color-red-light-2 !important;
+}
+.bg-red-light-3 {
+    background-color: $custom-color-red-light-3 !important;
+}
+.bg-red-light-4 {
+    background-color: $custom-color-red-light-4 !important;
+}
+.bg-red-light-5 {
+    background-color: $custom-color-red-light-5 !important;
+}
+
+
+//------------------------------ Blue ------------------------------//
+.bg-blue-dark-4 {
+    background-color: $custom-color-blue-dark-4 !important;
+}
+.bg-blue-dark-3 {
+    background-color: $custom-color-blue-dark-3 !important;
+}
+.bg-blue-dark-2 {
+    background-color: $custom-color-blue-dark-2 !important;
+}
+.bg-blue-dark-1 {
+    background-color: $custom-color-blue-dark-1 !important;
+}
+.bg-blue-medium {
+    background-color: $custom-color-blue-medium !important;
+}
+.bg-blue-light-1 {
+    background-color: $custom-color-blue-light-1 !important;
+}
+.bg-blue-light-2 {
+    background-color: $custom-color-blue-light-2 !important;
+}
+.bg-blue-light-3 {
+    background-color: $custom-color-blue-light-3 !important;
+}
+.bg-blue-light-4 {
+    background-color: $custom-color-blue-light-4 !important;
+}
+.bg-blue-light-5 {
+    background-color: $custom-color-blue-light-5 !important;
+}
+
+
+
+
+//------------------------------ Cyan ------------------------------//
+.bg-cyan-dark-4 {
+    background-color: $custom-color-cyan-dark-4 !important;
+}
+.bg-cyan-dark-3 {
+    background-color: $custom-color-cyan-dark-3 !important;
+}
+.bg-cyan-dark-2 {
+    background-color: $custom-color-cyan-dark-2 !important;
+}
+.bg-cyan-dark-1 {
+    background-color: $custom-color-cyan-dark-1 !important;
+}
+.bg-cyan-medium {
+    background-color: $custom-color-cyan-medium !important;
+}
+.bg-cyan-light-1 {
+    background-color: $custom-color-cyan-light-1 !important;
+}
+.bg-cyan-light-2 {
+    background-color: $custom-color-cyan-light-2 !important;
+}
+.bg-cyan-light-3 {
+    background-color: $custom-color-cyan-light-3 !important;
+}
+.bg-cyan-light-4 {
+    background-color: $custom-color-cyan-light-4 !important;
+}
+.bg-cyan-light-5 {
+    background-color: $custom-color-cyan-light-5 !important;
+}
+
+
+//----------------------------- Orange -----------------------------//
+.bg-orange-dark-4 {
+    background-color: $custom-color-orange-dark-4 !important;
+}
+.bg-orange-dark-3 {
+    background-color: $custom-color-orange-dark-3 !important;
+}
+.bg-orange-dark-2 {
+    background-color: $custom-color-orange-dark-2 !important;
+}
+.bg-orange-dark-1 {
+    background-color: $custom-color-orange-dark-1 !important;
+}
+.bg-orange-medium {
+    background-color: $custom-color-orange-medium !important;
+}
+.bg-orange-light-1 {
+    background-color: $custom-color-orange-light-1 !important;
+}
+.bg-orange-light-2 {
+    background-color: $custom-color-orange-light-2 !important;
+}
+.bg-orange-light-3 {
+    background-color: $custom-color-orange-light-3 !important;
+}
+.bg-orange-light-4 {
+    background-color: $custom-color-orange-light-4 !important;
+}
+.bg-orange-light-5 {
+    background-color: $custom-color-orange-light-5 !important;
+}
+
+
+//----------------------------- Purple -----------------------------//
+.bg-purple-dark-4 {
+    background-color: $custom-color-purple-dark-4 !important;
+}
+.bg-purple-dark-3 {
+    background-color: $custom-color-purple-dark-3 !important;
+}
+.bg-purple-dark-2 {
+    background-color: $custom-color-purple-dark-2 !important;
+}
+.bg-purple-dark-1 {
+    background-color: $custom-color-purple-dark-1 !important;
+}
+.bg-purple-medium {
+    background-color: $custom-color-purple-medium !important;
+}
+.bg-purple-light-1 {
+    background-color: $custom-color-purple-light-1 !important;
+}
+.bg-purple-light-2 {
+    background-color: $custom-color-purple-light-2 !important;
+}
+.bg-purple-light-3 {
+    background-color: $custom-color-purple-light-3 !important;
+}
+.bg-purple-light-4 {
+    background-color: $custom-color-purple-light-4 !important;
+}
+.bg-purple-light-5 {
+    background-color: $custom-color-purple-light-5 !important;
+}
+
+
+//------------------------------ Green -----------------------------//
+.bg-green-dark-4 {
+    background-color: $custom-color-green-dark-4 !important;
+}
+.bg-green-dark-3 {
+    background-color: $custom-color-green-dark-3 !important;
+}
+.bg-green-dark-2 {
+    background-color: $custom-color-green-dark-2 !important;
+}
+.bg-green-dark-1 {
+    background-color: $custom-color-green-dark-1 !important;
+}
+.bg-green-medium {
+    background-color: $custom-color-green-medium !important;
+}
+.bg-green-light-1 {
+    background-color: $custom-color-green-light-1 !important;
+}
+.bg-green-light-2 {
+    background-color: $custom-color-green-light-2 !important;
+}
+.bg-green-light-3 {
+    background-color: $custom-color-green-light-3 !important;
+}
+.bg-green-light-4 {
+    background-color: $custom-color-green-light-4 !important;
+}
+.bg-green-light-5 {
+    background-color: $custom-color-green-light-5 !important;
+}
+
+
+//------------------------------ Pink -----------------------------//
+.bg-pink-dark-4 {
+    background-color: $custom-color-pink-dark-4 !important;
+}
+.bg-pink-dark-3 {
+    background-color: $custom-color-pink-dark-3 !important;
+}
+.bg-pink-dark-2 {
+    background-color: $custom-color-pink-dark-2 !important;
+}
+.bg-pink-dark-1 {
+    background-color: $custom-color-pink-dark-1 !important;
+}
+.bg-pink-medium {
+    background-color: $custom-color-pink-medium !important;
+}
+.bg-pink-light-1 {
+    background-color: $custom-color-pink-light-1 !important;
+}
+.bg-pink-light-2 {
+    background-color: $custom-color-pink-light-2 !important;
+}
+.bg-pink-light-3 {
+    background-color: $custom-color-pink-light-3 !important;
+}
+.bg-pink-light-4 {
+    background-color: $custom-color-pink-light-4 !important;
+}
+.bg-pink-light-5 {
+    background-color: $custom-color-pink-light-5 !important;
+}
+
+
+//----------------------------- Yellow ----------------------------//
+.bg-yellow-dark-4 {
+    background-color: $custom-color-yellow-dark-4 !important;
+}
+.bg-yellow-dark-3 {
+    background-color: $custom-color-yellow-dark-3 !important;
+}
+.bg-yellow-dark-2 {
+    background-color: $custom-color-yellow-dark-2 !important;
+}
+.bg-yellow-dark-1 {
+    background-color: $custom-color-yellow-dark-1 !important;
+}
+.bg-yellow-medium {
+    background-color: $custom-color-yellow-medium !important;
+}
+.bg-yellow-light-1 {
+    background-color: $custom-color-yellow-light-1 !important;
+}
+.bg-yellow-light-2 {
+    background-color: $custom-color-yellow-light-2 !important;
+}
+.bg-yellow-light-3 {
+    background-color: $custom-color-yellow-light-3 !important;
+}
+.bg-yellow-light-4 {
+    background-color: $custom-color-yellow-light-4 !important;
+}
+.bg-yellow-light-5 {
+    background-color: $custom-color-yellow-light-5 !important;
+}
+
+
+//------------------------------- Gray -----------------------------//
+.bg-gray-dark-4 {
+    background-color: $custom-color-gray-dark-4 !important;
+}
+.bg-gray-dark-3 {
+    background-color: $custom-color-gray-dark-3 !important;
+}
+.bg-gray-dark-2 {
+    background-color: $custom-color-gray-dark-2 !important;
+}
+.bg-gray-dark-1 {
+    background-color: $custom-color-gray-dark-1 !important;
+}
+.bg-gray-medium {
+    background-color: $custom-color-gray-medium !important;
+}
+.bg-gray-light-1 {
+    background-color: $custom-color-gray-light-1 !important;
+}
+.bg-gray-light-2 {
+    background-color: $custom-color-gray-light-2 !important;
+}
+.bg-gray-light-3 {
+    background-color: $custom-color-gray-light-3 !important;
+}
+.bg-gray-light-4 {
+    background-color: $custom-color-gray-light-4 !important;
+}
+.bg-gray-light-5 {
+    background-color: $custom-color-gray-light-5 !important;
+}
+
+
+//---------------------- Bootstrap Backgrounds ---------------------//
+.bg-primary{
+    background-color: $custom-color-blue-medium !important;
+}
+.bg-secondary{
+    background-color: $custom-color-gray-medium !important;
+}
+.bg-success{
+    background-color: $custom-color-green-medium !important;
+}
+.bg-danger{
+    background-color: $custom-color-red-medium !important;
+}
+.bg-warning{
+    background-color: $custom-color-yellow-medium !important;
+}
+.bg-info{
+    background-color: $custom-color-purple-medium !important;
+}
+.bg-light{
+    background-color: $custom-color-gray-light-5 !important;
+}
+.bg-dark{
+    background-color: $custom-color-gray-dark-3 !important;
+}
+
+
+@import "bg_colors_dark";

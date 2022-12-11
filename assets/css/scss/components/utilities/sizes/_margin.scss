@@ -1,0 +1,86 @@
+//----------------------------- Padding -----------------------------//
+//---------- All Direction //
+@for $i from 0 through 20 {
+    .m-#{$i}px {
+        margin: #{$i}px !important;
+    }
+}
+
+//---------- Top //
+@for $i from 0 through 20 {
+    .mt-#{$i}px {
+        margin-top: #{$i}px !important;
+    }
+}
+
+//---------- Bottom //
+@for $i from 0 through 20 {
+    .mb-#{$i}px {
+        margin-bottom: #{$i}px !important;
+    }
+}
+
+//---------- X Direction //
+@for $i from 0 through 20 {
+
+    .mx-#{$i}px {
+        margin-left: #{$i}px !important;
+        margin-right: #{$i}px !important;
+    }
+
+}
+
+//---------- Y Direction //
+@for $i from 0 through 20 {
+
+    .my-#{$i}px {
+        margin-top: #{$i}px !important;
+        margin-bottom: #{$i}px !important;
+    }
+
+}
+
+
+
+body {
+
+    //-------------------------- LTR Direction --------------------------//
+    &:not(.rtl){
+        //---------- Start //
+        @for $i from 0 through 20 {
+            .ms-#{$i}px {
+                margin-left: #{$i}px !important;
+            }
+        }
+
+        //---------- End //
+        @for $i from 0 through 20 {
+
+            .me-#{$i}px {
+                margin-right: #{$i}px !important;
+            }
+
+        }
+    }
+
+
+    //-------------------------- RTL Direction --------------------------//
+    &.rtl {
+        //---------- Start //
+        @for $i from 0 through 20 {
+            .ms-#{$i}px {
+                margin-right: #{$i}px !important;
+            }
+        }
+        //---------- End //
+        @for $i from 0 through 20 {
+
+            .me-#{$i}px {
+                margin-left: #{$i}px !important;
+            }
+
+        }
+
+    }
+
+}

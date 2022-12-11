@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Panel</title>
+	<link rel="icon" href="../../../assets/images/logo.svg">
+	<link rel="stylesheet" href="../../../assets/css/plugins/boostrap/bootstrap.rtl.min.css">
+	<link rel="stylesheet" href="../../../assets/css/plugins/intro-js/introjs.min.css">
+	<link rel="stylesheet" href="../../../assets/css/plugins/intro-js/introjs-rtl.min.css">
+	<link rel="stylesheet" href="../../../assets/css/plugins/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../../../assets/css/plugins/codemirror/codemirror.css">
+	<link rel="stylesheet" href="../../../assets/css/plugins/codemirror/ayu-mirage.css">
+	<link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+
+<body class="rtl">
+
+<!------------------------------ Content ------------------------------>
+<div class="main-content p-3 float-end">
+	
+	<!-------------------------------- Main ------------------------------->
+	<main class="main">
+		
+		<div class="card radius-10px border-0 shadow-sm mb-5">
+			
+			<div class="card-header border-0 bg-transparent pt-4 pb-0">
+				
+				<h3 class="fs-18px ms-2 fw-bold">نحوه استفاده</h3>
+			
+			</div>
+			
+			<div class="card-body">
+				
+				<p>برای استفاده از
+					<b>Chart.js</b>
+					بایستی فایل js و css آن را اضافه کنید.
+				</p>
+				
+				<div class="codebox mt-4">
+                        <textarea class="codebox-content"> 
+        <link href="js/components/chart.css" rel="stylesheet" type="text/css"/>
+        <script src="../../../assets/chart-js/chart.js"></script>
+    </textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="card radius-10px border-0 shadow-sm">
+			
+			<div class="card-header border-0 bg-transparent pt-4 pb-0">
+				
+				<h3 class="fs-18px ms-2 fw-bold">Bar Chart</h3>
+			
+			</div>
+			
+			<div class="card-body">
+				
+				<div>
+					
+					<canvas id="chart-js-1"></canvas>
+				
+				</div>
+				
+				<div>
+					
+					<p>به سادگی یه
+						<code class="bg-gray-light-4 p-1">canvas</code>
+						در html ایجاد کنید و به آن یه
+						<code class="bg-gray-light-4 p-1">id</code>
+						بدین.
+					</p>
+					
+					<div class="codebox mt-4">
+    
+                            <textarea class="codebox-content">
+    
+            <canvas   id="chart-js-1"  ></canvas>
+        </textarea>
+					
+					</div>
+					
+					<p class="mt-4">حالا شروع به مقداردهی کردن آن در javascript خواهیم کرد.</p>
+					
+					<div class="codebox mt-4">
+    
+                            <textarea class="codebox-content">
+    
+        </textarea>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</main>
+
+</div>
+
+<!---------------------------- Back to Top ---------------------------->
+<div class="backdrop"></div>
+
+
+<!------------------------------ Scripts ------------------------------>
+<script src="../../../assets/js/plugins/boostrap/bootstrap.bundle.min.js"></script>
+<script src="../../../assets/js/plugins/jquery.min.js"></script>
+<script src="../../../assets/js/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../../assets/js/plugins/intro-js/intro.min.js"></script>
+<script src="../../../assets/js/main/initialization.js"></script>
+<script src="../../../assets/js/main/main.js"></script>
+<script src="../../../assets/js/plugins/intro-js/custom-intro-tour.js"></script>
+<script src="../../../assets/js/plugins/codemirror/codemirror.js"></script>
+<script src="../../../assets/js/plugins/codemirror/xml.js"></script>
+<script src="../../../assets/js/plugins/codemirror/custom-codemirror.js"></script>
+</body>
+
+</html>

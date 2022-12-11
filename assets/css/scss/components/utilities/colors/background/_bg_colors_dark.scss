@@ -1,0 +1,61 @@
+@import "../variables";
+
+body{
+    &.dark{
+        &.dark-mode-1{
+
+            //------------------------------- Gray -----------------------------//
+            .bg-gray-dark-4 {
+                background-color: $custom-color-gray-dark-4 !important;
+            }
+            .bg-gray-dark-3 {
+                background-color: $custom-color-gray-dark-3 !important;
+            }
+            .bg-gray-dark-2 {
+                background-color: $custom-color-gray-dark-2 !important;
+            }
+            .bg-gray-dark-1 {
+                background-color: $custom-color-gray-dark-1 !important;
+            }
+            .bg-gray-medium {
+                &:not(.ignore-dark-mode){
+                    background-color: $custom-color-navy-blue-medium !important;
+                }
+            }
+            .bg-gray-light-1 {
+                &:not(.ignore-dark-mode){
+                    background-color: $custom-color-navy-blue-light-1 !important;
+                }
+            }
+            .bg-gray-light-2 {
+                &:not(.ignore-dark-mode){
+                    background-color: $custom-color-navy-blue-light-2 !important;
+                }
+            }
+            .bg-gray-light-3 {
+                &:not(.ignore-dark-mode){
+                    background-color: $custom-color-navy-blue-light-3 !important;
+                }
+            }
+            .bg-gray-light-4 {
+                &:not(.ignore-dark-mode){
+                    background-color: $custom-color-navy-blue-light-4 !important;
+                }
+            }
+
+            .bg-gray-light-5 {
+                &:not(.ignore-dark-mode){
+                    background-color: $custom-color-navy-blue-dark-1 !important;
+                }
+            }
+
+            .bg-light {
+                &:not(.ignore-dark-mode){
+                    background-color: $custom-color-navy-blue-dark-1 !important;
+                }
+            }
+
+
+        }
+    }
+}

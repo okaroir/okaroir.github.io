@@ -1,0 +1,1139 @@
+@import "../../utilities/colors/variables";
+
+
+.btn {
+    cursor: pointer !important;
+    border-radius: 0.45rem;
+
+    & > svg {
+        &.icon {
+            width: 20px;
+        }
+    }
+
+
+
+    /*---------------------------- Simple Buttons -----------------------------*/
+    @each $colorName, $colorValue in $colors {
+        &.btn-#{$colorName} {
+            color: white;
+            background-color: $colorValue;
+
+            & > svg {
+                fill: white;
+            }
+
+            &:hover {
+                background-color: darken($colorValue, 10);
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 .25rem transparentize($colorValue, 0.75);
+            }
+
+        }
+    }
+
+    &.btn-primary {
+        color: white;
+        background-color: $custom-color-blue-medium;
+        border-color: $custom-color-blue-dark-1;
+
+        & > svg {
+            fill: white;
+        }
+
+        &:hover {
+            background-color: darken($custom-color-blue-medium, 10);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-blue-medium, 0.75);
+        }
+    }
+
+    &.btn-secondary {
+        color: white;
+        background-color: $custom-color-gray-medium;
+        border-color: $custom-color-gray-dark-1;
+
+        & > svg {
+            fill: white;
+        }
+
+        &:hover {
+            background-color: darken($custom-color-gray-medium, 10);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-medium, 0.75);
+        }
+    }
+
+    &.btn-success {
+        color: white;
+        background-color: $custom-color-green-medium;
+        border-color: $custom-color-green-dark-1;
+
+        & > svg {
+            fill: white;
+        }
+
+        &:hover {
+            background-color: darken($custom-color-green-medium, 10);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-green-medium, 0.75);
+        }
+    }
+
+    &.btn-danger {
+        color: white;
+        background-color: $custom-color-red-medium;
+        border-color: $custom-color-red-dark-1;
+
+        & > svg {
+            fill: white;
+        }
+
+        &:hover {
+            background-color: darken($custom-color-red-medium, 10);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-red-medium, 0.75);
+        }
+    }
+
+    &.btn-warning {
+        color: black;
+        background-color: $custom-color-yellow-medium;
+        border-color: $custom-color-yellow-dark-1;
+
+        & > svg {
+            fill: white;
+        }
+
+        &:hover {
+            background-color: darken($custom-color-yellow-medium, 10);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-yellow-medium, 0.75);
+        }
+    }
+
+    &.btn-info {
+        color: white;
+        background-color: $custom-color-purple-medium;
+        border-color: $custom-color-purple-dark-1;
+
+        & > svg {
+            fill: white;
+        }
+
+        &:hover {
+            background-color: darken($custom-color-purple-medium, 10);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-purple-medium, 0.75);
+        }
+    }
+
+    &.btn-light {
+        color: black;
+        background-color: $custom-color-gray-light-5;
+        border-color: $custom-color-gray-light-4;
+
+        & > svg {
+            fill: white;
+        }
+
+        &:hover {
+            background-color: darken($custom-color-gray-light-4, 10);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-light-4, 0.75);
+        }
+    }
+
+    &.btn-dark {
+        color: white;
+        background-color: $custom-color-gray-dark-3;
+        border-color: $custom-color-gray-dark-4;
+
+        & > svg {
+            fill: white;
+        }
+
+        &:hover {
+            background-color: darken($custom-color-gray-dark-3, 10);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-dark-3, 0.75);
+        }
+    }
+
+
+    /*---------------------------- Outline Buttons ----------------------------*/
+    @each $colorName, $colorValue in $colors {
+        &.btn-outline-#{$colorName} {
+            color: $colorValue;
+            border: 1px solid $colorValue;
+
+            & > svg {
+                fill: $colorValue;
+            }
+
+            &:hover {
+                background-color: $colorValue;
+                color: white;
+
+                & > svg {
+                    fill: white;
+                }
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 .25rem transparentize($colorValue, 0.75);
+            }
+
+
+        }
+    }
+
+    &.btn-outline-primary {
+        color: $custom-color-blue-medium;
+        border: 1px solid $custom-color-blue-medium;
+
+        & > svg {
+            fill: $custom-color-blue-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-blue-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-blue-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                top: -1px;
+                left: -1px;
+                border: solid 1px $custom-color-blue-medium;
+            }
+        }
+    }
+
+    &.btn-outline-secondary {
+
+        color: $custom-color-gray-medium;
+        border: 1px solid $custom-color-gray-medium;
+
+        & > svg {
+            fill: $custom-color-gray-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-gray-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                top: -1px;
+                left: -1px;
+                border: solid 1px $custom-color-gray-medium;
+            }
+        }
+
+    }
+
+    &.btn-outline-success {
+
+        color: $custom-color-green-medium;
+        border: 1px solid $custom-color-green-medium;
+
+        & > svg {
+            fill: $custom-color-green-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-green-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-green-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                top: -1px;
+                left: -1px;
+                border: solid 1px $custom-color-green-medium;
+            }
+        }
+    }
+
+    &.btn-outline-danger {
+
+        color: $custom-color-red-medium;
+        border: 1px solid $custom-color-red-medium;
+
+        & > svg {
+            fill: $custom-color-red-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-red-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-red-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                top: -1px;
+                left: -1px;
+                border: solid 1px $custom-color-red-medium;
+            }
+        }
+    }
+
+    &.btn-outline-warning {
+
+        color: $custom-color-yellow-medium;
+        border: 1px solid $custom-color-yellow-medium;
+
+        & > svg {
+            fill: $custom-color-yellow-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-yellow-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-yellow-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                top: -1px;
+                left: -1px;
+                border: solid 1px $custom-color-yellow-medium;
+            }
+        }
+
+    }
+
+    &.btn-outline-info {
+
+        color: $custom-color-purple-medium;
+        border: 1px solid $custom-color-purple-medium;
+
+        & > svg {
+            fill: $custom-color-purple-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-purple-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-purple-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                top: -1px;
+                left: -1px;
+                border: solid 1px $custom-color-purple-medium;
+            }
+        }
+    }
+
+    &.btn-outline-light {
+
+        color: $custom-color-gray-light-5;
+        border: 1px solid $custom-color-gray-light-5;
+
+        & > svg {
+            fill: $custom-color-gray-light-4;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-gray-light-4;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-light-4, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                top: -1px;
+                left: -1px;
+                border: solid 1px $custom-color-gray-light-4;
+            }
+        }
+
+    }
+
+    &.btn-outline-dark {
+
+        color: $custom-color-gray-dark-3;
+        border: 1px solid $custom-color-gray-dark-3;
+
+        & > svg {
+            fill: $custom-color-gray-dark-3;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-gray-dark-3;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-dark-3, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                top: -1px;
+                left: -1px;
+                border: solid 1px $custom-color-gray-dark-3;
+            }
+        }
+    }
+
+    /*------------------------- Outline Light Buttons --------------------------*/
+    @each $colorName in $colorNames {
+        &.btn-outline-light-#{$colorName} {
+            color: map-get($colors, #{$colorName}-medium);
+            border: 1px solid map-get($colors, #{$colorName}-medium);
+
+            & > svg {
+                fill: map-get($colors, #{$colorName}-medium);
+            }
+
+            &:hover {
+                background-color: map-get($colors, #{$colorName}-light-5);
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 .25rem transparentize(map-get($colors, #{$colorName}-medium), 0.75);
+            }
+
+            &.btn-pulse {
+                &::before {
+                    left: 0;
+                    right: 0;
+                    background-color: map-get($colors, #{$colorName}-light-5);
+                }
+            }
+        }
+    }
+
+    &.btn-outline-light-primary {
+        color: $custom-color-blue-medium;
+        border: 1px solid $custom-color-blue-medium;
+
+        & > svg {
+            fill: $custom-color-blue-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-blue-light-4;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-blue-medium, 0.75);
+        }
+    }
+
+    &.btn-outline-light-secondary {
+
+        color: $custom-color-gray-medium;
+        border: 1px solid $custom-color-gray-medium;
+
+        & > svg {
+            fill: $custom-color-gray-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-gray-light-4;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-medium, 0.75);
+        }
+
+    }
+
+    &.btn-outline-light-success {
+
+        color: $custom-color-green-medium;
+        border: 1px solid $custom-color-green-medium;
+
+        & > svg {
+            fill: $custom-color-green-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-green-light-4;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-green-medium, 0.75);
+        }
+    }
+
+    &.btn-outline-light-danger {
+
+        color: $custom-color-red-medium;
+        border: 1px solid $custom-color-red-medium;
+
+        & > svg {
+            fill: $custom-color-red-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-red-light-4;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-red-medium, 0.75);
+        }
+    }
+
+    &.btn-outline-light-warning {
+
+        color: $custom-color-yellow-medium;
+        border: 1px solid $custom-color-yellow-medium;
+
+        & > svg {
+            fill: $custom-color-yellow-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-yellow-light-4;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-yellow-medium, 0.75);
+        }
+
+    }
+
+    &.btn-outline-light-info {
+
+        color: $custom-color-purple-medium;
+        border: 1px solid $custom-color-purple-medium;
+
+        & > svg {
+            fill: $custom-color-purple-medium;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-purple-light-4;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-purple-medium, 0.75);
+        }
+    }
+
+    &.btn-outline-light-light {
+
+        color: $custom-color-gray-light-5;
+        border: 1px solid $custom-color-gray-light-5;
+
+        & > svg {
+            fill: $custom-color-gray-light-4;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-gray-light-5;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-light-4, 0.75);
+        }
+
+    }
+
+    &.btn-outline-light-dark {
+
+        color: $custom-color-gray-dark-3;
+        border: 1px solid $custom-color-gray-dark-3;
+
+        & > svg {
+            fill: $custom-color-gray-dark-3;
+        }
+
+        &:hover, &:focus {
+            background-color: $custom-color-gray-light-4;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-dark-3, 0.75);
+        }
+    }
+
+
+    /*----------------------------- Light Buttons -----------------------------*/
+    @each $colorName in $colorNames {
+        &.btn-light-#{$colorName} {
+            background-color: map-get($colors, #{$colorName}-light-5);
+            color: map-get($colors, #{$colorName}-medium);
+
+            & > svg {
+                fill: map-get($colors, #{$colorName}-medium);
+            }
+
+            &:hover {
+                background-color: map-get($colors, #{$colorName}-medium);
+                color: white;
+
+                & > svg {
+                    fill: white;
+                }
+            }
+
+            &:focus {
+                box-shadow: 0 0 0 .25rem transparentize(map-get($colors, #{$colorName}-medium), 0.75);
+            }
+
+            &.btn-pulse {
+                &::before {
+                    left: 0;
+                    right: 0;
+                    background-color: map-get($colors, #{$colorName}-light-5);
+                }
+            }
+
+            &.btn-bordered {
+                border-color: map-get($colors, #{$colorName}-medium);
+            }
+
+        }
+    }
+
+    &.btn-light-primary {
+        background-color: $custom-color-blue-light-5;
+        color: $custom-color-blue-medium;
+
+        & > svg {
+            fill: $custom-color-blue-medium;
+        }
+
+        &:hover {
+            background-color: $custom-color-blue-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-blue-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                left: 0;
+                right: 0;
+                background-color: $custom-color-blue-light-5;
+            }
+        }
+
+        &.btn-bordered {
+            border-color: $custom-color-blue-medium;
+        }
+    }
+
+    &.btn-light-secondary {
+
+        background-color: $custom-color-gray-light-5;
+        color: $custom-color-gray-medium;
+
+        & > svg {
+            fill: $custom-color-gray-medium;
+        }
+
+        &:hover {
+            background-color: $custom-color-gray-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                left: 0;
+                right: 0;
+                background-color: $custom-color-gray-light-5;
+            }
+        }
+
+        &.btn-bordered {
+            border-color: $custom-color-gray-medium;
+        }
+
+    }
+
+    &.btn-light-success {
+
+        background-color: $custom-color-green-light-5;
+        color: $custom-color-green-medium;
+
+        & > svg {
+            fill: $custom-color-green-medium;
+        }
+
+        &:hover {
+            background-color: $custom-color-green-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-green-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                left: 0;
+                right: 0;
+                background-color: $custom-color-green-light-5;
+            }
+        }
+
+        &.btn-bordered {
+            border-color: $custom-color-green-medium;
+        }
+    }
+
+    &.btn-light-danger {
+        background-color: $custom-color-red-light-5;
+        color: $custom-color-red-medium;
+
+        & > svg {
+            fill: $custom-color-red-medium;
+        }
+
+        &:hover {
+            background-color: $custom-color-red-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-red-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                left: 0;
+                right: 0;
+                background-color: $custom-color-red-light-5;
+            }
+        }
+
+        &.btn-bordered {
+            border-color: $custom-color-red-medium;
+        }
+    }
+
+    &.btn-light-warning {
+
+        background-color: $custom-color-yellow-light-5;
+        color: $custom-color-yellow-medium;
+
+        & > svg {
+            fill: $custom-color-yellow-medium;
+        }
+
+        &:hover {
+            background-color: $custom-color-yellow-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-yellow-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                left: 0;
+                right: 0;
+                background-color: $custom-color-yellow-light-5;
+            }
+        }
+
+        &.btn-bordered {
+            border-color: $custom-color-yellow-medium;
+        }
+
+    }
+
+    &.btn-light-info {
+        background-color: $custom-color-purple-light-5;
+        color: $custom-color-purple-medium;
+
+        & > svg {
+            fill: $custom-color-purple-medium;
+        }
+
+        &:hover {
+            background-color: $custom-color-purple-medium;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-purple-medium, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                left: 0;
+                right: 0;
+                background-color: $custom-color-purple-light-5;
+            }
+        }
+
+        &.btn-bordered {
+            border-color: $custom-color-purple-medium;
+        }
+    }
+
+    &.btn-light-light {
+
+        background-color: $custom-color-gray-light-5;
+        color: $custom-color-gray-light-4;
+
+        & > svg {
+            fill: $custom-color-gray-light-4;
+        }
+
+        &:hover {
+            background-color: $custom-color-gray-light-4;
+            color: black;
+
+            & > svg {
+                fill: black;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-light-4, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                left: 0;
+                right: 0;
+                background-color: $custom-color-gray-light-5;
+            }
+        }
+
+        &.btn-bordered {
+            border-color: $custom-color-gray-light-4;
+        }
+
+    }
+
+    &.btn-light-dark {
+
+        background-color: $custom-color-gray-light-5;
+        color: $custom-color-gray-dark-4;
+
+        & > svg {
+            fill: $custom-color-gray-dark-4;
+        }
+
+        &:hover {
+            background-color: $custom-color-gray-dark-4;
+            color: white;
+
+            & > svg {
+                fill: white;
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .25rem transparentize($custom-color-gray-dark-4, 0.75);
+        }
+
+        &.btn-pulse {
+            &::before {
+                left: 0;
+                right: 0;
+                background-color: $custom-color-gray-light-5;
+            }
+        }
+
+        &.btn-bordered {
+            border-color: $custom-color-gray-dark-4;
+        }
+
+    }
+
+
+    /*--------------------------------- Pulses --------------------------------*/
+    &.btn-pulse{
+        position: relative;
+        z-index: 1;
+        animation-duration: 2.5s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border:inherit;
+            border-radius: inherit;
+            background-color: inherit;
+            background-image: inherit;
+            animation-name: pulse-scale-1 !important;
+            animation-iteration-count: infinite;
+            animation-duration: inherit;
+            z-index: -1;
+        }
+    }
+    @for $i from 1 through 5 {
+
+        &.pulse-scale-#{$i} {
+            &:before {
+                animation-name: pulse-scale-#{$i} !important;
+            }
+        }
+
+    }
+
+
+    /*------------------------------ Button Sizes -----------------------------*/
+    &.btn-xs {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.6rem;
+
+        & > svg {
+            &.icon {
+                width: 14px;
+            }
+        }
+    }
+
+    &.btn-sm {
+        padding: 0.4rem 0.9rem;
+        font-size: 0.9rem;
+
+
+        & > svg {
+            &.icon {
+                width: 16px;
+            }
+        }
+    }
+
+    &.btn-md {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+
+        & > svg {
+            &.icon {
+                width: 20px;
+            }
+        }
+    }
+
+    &.btn-lg {
+        padding: 0.6rem 1.05rem;
+        font-size: 1.05rem;
+
+
+        & > svg {
+            &.icon {
+                width: 22px;
+            }
+        }
+    }
+
+    &.btn-xl {
+        padding: 0.7rem 1.1rem;
+        font-size: 1.1rem;
+
+
+        & > svg {
+            &.icon {
+                width: 24px;
+            }
+        }
+    }
+
+}
+
+@import 'buttons_dark';
+
+
+// --------------- Animation For Pulse --------------- //
+@keyframes btn-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-4 {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-3 {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-2 {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-blink {
+    to {
+        visibility: hidden;
+    }
+}

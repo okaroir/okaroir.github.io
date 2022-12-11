@@ -1,0 +1,32 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+
+            .breadcrumb:not(.unsupport-dark-mode){
+
+                & .breadcrumb-item:not(.unsupport-dark-mode){
+
+                    &.active{
+                        color: $light-color-6;
+                    }
+
+                    & a:not(.unsupport-dark-mode){
+                        color: $dark-color-5;
+
+                        &:hover{
+                            color: $light-color-6;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

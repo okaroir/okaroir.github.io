@@ -1,0 +1,74 @@
+.badge{
+
+    // normal 
+    &.badge-light{
+        background: $light-color-2;
+        color: $dark-color-4;
+    }
+
+    &.badge-red{
+        background: $red-color-1;
+        color: $light-color-1;
+    }
+
+    &.badge-green{
+        background: $green-color-1;
+        color: $light-color-1;
+    }
+    
+    &.badge-blue{
+        background: $blue-color-1;
+        color: $light-color-1;
+    }
+
+    &.badge-cyan{
+        background: $cyan-color-1;
+        color: $light-color-1;
+    }
+
+    &.badge-orange{
+        background: $orange-color-1;
+        color: $light-color-1;
+    }
+
+    &.badge-purple{
+        background: $purple-color-1;
+        color: $light-color-1;
+    }
+
+
+
+    // light
+    &.badge-light-red{
+        background: $red-color-3;
+        color: $red-color-1;
+    }
+
+    &.badge-light-green{
+        background: $green-color-3;
+        color: $green-color-1;
+    }
+    
+    &.badge-light-blue{
+        background: $blue-color-3;
+        color: $blue-color-1;
+    }
+
+    &.badge-light-cyan{
+        background: $cyan-color-3;
+        color: $cyan-color-1;
+    }
+
+    &.badge-light-orange{
+        background: $orange-color-3;
+        color: $orange-color-1;
+    }
+
+    &.badge-light-purple{
+        background: $purple-color-3;
+        color: $purple-color-1;
+    }
+
+}
+
+@import 'badge-dark';

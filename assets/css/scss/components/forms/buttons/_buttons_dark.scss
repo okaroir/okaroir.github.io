@@ -1,0 +1,38 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+            
+            & .btn:not(.unsupport-dark-mode){
+
+                &.btn-light-1,
+                &.btn-light-2,
+                &.btn-light-3,
+                &.btn-light-4,
+                &.btn-light-5,
+                &.btn-white,
+                &.btn-light{
+                    background-color: $dark-mode-color-3;
+                    color: $light-color-3;
+                }
+
+                
+                &.btn-outline-light,
+                &.btn-outline-light-1{
+                    border: 1px solid $dark-color-4;
+            
+                    &:hover{
+                        background-color: $dark-mode-color-3;
+                        color: $light-color-3;
+                    }
+                    
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,101 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+
+            & .header:not(.unsupport-dark-mode){
+                background-color: $dark-mode-color-1;
+
+                & .header-content:not(.unsupport-dark-mode){
+                    background-color: $dark-mode-color-2 !important;
+
+                    // toggle-btn
+                    & .header-toggle-btn:not(.unsupport-dark-mode){
+                        color: $light-color-4;
+
+                        & .line{
+                            stroke: $light-color-4;
+                        }
+
+                        & svg{
+                            fill: $light-color-4;
+                        }
+
+                    }
+
+                    // search
+                    & .header-search-box:not(.unsupport-dark-mode){
+                        background: $dark-mode-color-2 !important;
+                    }
+
+                    // quick-access-item 
+                    & .quick-access-item:not(.unsupport-dark-mode){
+                        border: 1px dashed rgba(255, 255, 255, 0.1) !important;
+                        transition: $main-transition;
+
+                        &:hover{
+                            background-color: $dark-mode-color-3 !important;
+                            border: 1px dashed transparent !important;
+                        }
+                    }
+
+                    // manual card-footer
+                    & .dropdown.notification:not(.unsupport-dark-mode){
+
+                        & .card-footer:not(.unsupport-dark-mode){
+
+                            & a:not(.unsupport-dark-mode){
+                                color: $light-color-6;
+                            }
+
+                        }
+
+                    }
+
+                    & a:not(.unsupport-dark-mode){
+                        color: $light-color-6;
+                    }
+
+                    // dropdown
+                    & .dropdown:not(.unsupport-dark-mode){
+
+                        & .dropdown-menu:not(.unsupport-dark-mode){
+
+                            & .megasubmenu:not(.unsupport-dark-mode){
+                                background-color: $dark-mode-color-2;
+                            }
+
+                        }
+
+                    }
+
+                    & .card-footer:not(.unsupport-dark-mode){
+                        border-top: 1px solid $dark-mode-color-3;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    &.dark{
+
+        & .dark-mode-btn{
+            
+            & .dark-mode-light-icon{
+                display: none !important;
+            }
+
+            & .dark-mode-dark-icon{
+                display: block !important;
+            }
+            
+        }
+
+    }
+
+}

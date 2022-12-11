@@ -1,0 +1,47 @@
+
+
+@import "navigations/sidebar/sidebar";
+@import "navigations/top/header";
+
+
+//------------------------ Main Content ------------------------//
+body {
+    &.style-01 {
+
+        .main-content {
+            width: calc(100% - 19rem);
+
+            & .main {
+                margin-top: 5.2rem;
+            }
+        }
+
+        .main-content.full {
+            width: calc(100% - 7rem);
+
+            & .header {
+                width: calc(100% - 7rem);
+            }
+        }
+
+    }
+
+}
+.main-content {
+    width: calc(100% - 22rem);
+    transition: $main-transition;
+
+    &.full {
+        width: calc(100% - 9.45rem);
+
+        & .header {
+            width: calc(100% - 9.45rem);
+        }
+    }
+
+    & .main {
+        margin: 7rem 0 1rem 0;
+        transition: $main-transition;
+    }
+
+}

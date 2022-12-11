@@ -1,0 +1,117 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+            
+            // Dark Mode Colors
+            & .bg-dark-mode-1{
+                background-color: $dark-mode-color-1 !important;
+            }
+
+            & .bg-dark-mode-2{
+                background-color: $dark-mode-color-2 !important;
+            }
+    
+            & .bg-dark-mode-3{
+                background-color: $dark-mode-color-3 !important;
+            }
+
+
+
+            // ------ Text Color ------ // 
+
+            // Color ===> Dark ===> Light
+            & .text-dark-1:not(.unsupport-dark-mode){
+                color: $light-color-1;  
+            }
+    
+            & .text-dark-2:not(.unsupport-dark-mode){
+                color: $light-color-2;   
+            }
+    
+            & .text-dark-3:not(.unsupport-dark-mode){
+                color: $light-color-3;   
+            }
+    
+            & .text-dark-4:not(.unsupport-dark-mode){
+                color: $light-color-6;   
+            }
+    
+            & .text-dark-5:not(.unsupport-dark-mode){
+                color: $light-color-6;   
+            }
+    
+            & .text-dark-1-important:not(.unsupport-dark-mode),
+            .hover-text-dark-1:hover:not(.unsupport-dark-mode){
+                color: $light-color-1 !important;   
+            }
+    
+            & .text-dark-2-important:not(.unsupport-dark-mode),
+            .hover-text-dark-2:hover:not(.unsupport-dark-mode){
+                color: $light-color-2 !important;
+            }
+    
+            & .text-dark-3-important:not(.unsupport-dark-mode),
+            .hover-text-dark-3:hover:not(.unsupport-dark-mode){
+                color: $light-color-3 !important;   
+            }
+    
+            & .text-dark-4-important:not(.unsupport-dark-mode),
+            .hover-text-dark-4:hover:not(.unsupport-dark-mode){
+                color: $light-color-5 !important;   
+            }
+
+
+            // Color ===> Light ===> Dark
+            & .text-light-1:not(.unsupport-dark-mode){
+                color: $dark-color-1;   
+            }
+    
+            & .text-light-2:not(.unsupport-dark-mode){
+                color: $dark-color-2;   
+            }
+    
+            & .text-light-3:not(.unsupport-dark-mode){
+                color: $dark-color-3;   
+            }
+    
+            & .text-light-4:not(.unsupport-dark-mode){
+                color: $dark-color-4;   
+            }
+    
+            & .text-light-5:not(.unsupport-dark-mode){
+                color: $dark-color-5;   
+            }
+    
+            & .text-light-1-important:not(.unsupport-dark-mode),
+            .hover-text-light-1:hover:not(.unsupport-dark-mode){
+                color: $dark-color-1 !important;   
+            }
+    
+            & .text-light-2-important:not(.unsupport-dark-mode),
+            .hover-text-light-2:hover:not(.unsupport-dark-mode){
+                color: $dark-color-2 !important;   
+            }
+    
+            & .text-light-3-important:not(.unsupport-dark-mode),
+            .hover-text-light-3:hover:not(.unsupport-dark-mode){
+                color: $dark-color-3 !important;   
+            }
+    
+            & .text-light-4-important:not(.unsupport-dark-mode),
+            .hover-text-light-4:hover:not(.unsupport-dark-mode){
+                color: $dark-color-4 !important;   
+            }
+    
+            & .text-light-5-important:not(.unsupport-dark-mode),
+            .hover-text-light-5:hover:not(.unsupport-dark-mode){
+                color: $dark-color-5 !important;   
+            }
+
+            
+        }
+
+    }
+
+}

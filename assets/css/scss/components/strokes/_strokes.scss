@@ -1,0 +1,22 @@
+
+@import '../../variables';
+
+@for $i from 0 through 19 {
+    .stroke-#{$i} {
+        stroke-width: #{$i}px;
+    }
+}
+
+@for $i from 10 through 50 {
+    .width-#{$i * 2}px {
+        width: #{$i * 2}px !important;
+    }
+}
+
+.stroke-red-1{
+    stroke: $red-color-1;
+}
+
+.stroke-red-1{
+    stroke: $red-color-1;
+}

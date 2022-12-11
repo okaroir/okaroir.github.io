@@ -1,0 +1,24 @@
+
+@for $i from 0 through 20 {
+    .z-index-#{$i} {
+        z-index: #{$i};
+    }
+}
+
+@for $i from 1 through 10 {
+    .z-index-#{$i * 50} {
+        z-index: #{$i * 50};
+    }
+}
+
+@for $i from 1 through 10 {
+    .z-index-#{$i * 1000} {
+        z-index: #{$i * 1000};
+    }
+}
+
+@for $i from 1 through 10 {
+    .z-index-#{$i * 10000} {
+        z-index: #{$i * 10000};
+    }
+}

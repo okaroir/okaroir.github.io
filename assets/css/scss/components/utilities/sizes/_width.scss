@@ -1,0 +1,88 @@
+//------------------------------ Width ------------------------------//
+@for $i from 0 through 19 {
+    .w-#{$i}px {
+        width: #{$i}px !important;
+    }
+}
+@for $i from 10 through 50 {
+    .w-#{$i * 2}px {
+        width: #{$i * 2}px !important;
+    }
+}
+@for $i from 21 through 40 {
+    .w-#{$i * 5}px {
+        width: #{$i * 5}px !important;
+    }
+}
+@for $i from 21 through 50 {
+    .w-#{$i * 10}px {
+        width: #{$i * 10}px !important;
+    }
+}
+@for $i from 1 through 10 {
+    .w-#{500 + $i * 50}px {
+        width: #{$i * 10}px !important;
+    }
+}
+@for $i from 1 through 2 {
+    .w-#{1000 + $i * 500}px {
+        width: #{$i * 10}px !important;
+    }
+}
+
+
+
+//------------------------ Min and Max Width ------------------------//
+@for $i from 0 through 19 {
+    .min-w-#{$i}px {
+        min-width: #{$i}px !important;
+    }
+    .max-w-#{$i}px {
+        max-width: #{$i}px !important;
+    }
+}
+
+@for $i from 10 through 50 {
+    .min-w-#{$i * 2}px {
+        min-width: #{$i * 2}px !important;
+    }
+    .max-w-#{$i * 2}px {
+        max-width: #{$i * 2}px !important;
+    }
+}
+
+@for $i from 21 through 40 {
+    .min-w-#{$i * 5}px {
+        min-width: #{$i * 5}px !important;
+    }
+    .max-w-#{$i * 5}px {
+        max-width: #{$i * 5}px !important;
+    }
+}
+
+@for $i from 21 through 50 {
+    .min-w-#{$i * 10}px {
+        min-width: #{$i * 10}px !important;
+    }
+    .max-w-#{$i * 10}px {
+        max-width: #{$i * 10}px !important;
+    }
+}
+
+@for $i from 1 through 10 {
+    .min-w-#{500 + $i * 50}px {
+        min-width: #{$i * 10}px !important;
+    }
+    .max-w-#{500 + $i * 50}px {
+        max-width: #{$i * 10}px !important;
+    }
+}
+
+@for $i from 1 through 2 {
+    .min-w-#{1000 + $i * 500}px {
+        min-width: #{$i * 10}px !important;
+    }
+    .max-w-#{1000 + $i * 500}px {
+        max-width: #{$i * 10}px !important;
+    }
+}

@@ -1,0 +1,241 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+            
+            & .sidebar:not(.unsupport-dark-mode){
+        
+                & .sidebar-content:not(.unsupport-dark-mode){
+                    background: $dark-mode-color-2;
+
+                    & .sidebar-items:not(.unsupport-dark-mode){
+        
+                        & .sidebar-item:not(.unsupport-dark-mode){
+                            
+                            &:hover{
+                                color: $light-color-4 !important;
+                            }
+                            
+                            &:not(.active-main){
+                                
+                                & .sidebar-link{
+        
+                                    &:hover{
+                                        background: $dark-mode-color-3;
+                                        
+                                        & .sidebar-item-text:not(.unsupport-dark-mode){
+                                            color: $light-color-5;
+                                        }
+        
+                                    }
+                                    
+        
+                                }  
+                            }
+        
+                            & .sidebar-link:not(.unsupport-dark-mode){
+        
+                                & .sidebar-item-text:not(.unsupport-dark-mode){
+                                    transition: $content-transition !important;
+                                }
+        
+                            }     
+                            
+                            & .sidebar-item-sub:not(.unsupport-dark-mode){
+                                
+                                &.sidebar-item-3{
+                        
+                                    &.active{
+            
+                                        & .hover-bg-light-1:not(.unsupport-dark-mode),
+                                        & .hover-bg-light-2:not(.unsupport-dark-mode),
+                                        & .hover-bg-light-3:not(.unsupport-dark-mode),
+                                        & .hover-bg-light-4:not(.unsupport-dark-mode),
+                                        & .hover-bg-light-5:not(.unsupport-dark-mode),
+                                        & .hover-bg-light-6:not(.unsupport-dark-mode),
+                                        & .hover-bg-cyan-3:not(.unsupport-dark-mode),
+                                        & .hover-bg-blue-3:not(.unsupport-dark-mode),
+                                        & .hover-bg-red-3:not(.unsupport-dark-mode),
+                                        & .hover-bg-orange-3:not(.unsupport-dark-mode),
+                                        & .hover-bg-green-3:not(.unsupport-dark-mode),
+                                        & .hover-bg-purple-3:not(.unsupport-dark-mode){
+                                            background-color: $dark-mode-color-3;                                
+                                        }
+
+                                        &.hover-box-bg-light-1,
+                                        &.hover-box-bg-light-2,
+                                        &.hover-box-bg-light-3,
+                                        &.hover-box-bg-light-4,
+                                        &.hover-box-bg-light-5,
+                                        &.hover-box-bg-light-6,
+                                        & .hover-box-bg-light-1,
+                                        & .hover-box-bg-light-2,
+                                        & .hover-box-bg-light-3,
+                                        & .hover-box-bg-light-4,
+                                        & .hover-box-bg-light-5,
+                                        & .hover-box-bg-light-6{
+                                            
+                                            & .box{
+                                                background-color: $dark-mode-color-3 !important;
+                                            }
+        
+                                        }
+
+                                    }
+            
+                                }
+
+                            }
+                            
+                        }
+        
+                    }
+
+                    // when width of page be mini mobile showing
+                    & .close-sidebar-menu-btn:not(.unsupport-dark-mode){
+                        color: $light-color-4;
+
+                        & .line:not(.unsupport-dark-mode){
+                            stroke: $light-color-4;
+                        }
+
+                        & svg:not(.unsupport-dark-mode){
+                            fill: $light-color-4;
+                        }
+                        
+                    }
+
+                }
+        
+                & .sidebar-tab-content:not(.unsupport-dark-mode){
+                    background: $dark-mode-color-2;
+                    border-right: 1px solid $dark-mode-color-3;
+        
+                    & .sidebar-link:not(.unsupport-dark-mode){
+                                
+                        & .sidebar-item-text:not(.unsupport-dark-mode){
+                            transition: all 0.1s ease !important;
+                        }
+        
+                    }
+        
+                    & .box{
+        
+                        & svg{
+                            transition: $content-transition !important;
+                        }
+        
+                    }
+        
+                }
+                
+                &.mini{
+                    
+                    & .sidebar-content{
+                        
+                        & .sidebar-items{
+        
+                            & .sidebar-item{
+                                
+                                &:hover{
+                                    background: none;
+                                }
+            
+                            }
+            
+                        }
+        
+                    }
+        
+                }
+
+                // change bg color to dark when hover
+                & .hover-bg-light-1:hover:not(.unsupport-dark-mode),
+                & .hover-bg-light-2:hover:not(.unsupport-dark-mode),
+                & .hover-bg-light-3:hover:not(.unsupport-dark-mode),
+                & .hover-bg-light-4:hover:not(.unsupport-dark-mode),
+                & .hover-bg-light-5:hover:not(.unsupport-dark-mode),
+                & .hover-bg-light-6:hover:not(.unsupport-dark-mode),
+                & .hover-bg-red-1:hover:not(.unsupport-dark-mode),
+                & .hover-bg-red-2:hover:not(.unsupport-dark-mode),
+                & .hover-bg-red-3:hover:not(.unsupport-dark-mode),
+                & .hover-bg-green-1:hover:not(.unsupport-dark-mode),
+                & .hover-bg-green-2:hover:not(.unsupport-dark-mode),
+                & .hover-bg-green-3:hover:not(.unsupport-dark-mode),
+                & .hover-bg-purple-1:hover:not(.unsupport-dark-mode),
+                & .hover-bg-purple-2:hover:not(.unsupport-dark-mode),
+                & .hover-bg-purple-3:hover:not(.unsupport-dark-mode),
+                & .hover-bg-blue-1:hover:not(.unsupport-dark-mode),
+                & .hover-bg-blue-2:hover:not(.unsupport-dark-mode),
+                & .hover-bg-blue-3:hover:not(.unsupport-dark-mode),
+                & .hover-bg-cyan-1:hover:not(.unsupport-dark-mode),
+                & .hover-bg-cyan-2:hover:not(.unsupport-dark-mode),
+                & .hover-bg-cyan-3:hover:not(.unsupport-dark-mode),
+                & .hover-bg-orange-1:hover:not(.unsupport-dark-mode),
+                & .hover-bg-orange-2:hover:not(.unsupport-dark-mode),
+                & .hover-bg-orange-3:hover:not(.unsupport-dark-mode){
+                    background-color: $dark-mode-color-3 !important;   
+                }
+
+                // change box color to dark
+                & .hover-box-bg-light-1:hover:not(.unsupport-dark-mode),
+                & .hover-box-bg-light-2:hover:not(.unsupport-dark-mode),
+                & .hover-box-bg-light-3:hover:not(.unsupport-dark-mode),
+                & .hover-box-bg-light-4:hover:not(.unsupport-dark-mode),
+                & .hover-box-bg-light-5:hover:not(.unsupport-dark-mode),
+                & .hover-box-bg-light-6:hover:not(.unsupport-dark-mode){
+
+                    & .box:not(.unsupport-dark-mode){
+                        background-color: $dark-mode-color-3 !important;
+                    }
+
+                }
+        
+            }
+            
+            &.style-1{
+
+                & .sidebar:not(.unsupport-dark-mode){
+                    
+                    & .sidebar-content:not(.unsupport-dark-mode){
+                        border-left: 1px solid $dark-mode-color-3 !important;
+                    }
+
+                }
+
+                &.ltr{
+                    
+                    & .sidebar:not(.unsupport-dark-mode){
+                    
+                        & .sidebar-content:not(.unsupport-dark-mode){
+                            border-right: 1px solid $dark-mode-color-3 !important;
+                        }
+    
+                    }
+
+                }
+
+            }
+
+            &.ltr{
+            
+                & .sidebar:not(.unsupport-dark-mode){
+    
+                    &.mini{
+                        
+                        & .sidebar-tab-content:not(.unsupport-dark-mode){
+                            border-left: 1px solid $dark-mode-color-3 !important;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

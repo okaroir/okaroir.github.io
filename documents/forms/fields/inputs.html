@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Panel</title>
+	<link rel="icon" href="../../../assets/images/logo.svg">
+	<link rel="stylesheet" href="../../../assets/css/plugins/boostrap/bootstrap.rtl.min.css">
+	<link rel="stylesheet" href="../../../assets/css/plugins/intro-js/introjs.min.css">
+	<link rel="stylesheet" href="../../../assets/css/plugins/intro-js/introjs-rtl.min.css">
+	<link rel="stylesheet" href="../../../assets/css/plugins/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../../../assets/css/plugins/codemirror/codemirror.css">
+	<link rel="stylesheet" href="../../../assets/css/plugins/codemirror/ayu-mirage.css">
+	<link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+
+<body class="rtl">
+
+<!------------------------------ Content ------------------------------>
+<div class="main-content p-3 float-end">
+	
+	<!-------------------------------- Main ------------------------------->
+	<main class="main">
+		
+		<div class="card radius-10px border-0 shadow-sm mb-5">
+			
+			<div class="card-body">
+				
+				<p class="mb-0 text-justify">
+					سفارشی سازی
+					<a href="https://getbootstrap.com/docs/5.1/forms/form-control/" class="primary-color hover-text-primary-dark">Bootstrap Forms Control</a>
+					در فایل
+					<code class="bg-gray-light-4 p-1">sass/components/_variables.scss</code>
+					و در فایل
+					<code class="bg-gray-light-4 p-1">sass/components/forms/input</code>
+					اتفاق می‌افتد
+				</p>
+			
+			</div>
+		
+		</div>
+		
+		<div class="card radius-10px border-0 shadow-sm mb-5">
+			
+			<div class="card-header border-0 bg-transparent ps-3 pt-4 pb-0">
+				
+				<h3 class="fs-18px fw-bold">Inputs</h3>
+			
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="row g-4 mb-4">
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<h5 class="dark-color-3 fs-16px"> input ساده </h5>
+						
+						<input type="text" class="form-control">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<h5 class="dark-color-3 fs-16px"> input بدون سایه </h5>
+						
+						<input type="text" class="form-control input-shadow-none">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<h5 class="dark-color-3 fs-16px"> input پر </h5>
+						
+						<input type="text" class="form-control input input-solid input-shadow-none" placeholder="نام و نام خانوادگی">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<h5 class="dark-color-3 fs-16px"> input مدرن </h5>
+						
+						<input type="text" class="form-control input input-modern radius-6px" placeholder="کد پستی">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<h5 class="dark-color-3 fs-16px"> input خط دار </h5>
+						
+						<input type="text" class="form-control input input-underline" placeholder="کد پستی">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<h5 class="dark-color-3 fs-16px"> input محو </h5>
+						
+						<input type="text" class="form-control input input-tranparent input-shadow-none" placeholder="شماره تلفن">
+					
+					</div>
+				
+				</div>
+				
+				<p class="mb-5"> باید کلاس
+					<code class="p-1 bg-gray-light-4 bg-dark-mode-3">.form-control</code>
+					را به تگ
+					<code class="p-1 bg-gray-light-4 bg-dark-mode-3">input</code>
+					بدهیم، حالا اگر مدلی مد نظر داریم میتونیم از
+					<code class="p-1 bg-gray-light-4">.input-solid</code>
+					,
+					<code class="p-1 bg-gray-light-4">.input-modern</code>
+					,
+					<code class="p-1 bg-gray-light-4">.input-underline</code>
+					,
+					<code class="p-1 bg-gray-light-4">.input-tranparent</code>
+					استفاده کنیم
+				</p>
+				
+				<div class="codebox mb-2">
+        
+                        <textarea class="codebox-content"> 
+        //simple input
+        <input type="text" class="form-control">
+        //input with simple border
+        <input type="text" class="form-control   input   shadow-none">
+        //solid input 
+        <input type="text" class="form-control   input   input-solid   input-shadow-none" placeholder="First Name">
+        //modern input
+        <input type="text" class="form-control   input   input-modern   radius-6px">
+        //underline input
+        <input type="text" class="form-control   input   input-underline" placeholder="number">
+        // transparent input
+        <input type="text" class="form-control   input   input-tranparent   input-shadow-none" placeholder="telephon number">
+        </textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="card radius-10px border-0 shadow-sm mb-5">
+			
+			<div class="card-header border-0 bg-transparent ps-3 pt-4 pb-0">
+				
+				<h3 class="fs-18px fw-bold">input با فوکوس رنگ های متفاوت</h3>
+			
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="row g-4 mb-4">
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control border-focus-purple-1">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" placeholder="نام کاربری" class="form-control border-focus-orange-1">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" placeholder="ایمیل" class="form-control border-focus-green-1">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control border-focus-red-1">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" placeholder="..." class="form-control border-focus-cyan-1">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control border-focus-blue-1">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control border-focus-dark-4">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control border-focus-light-6">
+					
+					</div>
+				
+				</div>
+				
+				<p class="mb-5"> باید از کلاس
+					<code class="p-1 bg-gray-light-4 bg-dark-mode-3">.border-focus-purple-1</code>
+					استفاده کنیم، حالا اینکه purple-1 باشه یا هر رنگی تصمیم شماست، از موارد زیر تنوع رنگ هارو مشاهده کنید و کلاس مربوطه را بردارید
+				</p>
+				
+				<div class="codebox mb-2">
+        
+                        <textarea class="codebox-content"> 
+        <input type="text" class="form-control   border-focus-purple-1">
+        <input type="text" class="form-control   border-focus-orange-1">
+        <input type="text" class="form-control   border-focus-red-1">
+        <input type="text" class="form-control   border-focus-cyan-1">
+        <input type="text" class="form-control   border-focus-green-1">
+        <input type="text" class="form-control   border-focus-blue-1">
+        <input type="text" class="form-control   border-focus-dark-4">
+        <input type="text" class="form-control   border-focus-light-6">
+        </textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="card radius-10px border-0 shadow-sm mb-5">
+			
+			<div class="card-header border-0 bg-transparent ps-3 pt-4 pb-0">
+				
+				<h3 class="fs-18px fw-bold"> input با فوکوس رنگ های متفاوت بدون سایه</h3>
+			
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="row g-4 mb-4">
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control border-focus-purple-1 input-shadow-none">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" placeholder="نام کاربری" class="form-control border-focus-green-1 input-shadow-none">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" placeholder="ایمیل" class="form-control border-focus-red-1 input-shadow-none">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control border-focus-cyan-1 input-shadow-none">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" placeholder="..." class="form-control border-focus-orange-1 input-shadow-none">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control border-focus-blue-1 input-shadow-none">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control border-focus-dark-4 input-shadow-none">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control border-focus-light-6 input-shadow-none">
+					
+					</div>
+				
+				
+				</div>
+				
+				<p class="mb-5"> باید از کلاس
+					<code class="p-1 bg-gray-light-4 bg-dark-mode-3">.input-shadow-none</code>
+					استفاده بکنیم
+				</p>
+				
+				<div class="codebox">
+    
+                        <textarea class="codebox-content"> 
+    <input type="text" class="form-control   input-shadow-none   border-focus-purple-1">
+    <input type="text" class="form-control   input-shadow-none   border-focus-orange-1">
+    <input type="text" class="form-control   input-shadow-none   border-focus-red-1">
+    <input type="text" class="form-control   input-shadow-none   border-focus-cyan-1">
+    <input type="text" class="form-control   input-shadow-none   border-focus-green-1">
+    <input type="text" class="form-control   input-shadow-none   border-focus-blue-1">
+    <input type="text" class="form-control   input-shadow-none   border-focus-dark-4">
+    <input type="text" class="form-control   input-shadow-none   border-focus-light-6">
+    </textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="card radius-10px border-0 shadow-sm mb-5">
+			
+			<div class="card-header border-0 bg-transparent ps-3 pt-4 pb-0">
+				
+				<h3 class="fs-18px fw-bold">
+					<b class="">input-modern</b>
+					با رنگ های متفاوت
+				</h3>
+			
+			</div>
+			
+			<div class="card-body">
+				
+				<p> با کلاس
+					<code class="bg-gray-light-4 p-1">shadow-cyan-1</code>
+					با سایه ای cyan خواهد بود
+				</p>
+				
+				<div class="row g-4 mb-4">
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control   input   input-modern shadow-cyan-1  radius-6px" placeholder="نام کاربری">
+					
+					</div>
+				
+				</div>
+				
+				<p class="text-justify"> با کلاس
+					<code class="bg-gray-light-4 p-1">focus-shadow-cyan-1</code>
+					زمانی که فوکوس شود رنگ سایه آن تغییر میکند به cyan
+				</p>
+				
+				<div class="row g-4 mb-5">
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control   input   input-modern focus-shadow-cyan-1  radius-6px" placeholder="نام کاربری">
+					
+					</div>
+				
+				</div>
+				
+				<div class="codebox">
+        
+                            <textarea class="codebox-content"> 
+        <input type="text" class="form-control   input   input-modern   shadow-purple-1">
+        <input type="text" class="form-control   input   input-modern   focus-shadow-purple-1">
+        
+        <input type="text" class="form-control   input   input-modern   shadow-cyan-1">
+        <input type="text" class="form-control   input   input-modern   focus-shadow-cyan-1">
+        
+        <input type="text" class="form-control   input   input-modern   shadow-red-1">
+        <input type="text" class="form-control   input   input-modern   focus-shadow-red-1">
+        
+        <input type="text" class="form-control   input   input-modern   shadow-blue-1">
+        <input type="text" class="form-control   input   input-modern   focus-shadow-blue-1">
+        
+        <input type="text" class="form-control   input   input-modern   shadow-green-1">
+        <input type="text" class="form-control   input   input-modern   focus-shadow-green-1">
+        
+        <input type="text" class="form-control   input   input-modern   shadow-orange-1">
+        <input type="text" class="form-control   input   input-modern   focus-shadow-orange-1">
+        
+        <input type="text" class="form-control   input   input-modern   shadow-dark-1">
+        <input type="text" class="form-control   input   input-modern   focus-shadow-dark-1">
+        
+        <input type="text" class="form-control   input   input-modern   shadow-light-1">
+        <input type="text" class="form-control   input   input-modern   focus-shadow-light-1">
+        </textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="card radius-10px border-0 shadow-sm mb-5">
+			
+			<div class="card-header border-0 bg-transparent ps-3 pt-4 pb-0">
+				<h3 class="fs-18px fw-bold"> input غیرفعال </h3>
+			</div>
+			
+			<div class="card-body">
+				
+				<div class="row g-4 mb-5">
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control " disabled>
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control input" placeholder="نام کاربری" disabled>
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control   input   input-modern   radius-6px" disabled placeholder="نام کاربری">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" class="form-control   input   input-underline" disabled placeholder="number">
+					
+					</div>
+					
+					<div class="col-lg-4 col-md-6">
+						
+						<input type="text" disabled class="form-control   input   input-tranparent   input-shadow-none" placeholder="بنویس در من">
+					
+					</div>
+				
+				</div>
+				
+				<p class="mb-5"> کافیه
+					<code class="p-1 bg-gray-light-4 bg-dark-mode-3">disabled</code>
+					رو به تگ
+					<code class="p-1 bg-gray-light-4 bg-dark-mode-3">input</code>
+					در قسمت attribute اضافه کنید
+				</p>
+				
+				<div class="codebox">
+    
+                        <textarea class="codebox-content"> 
+    <input type="text" class="form-control" disabled>
+    </textarea>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="card radius-10px border-0 shadow-sm">
+			
+			<div class="card-header border-0 bg-transparent ps-3 pt-4 pb-0">
+				<h3 class="fs-18px fw-bold"> input با چاشنی js </h3>
+			</div>
+			
+			<div class="card-body">
+				
+				<section id="inputs">
+					
+					
+					<p class="text-justify mb-3">
+						با اضافه کردن
+						<code class="bg-gray-light-4 p-1">data-seprator="4"</code>
+						attribue که به ازای کاراکتر انتخابی شما بیاد جداسازی کنه.
+						<br>
+						به طور پیش فرض از علامت
+						<code class="bg-gray-light-4 p-1">-</code>
+						استفاده میکند برای جداسازی ولی اگر بخواین تغییرش بدین با اضافه کردن
+						<code class="bg-gray-light-4 p-1">data-seprator-with="*"</code>
+						مشخص کنید با چه علامتی جدا شود
+					</p>
+					
+					<div class="row g-4 mb-5">
+						
+						<div class="col-lg-4 col-md-6">
+							
+							<label for="card" class="mb-1">شماره کارت</label>
+							<input type="text" id="card" class="form-control input input-modern ltr-direction" data-seprator="4" data-seprator-with="-">
+						
+						</div>
+					
+					</div>
+					
+					<div class="codebox mb-5">
+        
+                            <textarea class="codebox-content"> 
+        <input type="text" class="form-control   input   input-modern   ltr-direction" data-seprator="4" data-seprator-with="-">
+        </textarea>
+					
+					</div>
+					
+					<p class="text-justify mb-3">
+						با اضافه کردن
+						<code class="bg-gray-light-4 p-1">data-date="true"</code>
+						attribue مخصوص تاریخ میشود.
+					</p>
+					
+					<div class="row g-4 mb-5">
+						
+						<div class="col-lg-4 col-md-6">
+							<label for="date" class="mb-1">تاریخ</label>
+							<input id="date" class="form-control input input-modern ltr-direction" data-date="true" placeholder="dd/mm/yyyy" />
+						</div>
+					
+					</div>
+					
+					<div class="codebox mb-5">
+        
+                            <textarea class="codebox-content"> 
+        <input type="text" class="form-control   input   input-modern   ltr-direction" data-date="true" placeholder="dd/mm/yyyy">
+        </textarea>
+					
+					</div>
+					
+					<p class="text-justify mb-3">
+						با اضافه کردن
+						<code class="bg-gray-light-4 p-1">data-max-char="11"</code>
+						attribue حداکثر میتواند تا مقدار کاراکتری را که انتخاب میکنید بگیرد.
+					</p>
+					
+					<div class="row g-4 mb-5">
+						
+						<div class="col-lg-4 col-md-6">
+							<input type="text" class="form-control input input-modern" data-max-char="11" placeholder="کد پستی" />
+							<sub class="dark-color-3">بیشترین کاراکتر مجاز
+								<b>11</b>
+								میباشد
+							</sub>
+						</div>
+					
+					</div>
+					
+					<div class="codebox mb-5">
+        
+                            <textarea class="codebox-content"> 
+        <input type="text" class="form-control   input   input-modern" data-max-char="11">
+        </textarea>
+					
+					</div>
+					
+					<p class="text-justify mb-3">
+						با اضافه کردن
+						<code class="bg-gray-light-4 p-1">data-price="true"</code>
+						attribue با فرمت مبلغ جداسازی میکند.
+					</p>
+					
+					<div class="row g-4 mb-5">
+						
+						<div class="col-lg-4 col-md-6">
+							<input type="text" class="form-control input input-modern" data-price="true" placeholder="مبلغ" />
+						</div>
+					
+					</div>
+					
+					<div class="codebox ">
+        
+                            <textarea class="codebox-content"> 
+        <input type="text" class="form-control   input   input-modern"   data-price="true">
+        </textarea>
+					
+					</div>
+					
+					<!--  -->
+					
+					<!--  -->
+				
+				
+				</section>
+			
+			</div>
+		
+		</div>
+	
+	</main>
+
+</div>
+
+<!---------------------------- Back to Top ---------------------------->
+<div class="backdrop"></div>
+
+
+<!------------------------------ Scripts ------------------------------>
+<script src="../../../assets/js/plugins/boostrap/bootstrap.bundle.min.js"></script>
+<script src="../../../assets/js/plugins/jquery.min.js"></script>
+<script src="../../../assets/js/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../../assets/js/plugins/intro-js/intro.min.js"></script>
+<script src="../../../assets/js/main/initialization.js"></script>
+<script src="../../../assets/js/main/main.js"></script>
+<script src="../../../assets/js/plugins/intro-js/custom-intro-tour.js"></script>
+<script src="../../../assets/js/plugins/codemirror/codemirror.js"></script>
+<script src="../../../assets/js/plugins/codemirror/xml.js"></script>
+<script src="../../../assets/js/plugins/codemirror/custom-codemirror.js"></script>
+</body>
+
+</html>

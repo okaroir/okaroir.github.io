@@ -1,0 +1,19 @@
+/*
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+
+            & input:not(.unsupport-dark-mode),
+            & textarea:not(.unsupport-dark-mode){
+                background-color: $dark-mode-color-1;
+                color: $light-color-3;
+                border-color: $dark-mode-color-1;
+            }
+
+        }
+
+    }
+
+}*/

@@ -1,0 +1,105 @@
+//----------------------------- Height ------------------------------//
+@for $i from 0 through 19 {
+    .h-#{$i}px {
+        height: #{$i}px !important;
+    }
+}
+
+@for $i from 10 through 50 {
+    .h-#{$i * 2}px {
+        height: #{$i * 2}px !important;
+    }
+}
+
+@for $i from 21 through 40 {
+    .h-#{$i * 5}px {
+        height: #{$i * 5}px !important;
+    }
+}
+
+@for $i from 21 through 50 {
+    .h-#{$i * 10}px {
+        height: #{$i * 10}px !important;
+    }
+}
+
+@for $i from 1 through 10 {
+    .h-#{500 + $i * 50}px {
+        height: #{$i * 10}px !important;
+    }
+}
+
+@for $i from 1 through 2 {
+    .h-#{1000 + $i * 500}px {
+        height: #{$i * 10}px !important;
+    }
+}
+
+
+//----------------------- Min and Max Height ------------------------//
+@for $i from 0 through 19 {
+    .min-h-#{$i}px {
+        min-height: #{$i}px !important;
+    }
+    .max-h-#{$i}px {
+        max-height: #{$i}px !important;
+    }
+}
+
+@for $i from 10 through 50 {
+    .min-h-#{$i * 2}px {
+        min-height: #{$i * 2}px !important;
+    }
+    .max-h-#{$i * 2}px {
+        max-height: #{$i * 2}px !important;
+    }
+}
+
+@for $i from 21 through 40 {
+    .min-h-#{$i * 5}px {
+        min-height: #{$i * 5}px !important;
+    }
+    .max-h-#{$i * 5}px {
+        max-height: #{$i * 5}px !important;
+    }
+}
+
+@for $i from 21 through 50 {
+    .min-h-#{$i * 10}px {
+        min-height: #{$i * 10}px !important;
+    }
+    .max-h-#{$i * 10}px {
+        max-height: #{$i * 10}px !important;
+    }
+}
+
+@for $i from 1 through 10 {
+    .min-h-#{500 + $i * 50}px {
+        min-height: #{$i * 10}px !important;
+    }
+    .max-h-#{500 + $i * 50}px {
+        max-height: #{$i * 10}px !important;
+    }
+}
+
+@for $i from 1 through 2 {
+    .min-h-#{1000 + $i * 500}px {
+        min-height: #{$i * 10}px !important;
+    }
+    .max-h-#{1000 + $i * 500}px {
+        max-height: #{$i * 10}px !important;
+    }
+}
+
+
+//--------------------------- Line Height ---------------------------//
+@for $i from 0 through 19 {
+    .line-h-#{$i}px {
+        line-height: #{$i}px !important;
+    }
+}
+@for $i from 10 through 50 {
+    .line-h-#{$i * 2}px {
+        line-height: #{$i * 2}px !important;
+    }
+}

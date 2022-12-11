@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="icon" href="../../../../assets/images/logo.svg">
+
+    <!------------------------------ Components ------------------------------>
+    <link rel="stylesheet" href="../../../../assets/css/plugins/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/plugins/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/plugins/codemirror/codemirror.css">
+    <link rel="stylesheet" href="../../../../assets/css/plugins/codemirror/ayu-mirage.css">
+    <link rel="stylesheet" href="../../../../assets/css/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/document.css">
+
+    <!------------------------------ Components ------------------------------>
+
+    <link rel="stylesheet" href="../../../../assets/css/styles.css">
+</head>
+
+<body class="ltr ltr-direction dark dark-mode-1">
+
+<!------------------------------ Content ------------------------------>
+<div class="main-content p-3 float-end">
+
+    <!-------------------------------- Main ------------------------------->
+    <main class="main">
+
+        <!--------------------------- General ----------------------------->
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">General Description</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    <ul class="mb-0 ps-2 line-h-36px">
+                        <li>
+                            Checkboxes with custom colors are designed based on the colors provided in the template.
+                        </li>
+                        <li>
+                            To learn about the colors of the template, you can refer to the colors section.
+                        </li>
+                        <li>
+                            To customize the checkboxes, refer to the
+                            <span class="badge fw-normal fs-14px badge-light text-red-medium">
+								assets/css/scss/components/forms/checkboxes/_checkboxes.scss
+							</span>
+                            address.
+                        </li>
+                        <li>
+                            To customize the checkboxes in dark mode, refer to the
+                            <span class="badge fw-normal fs-14px badge-light text-red-medium">
+								assets/css/scss/components/forms/checkboxes/_checkboxes_dark.scss
+							</span>
+                            address.
+                        </li>
+                        <li>
+                            To create a checkbox, you must first add
+                            <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.form-check-input
+							</span>
+                            class to the element.
+                        </li>
+                        <li>
+                            Add additional classes to the desired element (the element that has the form-check-input
+                            class) based on different styles and colors (which can be seen in full below).
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!---------------------------- Colors ----------------------------->
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">Colors</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <!--------------------------- Description ------------------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    <ul class="mb-0 ps-2 line-h-36px">
+
+                        <li>
+                            We use 9 color schemes in the template.
+                        </li>
+                        <li>
+                            Exclusive checkboxes are designed based on these 9 colors.
+                        </li>
+                    </ul>
+                </div>
+
+                <!------------------------ Visual Examples ------------------------>
+                <div class="d-flex flex-wrap mb-3">
+                    <span class="bg-red-medium text-white me-2 mb-2 p-2">Red</span>
+                    <span class="bg-blue-medium text-white me-2 mb-2 p-2">Blue</span>
+                    <span class="bg-cyan-medium text-white me-2 mb-2 p-2">Cyan</span>
+                    <span class="bg-orange-medium text-white me-2 mb-2 p-2">Orange</span>
+                    <span class="bg-purple-medium text-white me-2 mb-2 p-2">Purple</span>
+                    <span class="bg-green-medium text-white me-2 mb-2 p-2">Green</span>
+                    <span class="bg-pink-medium text-white me-2 mb-2 p-2">Pink</span>
+                    <span class="bg-yellow-medium text-white me-2 mb-2 p-2">Yellow</span>
+                    <span class="bg-gray-medium text-white me-2 mb-2 p-2">Gray</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!---------------------------- Weight ----------------------------->
+        <div class="card radius-10px border-0 shadow-sm mb-5" id="buttons-weight">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">Color Weights</h3>
+
+            </div>
+
+            <div class="card-body">
+
+
+                <!--------------------------- Description ------------------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    <ul class="mb-0 ps-2 line-h-36px">
+                        <li class="mb-3">
+                            We have used 10 weights for coloring, which are:
+                            <div class="ltr-direction mt-2">
+                                dark-4 - dark-3 - dark-2 - dark-1 - medium - light-1 - light-2 - light-3 - light-4 -
+                                light-5
+                            </div>
+                        </li>
+                        <li>
+                            To use different color weights, just apply
+                            <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.checkbox-{color}-{weight}
+							</span>
+                            class to the desired element. For example:
+                            <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+								.checkbox-red-dark-4
+							</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!------------------------ Visual Examples ------------------------>
+                <div class="d-flex flex-wrap">
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-dark-4" id="weight-dark-4"
+                               checked/>
+                        <label class="form-check-label" for="weight-dark-4">Dark 4</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-dark-3" id="weight-dark-3"
+                               checked/>
+                        <label class="form-check-label" for="weight-dark-3">Dark 3</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-dark-2" id="weight-dark-2"
+                               checked/>
+                        <label class="form-check-label" for="weight-dark-2">Dark 2</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-dark-1" id="weight-dark-1"
+                               checked/>
+                        <label class="form-check-label" for="weight-dark-1">Dark 1</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-medium" id="weight-medium"
+                               checked/>
+                        <label class="form-check-label" for="weight-medium">Medium</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-light-1" id="weight-light-1"
+                               checked/>
+                        <label class="form-check-label" for="weight-light-1">Light 1</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-light-2" id="weight-light-2"
+                               checked/>
+                        <label class="form-check-label" for="weight-light-2">Light 2</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-light-3" id="weight-light-3"
+                               checked/>
+                        <label class="form-check-label" for="weight-light-3">Light 3</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-light-4" id="weight-light-4"
+                               checked/>
+                        <label class="form-check-label" for="weight-light-4">Light 4</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-light-5" id="weight-light-5"
+                               checked/>
+                        <label class="form-check-label" for="weight-light-5">Light 5</label>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!----------------------- Background Color ------------------------>
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">Background Colors</h3>
+
+            </div>
+
+            <div class="card-body">
+
+
+                <!------------------------------ Checked ------------------------------>
+                <!------------ Description ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    Using the
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .checked-bg-{color}-{weight}
+					</span>
+                    class, you can change the background color of the checkbox when it is
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    checked
+                    </span>
+                    . For example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .checked-bg-gray-dark-1
+					</span>
+                </div>
+                <!---------- Visual Examples ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checked-bg-gray-dark-1"
+                               id="checked-bg-red" checked/>
+                        <label class="form-check-label" for="checked-bg-red">Red</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-blue-medium checked-bg-gray-dark-1"
+                               id="checked-bg-blue" checked/>
+                        <label class="form-check-label" for="checked-bg-blue">Blue</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-cyan-medium checked-bg-gray-dark-1"
+                               id="checked-bg-cyan" checked/>
+                        <label class="form-check-label" for="checked-bg-cyan">Cyan</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium checked-bg-gray-dark-1"
+                               id="checked-bg-orange" checked/>
+                        <label class="form-check-label" for="checked-bg-orange">Orange</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium checked-bg-gray-dark-1"
+                               id="checked-bg-purple" checked/>
+                        <label class="form-check-label" for="checked-bg-purple">Purple</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-green-medium checked-bg-gray-dark-1"
+                               id="checked-bg-green" checked/>
+                        <label class="form-check-label" for="checked-bg-green">Green</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-pink-medium checked-bg-gray-dark-1"
+                               id="checked-bg-pink" checked/>
+                        <label class="form-check-label" for="checked-bg-pink">Pink</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-yellow-medium checked-bg-gray-dark-1"
+                               id="checked-bg-yellow" checked/>
+                        <label class="form-check-label" for="checked-bg-yellow">Yellow</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-gray-medium checked-bg-gray-dark-1"
+                               id="checked-bg-gray" checked/>
+                        <label class="form-check-label" for="checked-bg-gray">Gray</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-bg-gray-dark-1"    checked /></textarea>
+
+
+                <!----------------------------- Unchecked ----------------------------->
+                <!------------ Description ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    Using the
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .unchecked-bg-{color}-{weight}
+                    </span>
+                    class, you can change the background color of the checkbox when it is
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    unchecked
+                    </span>
+                    . For example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .unchecked-bg-red-light-5
+					</span>
+                </div>
+                <!---------- Visual Examples ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium unchecked-bg-red-light-5"
+                               id="unchecked-bg-red"/>
+                        <label class="form-check-label" for="unchecked-bg-red">Red</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium unchecked-bg-blue-light-5"
+                               id="unchecked-bg-blue"/>
+                        <label class="form-check-label" for="unchecked-bg-blue">Blue</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium unchecked-bg-cyan-light-5"
+                               id="unchecked-bg-cyan"/>
+                        <label class="form-check-label" for="unchecked-bg-cyan">Cyan</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium unchecked-bg-orange-light-5"
+                               id="unchecked-bg-orange"/>
+                        <label class="form-check-label" for="unchecked-bg-orange">Orange</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium unchecked-bg-purple-light-5"
+                               id="unchecked-bg-purple"/>
+                        <label class="form-check-label" for="unchecked-bg-purple">Purple</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-green-medium unchecked-bg-green-light-5"
+                               id="unchecked-bg-green"/>
+                        <label class="form-check-label" for="unchecked-bg-green">Green</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-pink-medium unchecked-bg-pink-light-5"
+                               id="unchecked-bg-pink"/>
+                        <label class="form-check-label" for="unchecked-bg-pink">Pink</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-yellow-medium unchecked-bg-yellow-light-5"
+                               id="unchecked-bg-yellow"/>
+                        <label class="form-check-label" for="unchecked-bg-yellow">Yellow</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-gray-medium unchecked-bg-gray-light-5"
+                               id="unchecked-bg-gray"/>
+                        <label class="form-check-label" for="unchecked-bg-gray">Gray</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    unchecked-bg-red-light-5"    checked /></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!------------------------- Border Color -------------------------->
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">Border Color</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <!------------------------------ Checked ------------------------------>
+                <!------------ Description ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    Using the
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .checked-border-{color}-{weight}
+                    </span>
+                    class, you can change the border color of the checkbox when it is
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    checked
+                    </span>
+                    . For example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+					    .checked-border-black
+					</span>
+                </div>
+                <!---------- Visual Examples ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checked-border-black"
+                               id="checked-border-red" checked/>
+                        <label class="form-check-label" for="checked-border-red">Red</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-blue-medium checked-border-black"
+                               id="checked-border-blue" checked/>
+                        <label class="form-check-label" for="checked-border-blue">Blue</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-cyan-medium checked-border-black"
+                               id="checked-border-cyan" checked/>
+                        <label class="form-check-label" for="checked-border-cyan">Cyan</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-orange-medium checked-border-black"
+                               id="checked-border-orange" checked/>
+                        <label class="form-check-label" for="checked-border-orange">Orange</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-medium checked-border-black"
+                               id="checked-border-purple" checked/>
+                        <label class="form-check-label" for="checked-border-purple">Purple</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-green-medium checked-border-black"
+                               id="checked-border-green" checked/>
+                        <label class="form-check-label" for="checked-border-green">Green</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-pink-medium checked-border-black"
+                               id="checked-border-pink" checked/>
+                        <label class="form-check-label" for="checked-border-pink">Pink</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-yellow-medium checked-border-black"
+                               id="checked-border-yellow" checked/>
+                        <label class="form-check-label" for="checked-border-yellow">Yellow</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-gray-medium checked-border-black"
+                               id="checked-border-gray" checked/>
+                        <label class="form-check-label" for="checked-border-gray">Gray</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-border-black"    checked /></textarea>
+
+
+                <!----------------------------- Unchecked ----------------------------->
+                <!------------ Description ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    Using the
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+					    .unchecked-border-{color}-{weight}
+                    </span>
+                    class, you can change the border color of the checkbox when it is
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    unchecked
+                    </span>
+                    . For example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+					    .unchecked-border-red-dark-4
+                    </span>
+                </div>
+                <!---------- Visual Examples ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium unchecked-border-red-medium"
+                               id="unchecked-border-red"/>
+                        <label class="form-check-label" for="unchecked-border-red">Red</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium unchecked-border-blue-medium"
+                               id="unchecked-border-blue"/>
+                        <label class="form-check-label" for="unchecked-border-blue">Blue</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium unchecked-border-cyan-medium"
+                               id="unchecked-border-cyan"/>
+                        <label class="form-check-label" for="unchecked-border-cyan">Cyan</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium unchecked-border-orange-medium"
+                               id="unchecked-border-orange"/>
+                        <label class="form-check-label" for="unchecked-border-orange">Orange</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium unchecked-border-purple-medium"
+                               id="unchecked-border-purple"/>
+                        <label class="form-check-label" for="unchecked-border-purple">Purple</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-green-medium unchecked-border-green-medium"
+                               id="unchecked-border-green"/>
+                        <label class="form-check-label" for="unchecked-border-green">Green</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-pink-medium unchecked-border-pink-medium"
+                               id="unchecked-border-pink"/>
+                        <label class="form-check-label" for="unchecked-border-pink">Pink</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-yellow-medium unchecked-border-yellow-medium"
+                               id="unchecked-border-yellow"/>
+                        <label class="form-check-label" for="unchecked-border-yellow">Yellow</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-gray-medium unchecked-border-gray-medium"
+                               id="unchecked-border-gray"/>
+                        <label class="form-check-label" for="unchecked-border-gray">Gray</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    unchecked-border-red-medium"    checked /></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!---------------------------- Marks ------------------------------>
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">Marks</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <!------------------------ General Description ------------------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    You can use 17 characters to display the mark in the checkboxes, which are:
+
+                    <div class="swiper mt-3 text-gray-light-1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick01 mb-2"></i>
+                                    tick-01
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick02 mb-2"></i>
+                                    tick-02
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick03 mb-2"></i>
+                                    tick-03
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick04 mb-2"></i>
+                                    tick-04
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick05 mb-2"></i>
+                                    tick-05
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick06 mb-2"></i>
+                                    tick-06
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-close01 mb-2"></i>
+                                    close-01
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-close02 mb-2"></i>
+                                    close-02
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-close03 mb-2"></i>
+                                    close-03
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-close04 mb-2"></i>
+                                    close-04
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-square01 mb-2"></i>
+                                    square-01
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-square02 mb-2"></i>
+                                    square-02
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-circle mb-2"></i>
+                                    circle
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-plus01 mb-2"></i>
+                                    plus-01
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-plus02 mb-2"></i>
+                                    plus-02
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-minus01 mb-2"></i>
+                                    minus-01
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-minus02 mb-2"></i>
+                                    minus-02
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 d-flex justify-content-center">
+                            <div class="swiper-button-prev text-gray-medium w-30px h-30px rounded-circle position-static"></div>
+                            <div class="swiper-button-next text-gray-medium w-30px h-30px rounded-circle position-static"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------ Checked ------------------------------>
+                <!------------ Description - Types ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    Using the
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .checked-mark-{mark}
+                    </span>
+                    class, you can change the
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+                        style of the mark
+                    </span>
+                    when the checkbox is
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    checked
+                    </span>
+                    . For example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .checked-mark-square-01
+					</span>
+                </div>
+                <!---------- Visual Examples - Types ---------->
+                <div class="d-flex flex-wrap">
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-medium checked-mark-tick-01"
+                               id="checked-mark-tick-01" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-01">Tick 01</label>
+                    </div>
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-medium checked-mark-tick-02"
+                               id="checked-mark-tick-02" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-02">Tick 02</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-medium checked-mark-tick-03"
+                               id="checked-mark-tick-03" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-03">Tick 03</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-medium checked-mark-tick-04"
+                               id="checked-mark-tick-04" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-04">Tick 04</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-medium checked-mark-tick-05"
+                               id="checked-mark-tick-05" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-05">Tick 05</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-green-medium checked-mark-tick-06"
+                               id="checked-mark-tick-06" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-06">Tick 06</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-pink-medium checked-mark-close-01"
+                               id="checked-mark-close-01" checked/>
+                        <label class="form-check-label" for="checked-mark-close-01">Close 01</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-yellow-medium checked-mark-close-02"
+                               id="checked-mark-close-02" checked/>
+                        <label class="form-check-label" for="checked-mark-close-02">Close 02</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-gray-medium checked-mark-square-01"
+                               id="checked-mark-square-01" checked/>
+                        <label class="form-check-label" for="checked-mark-square-01">Square 01</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-light-1 checked-mark-square-02"
+                               id="checked-mark-square-02" checked/>
+                        <label class="form-check-label" for="checked-mark-square-02">Square 02</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-light-1 checked-mark-circle"
+                               id="checked-mark-circle" checked/>
+                        <label class="form-check-label" for="checked-mark-circle">Circle</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-light-1 checked-mark-plus-01"
+                               id="checked-mark-plus-01" checked/>
+                        <label class="form-check-label" for="checked-mark-plus-01">Plus 01</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-light-1 checked-mark-plus-02"
+                               id="checked-mark-plus-02" checked/>
+                        <label class="form-check-label" for="checked-mark-plus-02">Plus 02</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-light-1 checked-mark-minus-01"
+                               id="checked-mark-minus-01" checked/>
+                        <label class="form-check-label" for="checked-mark-minus-01">Minus 01</label>
+                    </div>
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-green-light-1 checked-mark-minus-02"
+                               id="checked-mark-minus-02" checked/>
+                        <label class="form-check-label" for="checked-mark-minus-02">Minus 02</label>
+                    </div>
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-mark-tick-01"    checked /></textarea>
+
+                <!------------ Description - Color ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    Using the
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .checked-mark-{color}-{weight}
+                    </span>
+                    class, you can change the
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+                        color of the mark
+                    </span>
+                    when the checkbox is
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    checked
+                    </span>
+                    . For example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .checked-mark-cyan-medium
+                    </span>
+                </div>
+                <!---------- Visual Examples - Color ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-medium checked-bg-white checked-mark-red-medium"
+                               id="checked-mark-red" checked/>
+                        <label class="form-check-label" for="checked-mark-red">Red Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-medium checked-bg-white checked-mark-blue-medium"
+                               id="checked-mark-blue" checked/>
+                        <label class="form-check-label" for="checked-mark-blue">Blue Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-medium checked-bg-white checked-mark-cyan-medium"
+                               id="checked-mark-cyan" checked/>
+                        <label class="form-check-label" for="checked-mark-cyan">Cyan Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-medium checked-bg-white checked-mark-orange-medium"
+                               id="checked-mark-orange" checked/>
+                        <label class="form-check-label" for="checked-mark-orange">Orange Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-medium checked-bg-white checked-mark-purple-medium"
+                               id="checked-mark-purple" checked/>
+                        <label class="form-check-label" for="checked-mark-purple">Purple Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-green-medium checked-bg-white checked-mark-green-medium"
+                               id="checked-mark-green" checked/>
+                        <label class="form-check-label" for="checked-mark-green">Green Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-pink-medium checked-bg-white checked-mark-pink-medium"
+                               id="checked-mark-pink" checked/>
+                        <label class="form-check-label" for="checked-mark-pink">Pink Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-yellow-medium checked-bg-white checked-mark-yellow-medium"
+                               id="checked-mark-yellow" checked/>
+                        <label class="form-check-label" for="checked-mark-yellow">Yellow Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-gray-medium checked-bg-white checked-mark-gray-medium"
+                               id="checked-mark-gray" checked/>
+                        <label class="form-check-label" for="checked-mark-gray">Gray Mark</label>
+                    </div>
+
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-mark-red-medium"    checked /></textarea>
+
+                <!----------------------------- Unchecked ----------------------------->
+                <!------------ Description - Types ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    Using the
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .unchecked-mark-{mark}
+                    </span>
+                    class, you can change the
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+                        style of the mark
+                    </span>
+                    when the checkbox is
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    unchecked
+                    </span>
+                    . For example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .unchecked-mark-square-01
+					</span>
+                </div>
+                <!---------- Visual Examples - Types ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-medium unchecked-mark-tick-01 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-01"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-01">Tick 01</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-medium unchecked-mark-tick-02 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-02"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-02">Tick 02</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-medium unchecked-mark-tick-03 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-03"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-03">Tick 03</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-medium unchecked-mark-tick-04 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-04"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-04">Tick 04</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-medium unchecked-mark-tick-05 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-05"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-05">Tick 05</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-green-medium unchecked-mark-tick-06 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-06"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-06">Tick 06</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-pink-medium unchecked-mark-close-01 unchecked-mark-gray-medium"
+                               id="unchecked-mark-close-01"/>
+                        <label class="form-check-label" for="unchecked-mark-close-01">Close 01</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-yellow-medium unchecked-mark-close-02 unchecked-mark-gray-medium"
+                               id="unchecked-mark-close-02"/>
+                        <label class="form-check-label" for="unchecked-mark-close-02">Close 02</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-gray-medium unchecked-mark-square-01 unchecked-mark-gray-medium"
+                               id="unchecked-mark-square-01"/>
+                        <label class="form-check-label" for="unchecked-mark-square-01">Square 01</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-light-1 unchecked-mark-square-02 unchecked-mark-gray-medium"
+                               id="unchecked-mark-square-02"/>
+                        <label class="form-check-label" for="unchecked-mark-square-02">Square 02</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-light-1 unchecked-mark-plus-01 unchecked-mark-gray-medium"
+                               id="unchecked-mark-plus-01"/>
+                        <label class="form-check-label" for="unchecked-mark-plus-01">Plus 01</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-light-1 unchecked-mark-plus-02 unchecked-mark-gray-medium"
+                               id="unchecked-mark-plus-02"/>
+                        <label class="form-check-label" for="unchecked-mark-plus-02">Plus 02</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-light-1 unchecked-mark-minus-01 unchecked-mark-gray-medium"
+                               id="unchecked-mark-minus-01"/>
+                        <label class="form-check-label" for="unchecked-mark-minus-01">Minus 01</label>
+                    </div>
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-light-1 unchecked-mark-minus-02 unchecked-mark-gray-medium"
+                               id="unchecked-mark-minus-02"/>
+                        <label class="form-check-label" for="unchecked-mark-minus-02">Minus 02</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    unchecked-mark-tick-01    unchecked-mark-gray-medium"    checked /></textarea>
+
+                <!------------ Description - Color ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    Using the
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .unchecked-mark-{color}-{weight}
+                    </span>
+                    class, you can change the
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+                        color of the mark
+                    </span>
+                    when the checkbox is
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    unchecked
+                    </span>
+                    . For example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .unchecked-mark-cyan-medium
+                    </span>
+                </div>
+                <!---------- Visual Examples - Color ---------->
+                <div class="d-flex flex-wrap">
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-medium  unchecked-mark-red-medium unchecked-mark-tick-01"
+                               id="unchecked-mark-red"/>
+                        <label class="form-check-label" for="unchecked-mark-red">Red Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-medium unchecked-mark-blue-medium unchecked-mark-tick-02"
+                               id="unchecked-mark-blue"/>
+                        <label class="form-check-label" for="unchecked-mark-blue">Blue Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-medium unchecked-bg-white unchecked-mark-cyan-medium unchecked-mark-tick-03"
+                               id="unchecked-mark-cyan"/>
+                        <label class="form-check-label" for="unchecked-mark-cyan">Cyan Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-medium unchecked-bg-white unchecked-mark-orange-medium unchecked-mark-tick-04"
+                               id="unchecked-mark-orange"/>
+                        <label class="form-check-label" for="unchecked-mark-orange">Orange Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-medium unchecked-bg-white unchecked-mark-purple-medium unchecked-mark-tick-05"
+                               id="unchecked-mark-purple"/>
+                        <label class="form-check-label" for="unchecked-mark-purple">Purple Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-green-medium unchecked-bg-white unchecked-mark-green-medium unchecked-mark-tick-06"
+                               id="unchecked-mark-green"/>
+                        <label class="form-check-label" for="unchecked-mark-green">Green Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-pink-medium unchecked-bg-white unchecked-mark-pink-medium unchecked-mark-close-01"
+                               id="unchecked-mark-pink"/>
+                        <label class="form-check-label" for="unchecked-mark-pink">Pink Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-yellow-medium unchecked-bg-white unchecked-mark-yellow-medium unchecked-mark-close-02"
+                               id="unchecked-mark-yellow"/>
+                        <label class="form-check-label" for="unchecked-mark-yellow">Yellow Mark</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-gray-medium unchecked-bg-white unchecked-mark-gray-medium unchecked-mark-close-03"
+                               id="unchecked-mark-gray"/>
+                        <label class="form-check-label" for="unchecked-mark-gray">Gray Mark</label>
+                    </div>
+
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    unchecked-mark-red-medium    unchecked-mark-tick-01"    checked /></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!---------------------------- Sizes ------------------------------>
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">Sizes</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <!--------------------------- Default Sizes --------------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    To change the size of the checkboxes, you can use custom classes including:
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+					    .checkbox-xs
+                    </span>
+                    ،
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+					    .checkbox-sm
+                    </span>
+                    ،
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+					    .checkbox-md
+                    </span>
+                    ،
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+					    .checkbox-lg
+                    </span>
+                    و یا
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+					    .checkbox-xl
+                    </span>
+                    <div class="text-orange-dark-1">
+                        In this case, the size of the marks changes based on the size of the checkbox.
+                    </div>
+                </div>
+                <!-------------- Visual Examples -------------->
+                <div class="d-flex flex-wrap align-items-center">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checkbox-xs"
+                               id="size-xs" checked/>
+                        <label class="form-check-label" for="size-xs">Extra Small</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checkbox-sm"
+                               id="size-sm" checked/>
+                        <label class="form-check-label" for="size-sm">Small</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checkbox-md"
+                               id="size-md" checked/>
+                        <label class="form-check-label" for="size-md">Medium</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checkbox-lg"
+                               id="size-lg" checked/>
+                        <label class="form-check-label" for="size-lg">Large</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checkbox-xl"
+                               id="size-xl" checked/>
+                        <label class="form-check-label" for="size-xl">Extra Large</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checkbox-xs"    checked /></textarea>
+
+                <!--------------------------- Default Sizes --------------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    In addition, you can use the width and height classes to change the size of the checkboxes.
+                    <div class="text-orange-dark-1">
+                        In this case, the size of the signs does not change based on the size of the checkbox, and you have to manually determine the font size of the mark.
+                    </div>
+                </div>
+                <!-------------- Visual Examples -------------->
+                <div class="d-flex align-items-center">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-pink-medium w-20px h-20px"
+                               id="size-custom-w20px" checked/>
+                        <label class="form-check-label" for="size-custom-w20px">20×20</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-pink-medium w-30px h-30px"
+                               id="size-custom-w30px" checked/>
+                        <label class="form-check-label" for="size-custom-w30px">30×30</label>
+                    </div>
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-pink-medium w-40px h-40px"
+                               id="size-custom-w40px" checked/>
+                        <label class="form-check-label" for="size-custom-w40px">40×40</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    w-20px    h-20px"    checked /></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!--------------------------- Pulses ------------------------------>
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">Pulsating checkboxes</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <!------------------------------- Status ------------------------------>
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    <div>
+                        If you add the
+                        <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                            .checked-pulse
+                        </span>
+                        class to the checkbox, the checkbox will pulse when it is
+                        <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+                            checked
+                        </span>
+                    </div>
+                    <div>
+                        If you add the
+                        <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.checkbox-unchecked-pulse
+						</span>
+                        class to the checkbox, the checkbox will pulse when it is
+                        <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+                            unchecked
+                        </span>
+                    </div>
+                </div>
+                <!---------- Visual Examples - Status --------->
+                <div class="d-flex flex-wrap">
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium checked-pulse pulse-scale-3"
+                               id="pulse-checked" checked/>
+                        <label class="form-check-label" for="pulse-checked">Checked</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium unchecked-mark-close-01 unchecked-pulse pulse-scale-3"
+                               id="pulse-unchecked"/>
+                        <label class="form-check-label" for="pulse-unchecked">Unchecked</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium checked-pulse unchecked-pulse pulse-scale-3 pulse-scale-3"
+                               id="pulse-both" checked/>
+                        <label class="form-check-label" for="pulse-both">Any Status</label>
+                    </div>
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse"    checked />
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    unchecked-pulse"    checked />
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse    unchecked-pulse"    checked /></textarea>
+
+
+                <!----------------------------- Pulse Type ---------------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    The pulses you can apply are: scale-01، scale-02، scale-03، scale-04 و
+                    scale-05
+                    <div>
+                        To apply new pulses, just add the
+                        <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                            .pulse-{pulse}
+                        </span>
+                        class to the element. for example:
+                        <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                            .pulse-scale-03
+                        </span>
+                    </div>
+                </div>
+                <!--------------- Visual Examples ------------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium unchecked-mark-close-01 checked-pulse unchecked-pulse pulse-scale-1"
+                               id="pulse-type-01" checked/>
+                        <label class="form-check-label" for="pulse-type-01">Scale 1</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium checked-pulse unchecked-pulse pulse-scale-2"
+                               id="pulse-type-02"/>
+                        <label class="form-check-label" for="pulse-type-02">Scale 2</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium unchecked-mark-close-01 checked-pulse unchecked-pulse pulse-scale-3"
+                               id="pulse-type-03" checked/>
+                        <label class="form-check-label" for="pulse-type-03">Scale 3</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium unchecked-mark-close-01 checked-pulse unchecked-pulse pulse-scale-4"
+                               id="pulse-type-04"/>
+                        <label class="form-check-label" for="pulse-type-04">Scale 4</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium unchecked-mark-close-01 checked-pulse unchecked-pulse pulse-scale-5"
+                               id="pulse-type-05" checked/>
+                        <label class="form-check-label" for="pulse-type-05">Scale 5</label>
+                    </div>
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse    pulse-scale-3"    checked /></textarea>
+
+
+                <!--------------------- Pulse Animation Duration ---------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    For change the animation duration, you can use
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .anim-duration-{duration}
+                    </span>
+                    class. for example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .anim-duration-200ms
+                    </span>
+
+                    <div class="text-orange-dark-1">
+                        For more information, you can refer to the animation duration section.
+                    </div>
+                </div>
+                <!--------------- Visual Examples ------------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium checked-pulse unchecked-pulse pulse-scale-3 anim-duration-100ms"
+                               id="pulse-duration-1s" checked/>
+                        <label class="form-check-label" for="pulse-duration-1s">1 Second</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium checked-pulse unchecked-pulse pulse-scale-3 anim-duration-2s"
+                               id="pulse-duration-2s"/>
+                        <label class="form-check-label" for="pulse-duration-2s">2 Seconds</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium checked-pulse unchecked-pulse pulse-scale-3 anim-duration-3s"
+                               id="pulse-duration-3s" checked/>
+                        <label class="form-check-label" for="pulse-duration-3s">3 Seconds</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium checked-pulse unchecked-pulse pulse-scale-3 anim-duration-4s"
+                               id="pulse-duration-4s"/>
+                        <label class="form-check-label" for="pulse-duration-4s">4 Seconds</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium checked-pulse unchecked-pulse pulse-scale-3 anim-duration-5s"
+                               id="pulse-duration-5s" checked/>
+                        <label class="form-check-label" for="pulse-duration-5s">5 Seconds</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse    anim-duration-100ms"    checked /></textarea>
+
+
+                <!----------------------- Pulse Animation Delay ----------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    For add the animation delay, you can use
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .anim-delay-{delay}
+                    </span>
+                    class. for example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .anim-delay-1s
+                    </span>
+
+                    <div class="text-orange-dark-1">
+                        For more information, you can refer to the animation delay section.
+                    </div>
+                </div>
+                <!--------------- Visual Examples ------------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium checked-pulse unchecked-pulse pulse-scale-3 anim-delay-1s"
+                               id="pulse-delay-01"/>
+                        <label class="form-check-label" for="pulse-delay-01">1 Seconds</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium checked-pulse unchecked-pulse pulse-scale-3 anim-delay-2s"
+                               id="pulse-delay-02" checked/>
+                        <label class="form-check-label" for="pulse-delay-02">2 Seconds</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium checked-pulse unchecked-pulse pulse-scale-3 anim-delay-3s"
+                               id="pulse-delay-03"/>
+                        <label class="form-check-label" for="pulse-delay-03">3 Seconds</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium checked-pulse unchecked-pulse pulse-scale-3 anim-delay-4s"
+                               id="pulse-delay-04" checked/>
+                        <label class="form-check-label" for="pulse-delay-04">4 Seconds</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium checked-pulse unchecked-pulse pulse-scale-3 anim-delay-5s"
+                               id="pulse-delay-05"/>
+                        <label class="form-check-label" for="pulse-delay-05">5 Seconds</label>
+                    </div>
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse    anim-delay-1s"    checked /></textarea>
+
+
+                <!----------------------- Pulse Animation Count ----------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    For change the animation iteration count, you can use
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .anim-count-{count}
+                    </span>
+                    class. for example:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .anim-count-1
+                    </span>
+
+                    <div class="text-orange-dark-1">
+                        For more information, you can refer to the animation iteration count section.
+                    </div>
+                </div>
+                <!--------------- Visual Examples ------------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium checked-pulse unchecked-pulse pulse-scale-3 anim-count-1"
+                               id="pulse-count-1" checked/>
+                        <label class="form-check-label" for="pulse-count-1">1 Time</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium checked-pulse unchecked-pulse pulse-scale-3 anim-count-2"
+                               id="pulse-count-2" checked/>
+                        <label class="form-check-label" for="pulse-count-2">2 Times</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium checked-pulse unchecked-pulse pulse-scale-3 anim-count-3"
+                               id="pulse-count-3" checked/>
+                        <label class="form-check-label" for="pulse-count-3">3 Times</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium checked-pulse unchecked-pulse pulse-scale-3 anim-count-4"
+                               id="pulse-count-4" checked/>
+                        <label class="form-check-label" for="pulse-count-4">4 Times</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium checked-pulse unchecked-pulse pulse-scale-3"
+                               id="pulse-count-infinite" checked/>
+                        <label class="form-check-label" for="pulse-count-infinite">Infinite</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse    anim-count-1"    checked /></textarea>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+<!---------------------------- Back to Top ---------------------------->
+<div class="backdrop"></div>
+
+
+<!------------------------------ Scripts ------------------------------>
+<script src="../../../../assets/js/plugins/boostrap/bootstrap.bundle.min.js"></script>
+<script src="../../../../assets/js/plugins/jquery.min.js"></script>
+<script src="../../../../assets/js/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../../../assets/js/plugins/intro-js/intro.min.js"></script>
+<script src="../../../../assets/js/main/initialization.js"></script>
+<script src="../../../../assets/js/main/main.js"></script>
+<script src="../../../../assets/js/plugins/intro-js/custom-intro-tour.js"></script>
+<script src="../../../../assets/js/plugins/codemirror/codemirror.js"></script>
+<script src="../../../../assets/js/plugins/codemirror/xml.js"></script>
+<script src="../../../../assets/js/plugins/codemirror/custom-codemirror.js"></script>
+<script src="../../../../assets/js/plugins/swiper/swiper-bundle.min.js"></script>
+<script src="../../../../assets/js/plugins/swiper/swiper-used-in-document.js"></script>
+</body>
+
+</html>

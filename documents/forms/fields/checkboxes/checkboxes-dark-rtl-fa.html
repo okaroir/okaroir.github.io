@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="icon" href="../../../../assets/images/logo.svg">
+
+    <!------------------------------ Components ------------------------------>
+    <link rel="stylesheet" href="../../../../assets/css/plugins/boostrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/plugins/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/plugins/codemirror/codemirror.css">
+    <link rel="stylesheet" href="../../../../assets/css/plugins/codemirror/ayu-mirage.css">
+    <link rel="stylesheet" href="../../../../assets/css/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/document.css">
+
+    <!------------------------------ Components ------------------------------>
+
+    <link rel="stylesheet" href="../../../../assets/css/styles.css">
+</head>
+
+<body class="rtl dark dark-mode-1">
+
+<!------------------------------ Content ------------------------------>
+<div class="main-content p-3 float-end">
+
+    <!-------------------------------- Main ------------------------------->
+    <main class="main">
+
+        <!--------------------------- General ----------------------------->
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">توضیحات کلی</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    <ul class="mb-0 ps-2 line-h-36px">
+                        <li>
+                            ما بر اساس رنگ‌بندی‌های ارائه شده در قالب، چک‌باکس‌هایی با رنگ‌های سفارشی طراحی شده‌اند.
+                        </li>
+                        <li>
+                            برای آشنایی با رنگ‌بندی‌های قالب می‌توانید به بخش رنگ‌بندی‌ها مراجعه کنید.
+                        </li>
+                        <li>
+                            برای سفارشی‌سازی چک‌باکس‌ها به آدرس
+                            <span class="badge fw-normal fs-14px badge-light text-red-medium">
+								assets/css/scss/components/forms/checkboxes/_checkboxes.scss
+							</span>
+                            مراجعه کنید.
+                        </li>
+                        <li>
+                            برای سفارشی‌سازی چک‌باکس‌ها در حالت تاریک به آدرس
+                            <span class="badge fw-normal fs-14px badge-light text-red-medium">
+								assets/css/scss/components/forms/checkboxes/_checkboxes_dark.scss
+							</span>
+                            مراجعه کنید.
+                        </li>
+                        <li>
+                            برای ایجاد چک‌باکس ابتدا باید کلاس
+                            <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.form-check-input
+							</span>
+                            را به المان مورد نظر اعمال کنید.
+                        </li>
+                        <li>
+                            بر اساس استایل‌ها و رنگ‌بندی‌های مختلف (که در زیر به صورت کامل قابل مشاهده هستند) کلاس‌های
+                            مکمل را به المان مورد نظر (المانی که کلاس form-check-input دارد) اضافه کنید.
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!---------------------------- Colors ----------------------------->
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">رنگ‌ها</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <!--------------------------- Description ------------------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    <ul class="mb-0 ps-2 line-h-36px">
+
+                        <li>
+                            ما از ۹ رنگ‌بندی زیر در قالب استفاده می‌کنیم.
+                        </li>
+                        <li>
+                            چک‌باکس‌های اختصاصی بر اساس این ۹ رنگ طراحی شده‌اند.
+                        </li>
+                    </ul>
+                </div>
+
+                <!------------------------ Visual Examples ------------------------>
+                <div class="d-flex flex-wrap mb-3">
+                    <span class="bg-red-medium text-white me-2 mb-2 p-2">قرمز</span>
+                    <span class="bg-blue-medium text-white me-2 mb-2 p-2">آبی</span>
+                    <span class="bg-cyan-medium text-white me-2 mb-2 p-2">فیروزه‌ای</span>
+                    <span class="bg-orange-medium text-white me-2 mb-2 p-2">نارنجی</span>
+                    <span class="bg-purple-medium text-white me-2 mb-2 p-2">بنفش</span>
+                    <span class="bg-green-medium text-white me-2 mb-2 p-2">سبز</span>
+                    <span class="bg-pink-medium text-white me-2 mb-2 p-2">صورتی</span>
+                    <span class="bg-yellow-medium text-white me-2 mb-2 p-2">زرد</span>
+                    <span class="bg-gray-medium text-white me-2 mb-2 p-2">خاکستری</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!---------------------------- Weight ----------------------------->
+        <div class="card radius-10px border-0 shadow-sm mb-5" id="buttons-weight">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">وزن رنگ‌ها</h3>
+
+            </div>
+
+            <div class="card-body">
+
+
+                <!--------------------------- Description ------------------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    <ul class="mb-0 ps-2 line-h-36px">
+                        <li class="mb-3">
+                            ما از ۱۰ وزن برای رنگ‌بندی استفاده کرده‌ایم که عبارتند از:
+                            <div class="ltr-direction mt-2">
+                                dark-4 - dark-3 - dark-2 - dark-1 - medium - light-1 - light-2 - light-3 - light-4 -
+                                light-5
+                            </div>
+                        </li>
+                        <li>
+                            برای استفاده از وزن‌های مختلف رنگ کافیست کلاس
+                            <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.checkbox-{color}-{weight}
+							</span>
+                            را به المان مورد نظر اعمال کنید. به‌عنوان نمونه
+                            <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+								.checkbox-red-dark-4
+							</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!------------------------ Visual Examples ------------------------>
+
+                
+                
+                <div class="d-flex flex-wrap">
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-dark-4" id="weight-dark-4"
+                               checked/>
+                        <label class="form-check-label" for="weight-dark-4">تاریک ۴</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-dark-3" id="weight-dark-3"
+                               checked/>
+                        <label class="form-check-label" for="weight-dark-3">تاریک ۳</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-dark-2" id="weight-dark-2"
+                               checked/>
+                        <label class="form-check-label" for="weight-dark-2">تاریک ۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-dark-1" id="weight-dark-1"
+                               checked/>
+                        <label class="form-check-label" for="weight-dark-1">تاریک ۱</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-medium" id="weight-medium"
+                               checked/>
+                        <label class="form-check-label" for="weight-medium">متوسط</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-light-1" id="weight-light-1"
+                               checked/>
+                        <label class="form-check-label" for="weight-light-1">روشن ۱</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-light-2" id="weight-light-2"
+                               checked/>
+                        <label class="form-check-label" for="weight-light-2">روشن ۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-light-3" id="weight-light-3"
+                               checked/>
+                        <label class="form-check-label" for="weight-light-3">روشن ۳</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-light-4" id="weight-light-4"
+                               checked/>
+                        <label class="form-check-label" for="weight-light-4">روشن ۴</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-light-5" id="weight-light-5"
+                               checked/>
+                        <label class="form-check-label" for="weight-light-5">روشن ۵</label>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!----------------------- Background Color ------------------------>
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">رنگ پس‌زمینه</h3>
+
+            </div>
+
+            <div class="card-body">
+
+
+                <!------------------------------ Checked ------------------------------>
+                <!------------ Description ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    با استفاده از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .checked-bg-{color}-{weight}
+					</span>
+                    می‌توانید رنگ پس‌زمینه چک‌باکس را در حالتی که
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    تیک خورده
+                    </span>
+                    است تغییر دهید. به‌عنوان نمونه:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .checked-bg-gray-dark-1
+					</span>
+                </div>
+                <!---------- Visual Examples ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checked-bg-gray-dark-1"
+                               id="checked-bg-red" checked/>
+                        <label class="form-check-label" for="checked-bg-red">قرمز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-blue-medium checked-bg-gray-dark-1"
+                               id="checked-bg-blue" checked/>
+                        <label class="form-check-label" for="checked-bg-blue">آبی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-cyan-medium checked-bg-gray-dark-1"
+                               id="checked-bg-cyan" checked/>
+                        <label class="form-check-label" for="checked-bg-cyan">فیروزه‌ای</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium checked-bg-gray-dark-1"
+                               id="checked-bg-orange" checked/>
+                        <label class="form-check-label" for="checked-bg-orange">نارنجی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium checked-bg-gray-dark-1"
+                               id="checked-bg-purple" checked/>
+                        <label class="form-check-label" for="checked-bg-purple">بنفش</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-green-medium checked-bg-gray-dark-1"
+                               id="checked-bg-green" checked/>
+                        <label class="form-check-label" for="checked-bg-green">سبز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-pink-medium checked-bg-gray-dark-1"
+                               id="checked-bg-pink" checked/>
+                        <label class="form-check-label" for="checked-bg-pink">صورتی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-yellow-medium checked-bg-gray-dark-1"
+                               id="checked-bg-yellow" checked/>
+                        <label class="form-check-label" for="checked-bg-yellow">زرد</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-gray-medium checked-bg-gray-dark-1"
+                               id="checked-bg-gray" checked/>
+                        <label class="form-check-label" for="checked-bg-gray">خاکستری</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-bg-gray-dark-1"    checked /></textarea>
+
+
+                <!----------------------------- Unchecked ----------------------------->
+                <!------------ Description ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    با استفاده از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .unchecked-bg-{color}-{weight}
+                    </span>
+                    می‌توانید رنگ پس‌زمینه چک‌باکس را در حالتی که
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    تیک نخورده
+                    </span>
+                    است تغییر دهید. به‌عنوان نمونه:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .unchecked-bg-red-light-5
+					</span>
+                </div>
+                <!---------- Visual Examples ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium unchecked-bg-red-light-5"
+                               id="unchecked-bg-red"/>
+                        <label class="form-check-label" for="unchecked-bg-red">قرمز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium unchecked-bg-blue-light-5"
+                               id="unchecked-bg-blue"/>
+                        <label class="form-check-label" for="unchecked-bg-blue">آبی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium unchecked-bg-cyan-light-5"
+                               id="unchecked-bg-cyan"/>
+                        <label class="form-check-label" for="unchecked-bg-cyan">فیروزه‌ای</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium unchecked-bg-orange-light-5"
+                               id="unchecked-bg-orange"/>
+                        <label class="form-check-label" for="unchecked-bg-orange">نارنجی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium unchecked-bg-purple-light-5"
+                               id="unchecked-bg-purple"/>
+                        <label class="form-check-label" for="unchecked-bg-purple">بنفش</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-green-medium unchecked-bg-green-light-5"
+                               id="unchecked-bg-green"/>
+                        <label class="form-check-label" for="unchecked-bg-green">سبز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-pink-medium unchecked-bg-pink-light-5"
+                               id="unchecked-bg-pink"/>
+                        <label class="form-check-label" for="unchecked-bg-pink">صورتی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-yellow-medium unchecked-bg-yellow-light-5"
+                               id="unchecked-bg-yellow"/>
+                        <label class="form-check-label" for="unchecked-bg-yellow">زرد</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-gray-medium unchecked-bg-gray-light-5"
+                               id="unchecked-bg-gray"/>
+                        <label class="form-check-label" for="unchecked-bg-gray">خاکستری</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    unchecked-bg-red-light-5"    checked /></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!------------------------- Border Color -------------------------->
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">رنگ Border</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <!------------------------------ Checked ------------------------------>
+                <!------------ Description ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    با استفاده از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .checked-border-{color}-{weight}
+                    </span>
+                    می‌توانید رنگ حاشیه چک‌باکس را در حالتی که
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    تیک خورده
+                    </span>
+                    است تغییر دهید. به‌عنوان نمونه:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+					    .checked-border-black
+					</span>
+                </div>
+                <!---------- Visual Examples ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checked-border-black"
+                               id="checked-border-red" checked/>
+                        <label class="form-check-label" for="checked-border-red">قرمز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-blue-medium checked-border-black"
+                               id="checked-border-blue" checked/>
+                        <label class="form-check-label" for="checked-border-blue">آبی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-cyan-medium checked-border-black"
+                               id="checked-border-cyan" checked/>
+                        <label class="form-check-label" for="checked-border-cyan">فیروزه‌ای</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-orange-medium checked-border-black"
+                               id="checked-border-orange" checked/>
+                        <label class="form-check-label" for="checked-border-orange">نارنجی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-purple-medium checked-border-black"
+                               id="checked-border-purple" checked/>
+                        <label class="form-check-label" for="checked-border-purple">بنفش</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-green-medium checked-border-black"
+                               id="checked-border-green" checked/>
+                        <label class="form-check-label" for="checked-border-green">سبز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-pink-medium checked-border-black"
+                               id="checked-border-pink" checked/>
+                        <label class="form-check-label" for="checked-border-pink">صورتی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-yellow-medium checked-border-black"
+                               id="checked-border-yellow" checked/>
+                        <label class="form-check-label" for="checked-border-yellow">زرد</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-gray-medium checked-border-black"
+                               id="checked-border-gray" checked/>
+                        <label class="form-check-label" for="checked-border-gray">خاکستری</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-border-black"    checked /></textarea>
+
+
+                <!----------------------------- Unchecked ----------------------------->
+                <!------------ Description ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    با استفاده از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+					    .unchecked-border-{color}-{weight}
+                    </span>
+                    می‌توانید رنگ حاشیه چک‌باکس را در حالتی که
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    تیک نخورده
+                    </span>
+                    است تغییر دهید. به‌عنوان نمونه:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+					    .unchecked-border-red-dark-4
+                    </span>
+                </div>
+                <!---------- Visual Examples ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium unchecked-border-red-medium"
+                               id="unchecked-border-red"/>
+                        <label class="form-check-label" for="unchecked-border-red">قرمز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium unchecked-border-blue-medium"
+                               id="unchecked-border-blue"/>
+                        <label class="form-check-label" for="unchecked-border-blue">آبی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium unchecked-border-cyan-medium"
+                               id="unchecked-border-cyan"/>
+                        <label class="form-check-label" for="unchecked-border-cyan">فیروزه‌ای</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium unchecked-border-orange-medium"
+                               id="unchecked-border-orange"/>
+                        <label class="form-check-label" for="unchecked-border-orange">نارنجی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium unchecked-border-purple-medium"
+                               id="unchecked-border-purple"/>
+                        <label class="form-check-label" for="unchecked-border-purple">بنفش</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-green-medium unchecked-border-green-medium"
+                               id="unchecked-border-green"/>
+                        <label class="form-check-label" for="unchecked-border-green">سبز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-pink-medium unchecked-border-pink-medium"
+                               id="unchecked-border-pink"/>
+                        <label class="form-check-label" for="unchecked-border-pink">صورتی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-yellow-medium unchecked-border-yellow-medium"
+                               id="unchecked-border-yellow"/>
+                        <label class="form-check-label" for="unchecked-border-yellow">زرد</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-gray-medium unchecked-border-gray-medium"
+                               id="unchecked-border-gray"/>
+                        <label class="form-check-label" for="unchecked-border-gray">خاکستری</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    unchecked-border-red-medium"    checked /></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!---------------------------- Marks ------------------------------>
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">نشانه‌ها</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <!------------------------ General Description ------------------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    شما می‌توانید از ۱۷ نشانه برای نمایش مارک در چک‌باکس‌ها استفاده کنید که عبارتند از:
+
+                    <div class="swiper mt-3 text-gray-light-1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick01 mb-2"></i>
+                                    tick-01
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick02 mb-2"></i>
+                                    tick-02
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick03 mb-2"></i>
+                                    tick-03
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick04 mb-2"></i>
+                                    tick-04
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick05 mb-2"></i>
+                                    tick-05
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-tick06 mb-2"></i>
+                                    tick-06
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-close01 mb-2"></i>
+                                    close-01
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-close02 mb-2"></i>
+                                    close-02
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-close03 mb-2"></i>
+                                    close-03
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-close04 mb-2"></i>
+                                    close-04
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-square01 mb-2"></i>
+                                    square-01
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-square02 mb-2"></i>
+                                    square-02
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-circle mb-2"></i>
+                                    circle
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-plus01 mb-2"></i>
+                                    plus-01
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-plus02 mb-2"></i>
+                                    plus-02
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-minus01 mb-2"></i>
+                                    minus-01
+                                </div>
+                            </div>
+                            <div class="swiper-slide cursor-pointer">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="cu-icons-minus02 mb-2"></i>
+                                    minus-02
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 d-flex justify-content-center">
+                            <div class="swiper-button-prev text-gray-medium w-30px h-30px rounded-circle position-static"></div>
+                            <div class="swiper-button-next text-gray-medium w-30px h-30px rounded-circle position-static"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------ Checked ------------------------------>
+                <!------------ Description - Types ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    با استفاده از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .checked-mark-{mark}
+                    </span>
+                    می‌توانید
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    استایل علامت چک‌باکس
+                    </span>
+                    را در حالتی که
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    تیک خورده
+                    </span>
+                    است تغییر دهید. به‌عنوان نمونه:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .checked-mark-square-01
+					</span>
+                </div>
+                <!---------- Visual Examples - Types ---------->
+                <div class="d-flex flex-wrap">
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-medium checked-mark-tick-01"
+                               id="checked-mark-tick-01" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-01">تیک ۰۱</label>
+                    </div>
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-medium checked-mark-tick-02"
+                               id="checked-mark-tick-02" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-02">تیک ۰۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-medium checked-mark-tick-03"
+                               id="checked-mark-tick-03" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-03">تیک ۰۳</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-medium checked-mark-tick-04"
+                               id="checked-mark-tick-04" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-04">تیک ۰۴</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-medium checked-mark-tick-05"
+                               id="checked-mark-tick-05" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-05">تیک ۰۵</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-green-medium checked-mark-tick-06"
+                               id="checked-mark-tick-06" checked/>
+                        <label class="form-check-label" for="checked-mark-tick-06">تیک ۰۶</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-pink-medium checked-mark-close-01"
+                               id="checked-mark-close-01" checked/>
+                        <label class="form-check-label" for="checked-mark-close-01">ضربدر ۰۱</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-yellow-medium checked-mark-close-02"
+                               id="checked-mark-close-02" checked/>
+                        <label class="form-check-label" for="checked-mark-close-02">ضربدر ۰۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-gray-medium checked-mark-square-01"
+                               id="checked-mark-square-01" checked/>
+                        <label class="form-check-label" for="checked-mark-square-01">مربع ۰۱</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-light-1 checked-mark-square-02"
+                               id="checked-mark-square-02" checked/>
+                        <label class="form-check-label" for="checked-mark-square-02">مربع ۰۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-light-1 checked-mark-plus-01"
+                               id="checked-mark-plus-01" checked/>
+                        <label class="form-check-label" for="checked-mark-plus-01">به‌علاوه ۰۱</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-light-1 checked-mark-plus-02"
+                               id="checked-mark-plus-02" checked/>
+                        <label class="form-check-label" for="checked-mark-plus-02">به‌علاوه ۰۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-light-1 checked-mark-minus-01"
+                               id="checked-mark-minus-01" checked/>
+                        <label class="form-check-label" for="checked-mark-minus-01">منها ۰۱</label>
+                    </div>
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-light-1 checked-mark-minus-02"
+                               id="checked-mark-minus-02" checked/>
+                        <label class="form-check-label" for="checked-mark-minus-02">منها ۰۲</label>
+                    </div>
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-mark-tick-01"    checked /></textarea>
+
+                <!------------ Description - Color ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    با استفاده از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .checked-mark-{color}-{weight}
+                    </span>
+                    می‌توانید
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    رنگ علامت چک‌باکس
+                    </span>
+                    را در حالتی که
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    تیک خورده
+                    </span>
+                    است تغییر دهید. به‌عنوان نمونه:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .checked-mark-cyan-medium
+                    </span>
+                </div>
+                <!---------- Visual Examples - Color ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-medium checked-bg-white checked-mark-red-medium"
+                               id="checked-mark-red" checked/>
+                        <label class="form-check-label" for="checked-mark-red">علامت قرمز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-medium checked-bg-white checked-mark-blue-medium"
+                               id="checked-mark-blue" checked/>
+                        <label class="form-check-label" for="checked-mark-blue">علامت آبی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-medium checked-bg-white checked-mark-cyan-medium"
+                               id="checked-mark-cyan" checked/>
+                        <label class="form-check-label" for="checked-mark-cyan">علامت فیروزه‌ای</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-medium checked-bg-white checked-mark-orange-medium"
+                               id="checked-mark-orange" checked/>
+                        <label class="form-check-label" for="checked-mark-orange">علامت نارنجی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-medium checked-bg-white checked-mark-purple-medium"
+                               id="checked-mark-purple" checked/>
+                        <label class="form-check-label" for="checked-mark-purple">علامت بنفش</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-green-medium checked-bg-white checked-mark-green-medium"
+                               id="checked-mark-green" checked/>
+                        <label class="form-check-label" for="checked-mark-green">علامت سبز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-pink-medium checked-bg-white checked-mark-pink-medium"
+                               id="checked-mark-pink" checked/>
+                        <label class="form-check-label" for="checked-mark-pink">علامت صورتی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-yellow-medium checked-bg-white checked-mark-yellow-medium"
+                               id="checked-mark-yellow" checked/>
+                        <label class="form-check-label" for="checked-mark-yellow">علامت زرد</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-gray-medium checked-bg-white checked-mark-gray-medium"
+                               id="checked-mark-gray" checked/>
+                        <label class="form-check-label" for="checked-mark-gray">علامت خاکستری</label>
+                    </div>
+
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-mark-red-medium"    checked /></textarea>
+
+                <!----------------------------- Unchecked ----------------------------->
+                <!------------ Description - Types ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    با استفاده از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .unchecked-mark-{mark}
+                    </span>
+                    می‌توانید
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    استایل علامت چک‌باکس
+                    </span>
+                    را در حالتی که
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    تیک نخورده
+                    </span>
+                    است تغییر دهید. به‌عنوان نمونه:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .unchecked-mark-close-02
+                    </span>
+                </div>
+                <!---------- Visual Examples - Types ---------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-medium unchecked-mark-tick-01 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-01"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-01">تیک ۰۱</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-medium unchecked-mark-tick-02 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-02"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-02">تیک ۰۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-medium unchecked-mark-tick-03 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-03"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-03">تیک ۰۳</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-medium unchecked-mark-tick-04 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-04"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-04">تیک ۰۴</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-medium unchecked-mark-tick-05 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-05"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-05">تیک ۰۵</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-green-medium unchecked-mark-tick-06 unchecked-mark-gray-medium"
+                               id="unchecked-mark-tick-06"/>
+                        <label class="form-check-label" for="unchecked-mark-tick-06">تیک ۰۶</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-pink-medium unchecked-mark-close-01 unchecked-mark-gray-medium"
+                               id="unchecked-mark-close-01"/>
+                        <label class="form-check-label" for="unchecked-mark-close-01">ضربدر ۰۱</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-yellow-medium unchecked-mark-close-02 unchecked-mark-gray-medium"
+                               id="unchecked-mark-close-02"/>
+                        <label class="form-check-label" for="unchecked-mark-close-02">ضربدر ۰۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-gray-medium unchecked-mark-square-01 unchecked-mark-gray-medium"
+                               id="unchecked-mark-square-01"/>
+                        <label class="form-check-label" for="unchecked-mark-square-01">مربع ۰۱</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-light-1 unchecked-mark-square-02 unchecked-mark-gray-medium"
+                               id="unchecked-mark-square-02"/>
+                        <label class="form-check-label" for="unchecked-mark-square-02">مربع ۰۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-light-1 unchecked-mark-plus-01 unchecked-mark-gray-medium"
+                               id="unchecked-mark-plus-01"/>
+                        <label class="form-check-label" for="unchecked-mark-plus-01">به‌علاوه ۰۱</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-light-1 unchecked-mark-plus-02 unchecked-mark-gray-medium"
+                               id="unchecked-mark-plus-02"/>
+                        <label class="form-check-label" for="unchecked-mark-plus-02">به‌علاوه ۰۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-light-1 unchecked-mark-minus-01 unchecked-mark-gray-medium"
+                               id="unchecked-mark-minus-01"/>
+                        <label class="form-check-label" for="unchecked-mark-minus-01">منها ۰۱</label>
+                    </div>
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-light-1 unchecked-mark-minus-02 unchecked-mark-gray-medium"
+                               id="unchecked-mark-minus-02"/>
+                        <label class="form-check-label" for="unchecked-mark-minus-02">منها ۰۲</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    unchecked-mark-tick-01    unchecked-mark-gray-medium"    checked /></textarea>
+
+                <!------------ Description - Color ------------>
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    با استفاده از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .unchecked-mark-{color}-{weight}
+                    </span>
+                    می‌توانید
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    رنگ علامت چک‌باکس
+                    </span>
+                    را در حالتی که
+                    <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+					    تیک نخورده
+                    </span>
+                    است تغییر دهید. به‌عنوان نمونه:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .unchecked-mark-blue-medium
+                    </span>
+                </div>
+                <!---------- Visual Examples - Color ---------->
+                <div class="d-flex flex-wrap">
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-red-medium  unchecked-mark-red-medium unchecked-mark-tick-01"
+                               id="unchecked-mark-red"/>
+                        <label class="form-check-label" for="unchecked-mark-red">نشان قرمز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-blue-medium unchecked-mark-blue-medium unchecked-mark-tick-02"
+                               id="unchecked-mark-blue"/>
+                        <label class="form-check-label" for="unchecked-mark-blue">نشان آبی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-cyan-medium unchecked-bg-white unchecked-mark-cyan-medium unchecked-mark-tick-03"
+                               id="unchecked-mark-cyan"/>
+                        <label class="form-check-label" for="unchecked-mark-cyan">نشان فیروزه‌ای</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-orange-medium unchecked-bg-white unchecked-mark-orange-medium unchecked-mark-tick-04"
+                               id="unchecked-mark-orange"/>
+                        <label class="form-check-label" for="unchecked-mark-orange">نشان نارنجی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-purple-medium unchecked-bg-white unchecked-mark-purple-medium unchecked-mark-tick-05"
+                               id="unchecked-mark-purple"/>
+                        <label class="form-check-label" for="unchecked-mark-purple">نشان بنفش</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-green-medium unchecked-bg-white unchecked-mark-green-medium unchecked-mark-tick-06"
+                               id="unchecked-mark-green"/>
+                        <label class="form-check-label" for="unchecked-mark-green">نشان سبز</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-pink-medium unchecked-bg-white unchecked-mark-pink-medium unchecked-mark-close-01"
+                               id="unchecked-mark-pink"/>
+                        <label class="form-check-label" for="unchecked-mark-pink">نشان صورتی</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-yellow-medium unchecked-bg-white unchecked-mark-yellow-medium unchecked-mark-close-02"
+                               id="unchecked-mark-yellow"/>
+                        <label class="form-check-label" for="unchecked-mark-yellow">نشان زرد</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-lg checkbox-gray-medium unchecked-bg-white unchecked-mark-gray-medium unchecked-mark-close-03"
+                               id="unchecked-mark-gray"/>
+                        <label class="form-check-label" for="unchecked-mark-gray">نشان خاکستری</label>
+                    </div>
+
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    unchecked-mark-red-medium    unchecked-mark-tick-01"    checked /></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!---------------------------- Sizes ------------------------------>
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">اندازه‌ها</h3>
+
+            </div>
+
+            <div class="card-body">
+
+                <!--------------------------- Default Sizes --------------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    برای تغییر اندازه چک‌باکس‌ها می‌توانید از کلاس‌های سفارشی شامل:
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.checkbox-xs
+							</span>
+                    ،
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.checkbox-sm
+							</span>
+                    ،
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.checkbox-md
+							</span>
+                    ،
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.checkbox-lg
+							</span>
+                    و یا
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.checkbox-xl
+							</span>
+                    استفاده کنید.
+                    <div class="text-orange-dark-1">
+                        در این حالت اندازه نشانه‌ها بر اساس اندازه چک‌باکس تغییر می‌کند.
+                    </div>
+                </div>
+                <!-------------- Visual Examples -------------->
+                <div class="d-flex flex-wrap align-items-center">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checkbox-xs"
+                               id="size-xs" checked/>
+                        <label class="form-check-label" for="size-xs">خیلی کوچک</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checkbox-sm"
+                               id="size-sm" checked/>
+                        <label class="form-check-label" for="size-sm">کوچک</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checkbox-md"
+                               id="size-md" checked/>
+                        <label class="form-check-label" for="size-md">متوسط</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checkbox-lg"
+                               id="size-lg" checked/>
+                        <label class="form-check-label" for="size-lg">بزرگ</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-red-medium checkbox-xl"
+                               id="size-xl" checked/>
+                        <label class="form-check-label" for="size-xl">خیلی بزرگ</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checkbox-xs"    checked /></textarea>
+
+                <!--------------------------- Default Sizes --------------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    علاوه بر این می‌توانید از کلاس‌های عرض و ارتفاع نیز برای تغییر اندازه چک‌باکس‌ها استفاده
+                    کنید.
+                    <div class="text-orange-dark-1">
+                        در این حالت اندازه نشانه‌ها بر اساس اندازه چک‌باکس تغییر نمی‌کند و شما خودتان باید به صورت دستی
+                        اندازه فونت مارک را تعیین کنید.
+                    </div>
+                </div>
+                <!-------------- Visual Examples -------------->
+                <div class="d-flex align-items-center">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-pink-medium w-20px h-20px"
+                               id="size-custom-w20px" checked/>
+                        <label class="form-check-label" for="size-custom-w20px">۲۰×۲۰</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-pink-medium w-30px h-30px"
+                               id="size-custom-w30px" checked/>
+                        <label class="form-check-label" for="size-custom-w30px">۳۰×۳۰</label>
+                    </div>
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox" class="me-1 form-check-input checkbox-pink-medium w-40px h-40px"
+                               id="size-custom-w40px" checked/>
+                        <label class="form-check-label" for="size-custom-w40px">۴۰×۴۰</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    w-20px    h-20px"    checked /></textarea>
+
+            </div>
+
+        </div>
+
+
+        <!--------------------------- Pulses ------------------------------>
+        <div class="card radius-10px border-0 shadow-sm mb-5">
+
+            <div class="card-header">
+
+                <h3 class="fs-18px fw-bold m-0">چک‌باکس‌های ضربانی</h3>
+
+            </div>
+
+            <div class="card-body">
+    
+                <!------------------------------- Status ------------------------------>
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px">
+                    <div>
+                        اگر به چک‌باکس کلاس
+                        <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                            .checked-pulse
+                        </span>
+                        را اضافه کنید موقعی که چک‌باکس
+                        <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+                            تیک خورده
+                        </span>
+                        است، چک‌باکس دارای ضربان می‌باشد.
+                    </div>
+                    <div>
+                        اگر به چک‌باکس کلاس
+                        <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+								.checkbox-unchecked-pulse
+							</span>
+                        را اضافه کنید موقعی که چک‌باکس
+                        <span class="badge fw-normal fs-14px badge-light text-yellow-dark-4 ltr-direction">
+                            تیک نخورده
+                        </span>
+                        است، چک‌باکس دارای ضربان می‌باشد.
+                    </div>
+                </div>
+                <!---------- Visual Examples - Status --------->
+                <div class="d-flex flex-wrap">
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium checked-pulse pulse-scale-3"
+                               id="pulse-checked" checked/>
+                        <label class="form-check-label" for="pulse-checked">تیک خورده</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium unchecked-mark-close-01 unchecked-pulse pulse-scale-3"
+                               id="pulse-unchecked"/>
+                        <label class="form-check-label" for="pulse-unchecked">تیک نخورده</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium checked-pulse unchecked-pulse pulse-scale-3 pulse-scale-3"
+                               id="pulse-both" checked/>
+                        <label class="form-check-label" for="pulse-both">هر دو حالت</label>
+                    </div>
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse"    checked />
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    unchecked-pulse"    checked />
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse    unchecked-pulse"    checked /></textarea>
+    
+    
+    
+                <!----------------------------- Pulse Type ---------------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    ضربان‌هایی که می‌توانید اعمال کنید عبارتند از: scale-01، scale-02، scale-03، scale-04 و
+                    scale-05
+                    <div>
+                        برای اعمال ضربان‌های جدید کافیست کلاس
+                        <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                            .pulse-{pulse}
+                        </span>
+                        را به المان اضافه کنید. به‌عنوان مثال:
+                        <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                            .pulse-scale-03
+                        </span>
+                    </div>
+                </div>
+                <!--------------- Visual Examples ------------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium unchecked-mark-close-01 checked-pulse unchecked-pulse pulse-scale-1"
+                               id="pulse-type-01" checked/>
+                        <label class="form-check-label" for="pulse-type-01">بزرگ‌نمایی ۱</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium checked-pulse unchecked-pulse pulse-scale-2"
+                               id="pulse-type-02"/>
+                        <label class="form-check-label" for="pulse-type-02">بزرگ‌نمایی ۲</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium unchecked-mark-close-01 checked-pulse unchecked-pulse pulse-scale-3"
+                               id="pulse-type-03" checked/>
+                        <label class="form-check-label" for="pulse-type-03">بزرگ‌نمایی ۳</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium unchecked-mark-close-01 checked-pulse unchecked-pulse pulse-scale-4"
+                               id="pulse-type-04"/>
+                        <label class="form-check-label" for="pulse-type-04">بزرگ‌نمایی ۴</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium unchecked-mark-close-01 checked-pulse unchecked-pulse pulse-scale-5"
+                               id="pulse-type-05" checked/>
+                        <label class="form-check-label" for="pulse-type-05">بزرگ‌نمایی ۵</label>
+                    </div>
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse    pulse-scale-3"    checked /></textarea>
+    
+    
+                <!--------------------- Pulse Animation Duration ---------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    برای اعمال مدت‌زمان ضربان می‌توانید از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .anim-duration-{duration}
+                    </span>
+                    استفاده کنید. به‌عنوان مثال:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .anim-duration-200ms
+                    </span>
+    
+                    <div class="text-orange-dark-1">
+                        برای اطلاعات بیشتر می‌توانید به بخش مدت‌زمان انیمیشن مراجعه کنید.
+                    </div>
+                </div>
+                <!--------------- Visual Examples ------------->
+                <div class="d-flex flex-wrap">
+        
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                                class="me-1 form-check-input checkbox-red-medium checked-pulse unchecked-pulse pulse-scale-3 anim-duration-100ms"
+                                id="pulse-duration-1s" checked/>
+                        <label class="form-check-label" for="pulse-duration-1s">۱ ثانیه</label>
+                    </div>
+        
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                                class="me-1 form-check-input checkbox-blue-medium checked-pulse unchecked-pulse pulse-scale-3 anim-duration-2s"
+                                id="pulse-duration-2s"/>
+                        <label class="form-check-label" for="pulse-duration-2s">۲ ثانیه</label>
+                    </div>
+        
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                                class="me-1 form-check-input checkbox-cyan-medium checked-pulse unchecked-pulse pulse-scale-3 anim-duration-3s"
+                                id="pulse-duration-3s" checked/>
+                        <label class="form-check-label" for="pulse-duration-3s">۳ ثانیه</label>
+                    </div>
+        
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                                class="me-1 form-check-input checkbox-orange-medium checked-pulse unchecked-pulse pulse-scale-3 anim-duration-4s"
+                                id="pulse-duration-4s"/>
+                        <label class="form-check-label" for="pulse-duration-4s">۴ ثانیه</label>
+                    </div>
+        
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                                class="me-1 form-check-input checkbox-purple-medium checked-pulse unchecked-pulse pulse-scale-3 anim-duration-5s"
+                                id="pulse-duration-5s" checked/>
+                        <label class="form-check-label" for="pulse-duration-5s">۵ ثانیه</label>
+                    </div>
+    
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse    anim-duration-100ms"    checked /></textarea>
+    
+    
+                <!----------------------- Pulse Animation Delay ----------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    برای اعمال تأخیر در ضربان می‌توانید از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .anim-delay-{delay}
+                    </span>
+                    استفاده کنید. به‌عنوان مثال:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .anim-delay-1s
+                    </span>
+    
+                    <div class="text-orange-dark-1">
+                        برای اطلاعات بیشتر می‌توانید به بخش تأخیر انیمیشن مراجعه کنید.
+                    </div>
+                </div>
+                <!--------------- Visual Examples ------------->
+                <div class="d-flex flex-wrap">
+        
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                                class="me-1 form-check-input checkbox-red-medium checked-pulse unchecked-pulse pulse-scale-3 anim-delay-1s"
+                                id="pulse-delay-01"/>
+                        <label class="form-check-label" for="pulse-delay-01">۱ ثانیه</label>
+                    </div>
+        
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                                class="me-1 form-check-input checkbox-blue-medium checked-pulse unchecked-pulse pulse-scale-3 anim-delay-2s"
+                                id="pulse-delay-02" checked/>
+                        <label class="form-check-label" for="pulse-delay-02">۲ ثانیه</label>
+                    </div>
+        
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                                class="me-1 form-check-input checkbox-cyan-medium checked-pulse unchecked-pulse pulse-scale-3 anim-delay-3s"
+                                id="pulse-delay-03"/>
+                        <label class="form-check-label" for="pulse-delay-03">۳ ثانیه</label>
+                    </div>
+        
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                                class="me-1 form-check-input checkbox-orange-medium checked-pulse unchecked-pulse pulse-scale-3 anim-delay-4s"
+                                id="pulse-delay-04" checked/>
+                        <label class="form-check-label" for="pulse-delay-04">۴ ثانیه</label>
+                    </div>
+        
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                                class="me-1 form-check-input checkbox-purple-medium checked-pulse unchecked-pulse pulse-scale-3 anim-delay-5s"
+                                id="pulse-delay-05"/>
+                        <label class="form-check-label" for="pulse-delay-05">۵ ثانیه</label>
+                    </div>
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse    anim-delay-1s"    checked /></textarea>
+    
+    
+                <!----------------------- Pulse Animation Count ----------------------->
+                <!---------------- Description ---------------->
+                <div class="alert bg-gray-light-5 rounded-10px line-h-36px mt-5">
+                    برای تعیین تعداد دفعات نمایش ضربان می‌توانید از کلاس
+                    <span class="badge fw-normal fs-14px badge-light text-blue-medium ltr-direction">
+                        .anim-count-{count}
+                    </span>
+                    استفاده کنید. به‌عنوان مثال:
+                    <span class="badge fw-normal fs-14px badge-light text-cyan-medium ltr-direction">
+                        .anim-count-1
+                    </span>
+    
+                    <div class="text-orange-dark-1">
+                        برای اطلاعات بیشتر می‌توانید به بخش تعداد تکرارهای انیمیشن مراجعه کنید.
+                    </div>
+                </div>
+                <!--------------- Visual Examples ------------->
+                <div class="d-flex flex-wrap">
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-red-medium checked-pulse unchecked-pulse pulse-scale-3 anim-count-1"
+                               id="pulse-count-1" checked/>
+                        <label class="form-check-label" for="pulse-count-1">۱ بار</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-blue-medium checked-pulse unchecked-pulse pulse-scale-3 anim-count-2"
+                               id="pulse-count-2" checked/>
+                        <label class="form-check-label" for="pulse-count-2">۲ بار</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-cyan-medium checked-pulse unchecked-pulse pulse-scale-3 anim-count-3"
+                               id="pulse-count-3" checked/>
+                        <label class="form-check-label" for="pulse-count-3">۳ بار</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-orange-medium checked-pulse unchecked-pulse pulse-scale-3 anim-count-4"
+                               id="pulse-count-4" checked/>
+                        <label class="form-check-label" for="pulse-count-4">۴ بار</label>
+                    </div>
+
+                    <div class="mb-3 mx-2">
+                        <input type="checkbox"
+                               class="me-1 form-check-input checkbox-purple-medium checked-pulse unchecked-pulse pulse-scale-3"
+                               id="pulse-count-infinite" checked/>
+                        <label class="form-check-label" for="pulse-count-infinite">بی‌نهایت</label>
+                    </div>
+
+                </div>
+                <!------------ Code Example ----------->
+                <textarea class="codebox-content" rows="20">
+<input type="checkbox"    class="form-check-input    checkbox-red-medium    checked-pulse    anim-count-1"    checked /></textarea>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+<!---------------------------- Back to Top ---------------------------->
+<div class="backdrop"></div>
+
+
+<!------------------------------ Scripts ------------------------------>
+<script src="../../../../assets/js/plugins/boostrap/bootstrap.bundle.min.js"></script>
+<script src="../../../../assets/js/plugins/jquery.min.js"></script>
+<script src="../../../../assets/js/plugins/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../../../assets/js/plugins/intro-js/intro.min.js"></script>
+<script src="../../../../assets/js/main/initialization.js"></script>
+<script src="../../../../assets/js/main/main.js"></script>
+<script src="../../../../assets/js/plugins/intro-js/custom-intro-tour.js"></script>
+<script src="../../../../assets/js/plugins/codemirror/codemirror.js"></script>
+<script src="../../../../assets/js/plugins/codemirror/xml.js"></script>
+<script src="../../../../assets/js/plugins/codemirror/custom-codemirror.js"></script>
+<script src="../../../../assets/js/plugins/swiper/swiper-bundle.min.js"></script>
+<script src="../../../../assets/js/plugins/swiper/swiper-used-in-document.js"></script>
+</body>
+
+</html>

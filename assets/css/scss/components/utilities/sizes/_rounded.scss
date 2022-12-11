@@ -1,0 +1,215 @@
+//----------------------------- Rounded -----------------------------//
+//----------  All Corners //
+@for $i from 0 through 19 {
+    .rounded-#{$i}px {
+        border-radius: #{$i}px !important;
+    }
+}
+
+@for $i from 10 through 25 {
+    .rounded-#{$i * 2}px {
+        border-radius: #{$i * 2}px !important;
+    }
+}
+
+
+//---------- Top Corners //
+@for $i from 0 through 19 {
+    .rounded-top-#{$i}px {
+        border-top-right-radius: #{$i}px !important;
+        border-top-left-radius: #{$i}px !important;
+    }
+}
+
+@for $i from 10 through 25 {
+    .rounded-top-#{$i * 2}px {
+        border-top-right-radius: #{$i * 2}px !important;
+        border-top-left-radius: #{$i * 2}px !important;
+    }
+}
+
+
+//---------- Bottom Corners //
+@for $i from 0 through 19 {
+    .rounded-bottom-#{$i}px {
+        border-bottom-right-radius: #{$i}px !important;
+        border-bottom-left-radius: #{$i}px !important;
+    }
+}
+
+@for $i from 10 through 25 {
+    .rounded-bottom-#{$i * 2}px {
+        border-bottom-right-radius: #{$i * 2}px !important;
+        border-bottom-left-radius: #{$i * 2}px !important;
+    }
+}
+
+
+
+body {
+
+    //-------------------------- LTR Direction --------------------------//
+    &:not(.rtl){
+        //---------- Start Corners //
+        @for $i from 0 through 19 {
+            .rounded-start-#{$i}px {
+                border-top-left-radius: #{$i}px !important;
+                border-bottom-left-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-start-#{$i * 2}px {
+                border-top-left-radius: #{$i * 2}px !important;
+                border-bottom-left-radius: #{$i * 2}px !important;
+            }
+        }
+
+        //---------- End Corners //
+        @for $i from 0 through 19 {
+            .rounded-end-#{$i}px {
+                border-top-right-radius: #{$i}px !important;
+                border-bottom-right-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-end-#{$i * 2}px {
+                border-top-right-radius: #{$i * 2}px !important;
+                border-bottom-right-radius: #{$i * 2}px !important;
+            }
+        }
+
+        //---------- Top Start Corner //
+        @for $i from 0 through 19 {
+            .rounded-top-start-#{$i}px {
+                border-top-left-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-top-start-#{$i * 2}px {
+                border-top-left-radius: #{$i * 2}px !important;
+            }
+        }
+
+        //---------- Top End Corner //
+        @for $i from 0 through 19 {
+            .rounded-top-end-#{$i}px {
+                border-top-right-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-top-end-#{$i * 2}px {
+                border-top-right-radius: #{$i * 2}px !important;
+            }
+        }
+
+        //---------- Bottom Start Corner //
+        @for $i from 0 through 19 {
+            .rounded-bottom-start-#{$i}px {
+                border-bottom-left-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-bottom-start-#{$i * 2}px {
+                border-bottom-left-radius: #{$i * 2}px !important;
+            }
+        }
+
+        //---------- Bottom End Corner //
+        @for $i from 0 through 19 {
+            .rounded-bottom-end-#{$i}px {
+                border-bottom-right-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-bottom-end-#{$i * 2}px {
+                border-bottom-right-radius: #{$i * 2}px !important;
+            }
+        }
+    }
+
+
+    //-------------------------- RTL Direction --------------------------//
+    &.rtl {
+        //---------- Start Corners //
+        @for $i from 0 through 19 {
+            .rounded-start-#{$i}px {
+                border-top-right-radius: #{$i}px !important;
+                border-bottom-right-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-start-#{$i * 2}px {
+                border-top-right-radius: #{$i * 2}px !important;
+                border-bottom-right-radius: #{$i * 2}px !important;
+            }
+        }
+
+        //---------- End Corners //
+        @for $i from 0 through 19 {
+            .rounded-end-#{$i}px {
+                border-top-left-radius: #{$i}px !important;
+                border-bottom-left-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-end-#{$i * 2}px {
+                border-top-left-radius: #{$i * 2}px !important;
+                border-bottom-left-radius: #{$i * 2}px !important;
+            }
+        }
+
+
+        //---------- Top Start Corner //
+        @for $i from 0 through 19 {
+            .rounded-top-start-#{$i}px {
+                border-top-right-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-top-start-#{$i * 2}px {
+                border-top-right-radius: #{$i * 2}px !important;
+            }
+        }
+
+
+        //---------- Top End Corner //
+        @for $i from 0 through 19 {
+            .rounded-top-end-#{$i}px {
+                border-top-left-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-top-end-#{$i * 2}px {
+                border-top-left-radius: #{$i * 2}px !important;
+            }
+        }
+
+
+        //---------- Bottom Start Corner //
+        @for $i from 0 through 19 {
+            .rounded-bottom-start-#{$i}px {
+                border-bottom-right-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-bottom-start-#{$i * 2}px {
+                border-bottom-right-radius: #{$i * 2}px !important;
+            }
+        }
+
+
+        //---------- Bottom End Corner //
+        @for $i from 0 through 19 {
+            .rounded-bottom-end-#{$i}px {
+                border-bottom-left-radius: #{$i}px !important;
+            }
+        }
+        @for $i from 10 through 25 {
+            .rounded-bottom-end-#{$i * 2}px {
+                border-bottom-left-radius: #{$i * 2}px !important;
+            }
+        }
+
+    }
+
+}

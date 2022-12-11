@@ -1,0 +1,24 @@
+.image-input{
+    width: fit-content;
+
+    & .image-input-upload{
+        top: -10px;
+        left: -10px;
+
+        & .image-input-upload-btn{
+            z-index: 1;
+            border: 1px solid $light-color-4 !important;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.05);
+        }
+
+    }
+
+    & .image-input-cancle-btn{
+        bottom: -10px;
+        left: -10px;
+        z-index: 1;
+        border: 1px solid $light-color-4 !important;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.05);
+    }
+
+}

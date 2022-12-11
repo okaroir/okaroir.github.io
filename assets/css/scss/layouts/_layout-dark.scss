@@ -1,0 +1,17 @@
+body{
+
+    &.dark:not(.unsupport-dark-mode){
+
+        &.dark-mode-1{
+            background-color: $dark-mode-color-1;
+            color: $light-color-6;
+
+            & .main:not(.unsupport-dark-mode){
+                color: $light-color-6;
+            }
+
+        }
+
+    }
+
+}
